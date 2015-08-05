@@ -1,0 +1,2 @@
+python image_creator.py ..\www\json\places.json --dest ..\www\img\map\roadmap\1280x1200\ --size 1280x1200
+python image_creator.py ..\www\json\places.json --dest ..\www\img\map\satellite\1280x1200\ --size 1280x1200 --maptype satellite

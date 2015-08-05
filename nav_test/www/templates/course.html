@@ -1,0 +1,16 @@
+<ion-view >
+	<ion-nav-title>{{course.name}}</ion-nav-title>
+
+	<ion-content dir="rtl">
+		ظرفیت گرفته شده: 
+		<div dir="ltr" style="display: inline;">
+			<knob knob-data="knobValue" id="capacity-left" data-capacity="{{course.capacity}}" data-enrolled="{{course.enrolled_num}}"/>
+		</div>
+
+		ساعت های تشکیل:
+		<div>
+		{{course.hours}}
+		</div>
+		
+	</ion-content>
+</ion-view>
