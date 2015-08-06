@@ -27,6 +27,29 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 		
 	})
 
+	.state('index.forms',{
+		url: '/forms',
+		views:{
+			main_content: {
+				templateUrl: 'templates/forms.html',
+				controller: 'FormsCtrl'
+			}	
+		}
+		
+	})
+
+
+	.state('index.form',{
+		url: '/form/:formId',
+		views:{
+			main_content: {
+				templateUrl: 'templates/form.html',
+				controller: 'FormCtrl'
+			}	
+		}
+		
+	})
+
 	.state('index.courses',{
 		url: '/courses',
 		views:{

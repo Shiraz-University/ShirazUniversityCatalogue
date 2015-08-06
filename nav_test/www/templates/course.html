@@ -9,7 +9,12 @@
 
 		ساعت های تشکیل:
 		<div>
-		{{course.hours}}
+			<div ng-repeat="session in course.sessions" >{{session.day}} {{session.start}} {{session.end}}</div>
+		</div>
+
+		استاد:
+		<div>
+		{{course.professor}}
 		</div>
 		
 	</ion-content>

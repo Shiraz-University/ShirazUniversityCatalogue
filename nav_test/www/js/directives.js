@@ -9,7 +9,15 @@ function call_all_waiting_function()
 	}
 }
 
-angular.module('ionicApp.directives',[])
+angular.module('ionicApp.directives',['ngSanitize'])
+
+.filter('unsafe', ['$sce', function($sce) {
+
+    return function(text) {
+    	console.log(text);
+        return $sce.trustAsHtml(text);
+    };
+}])
 
 .directive('ionslider',function($timeout){
 	function createValues(){
@@ -71,11 +79,11 @@ angular.module('ionicApp.directives',[])
                     step:$scope.step,
                     hideMinMax:$scope.hideMinMax,
                     hideFromTo:$scope.hideFromTo,
-                    from:$scope.start,
+                    from:$scope.from,
                     to: $scope.to,
                     disable:$scope.disable,
                     onChange: function(data){
-                    	$scope.start = data.from;
+                    	$scope.from = data.from;
                     	$scope.to = data.to;
                     	$scope.$apply();
                     	if ($scope.onChange){
@@ -92,9 +100,9 @@ angular.module('ionicApp.directives',[])
             $scope.$watch('max', function(value) {
                 $timeout(function(){ $element.data("ionRangeSlider").update({max: value}); });
             });
-            $scope.$watch('from', function(value) {
-                $timeout(function(){ $element.data("ionRangeSlider").update({from: value}); });
-            });
+            // $scope.$watch('from', function(value) {
+            //     $timeout(function(){ $element.data("ionRangeSlider").update({from: value}); });
+            // });
             $scope.$watch('disable', function(value) {
                 $timeout(function(){ $element.data("ionRangeSlider").update({disable: value}); });
             });
@@ -154,6 +162,42 @@ angular.module('ionicApp.directives',[])
 	return {
 		link: link
 	};
+})
+
+.directive('suDayPicker', function(){
+	var dayNames = [
+		'\u0634\u0646\u0628\u0647',
+		'\u06CC\u06A9\u0020\u0634\u0646\u0628\u0647',
+		'\u062F\u0648\u0020\u0634\u0646\u0628\u0647',
+		'\u0633\u0647\u0020\u0634\u0646\u0628\u0647',
+		'\u0686\u0647\u0627\u0631\u0020\u0634\u0646\u0628\u0647',
+		'\u067E\u0646\u062C\u0020\u0634\u0646\u0628\u0647',
+		'\u062C\u0645\u0639\u0647'
+	];
+	return {
+		templateUrl: '../templates/su-day-picker.html',
+		scope: {
+			pickedDays: '=pickedDays',
+
+		},
+		link: function(scope, element, attrs){
+			scope.dayNames = dayNames;
+			element.on('click', function(e){
+				//console.log($(e.target).attr('su-id'));
+				jQuery(e.target).toggleClass('su-day-selected');
+				var days = element.children('table').children('tbody').children('tr').children('td');
+				scope.pickedDays = [];
+				for (var i = 0;i < days.length; i++){
+					var currentElement = jQuery(days[i]);
+					if (currentElement.hasClass('su-day-selected')){
+						scope.pickedDays.push(i);
+					}
+				}
+				scope.$apply();
+				
+			});
+		}
+	}
 })
 
 .directive('knob', ['$timeout', function($timeout) {
@@ -224,3 +268,4 @@ angular.module('ionicApp.directives',[])
         }
     };
 }]);
+

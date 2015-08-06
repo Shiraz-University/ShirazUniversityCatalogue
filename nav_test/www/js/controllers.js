@@ -1,3 +1,4 @@
+console.log('\u062A\u0633\u062A');
 angular.module('ionicApp.controllers', ['ngRoute'])
 
 .controller('DashCtrl', function($scope) {})
@@ -28,6 +29,22 @@ angular.module('ionicApp.controllers', ['ngRoute'])
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
+.controller('FormsCtrl', function($scope, FormFactory){
+    FormFactory.then(function(data){
+        console.log(data);
+        $scope.forms = data;
+    });
+})
+
+.controller('FormCtrl', function($scope,$stateParams, FormFactory){
+    var formId = $stateParams.formId;
+    FormFactory.then(function(data){
+        var allForms = data;
+        var currentForm = data.filter(function(x){return x.id == formId;})[0];
+        $scope.form = currentForm;
+    });
+})
+
 .factory('PlaceFactory', function($http, $cacheFactory)
 {
     get_url = '../json/places.json';
@@ -41,6 +58,18 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
 })
 
+.factory('FormFactory', function($http, $cacheFactory)
+{
+    get_url = '../json/forms.json';
+    return $http.get(get_url,{ cache: true}).then(function(items){
+        for (var i = 0; i< items.data.length; i++){
+            items.data[i].id = i;
+        }
+        return items.data;
+    });
+
+})
+
 .factory('CourseFactory', function($http, $cacheFactory)
 {
     get_url = '../json/courses.json';
@@ -49,10 +78,64 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     // {
     //     get_url = '/android_asset/www/json/places.json';
     // }
-    
-    return $http.get(get_url,{ cache: true});
+    function parseTime(timeString){
+        var parts = timeString.split(':');
+        var hour = +parts[0];
+        var minute = +parts[1];
+        var totalMinute = hour * 60 + minute;
+        return totalMinute;
+    }
+    function getSessionTimes(course){
+        var hours = course.hours;
+        var sessions = hours.split('?');
+        var sessionInstances = [];
+        var dayTranslationTable = {
+            'شنبه' : 0,
+            'يک شنبه' : 1,
+            'دو شنبه' : 2,
+            'سه شنبه' : 3,
+            'چهار شنبه' : 4,
+            'پنج شنبه' : 5,
+            'جمعه' : 6,
+        };
+        function dayTranslate(dayname){
+            if (dayname in dayTranslationTable){
+                return dayTranslationTable[dayname];
+            }
+            //todo: remove in production
+            else{
+                console.log('the dayname was : ');
+                console.log(dayname);
+                console.log('تست');
+                throw "test";
+            }
 
+        }
+        for (var i = 0; i < sessions.length; i++){
+            var currentSession = sessions[i];
+            var parts = currentSession.split('!');
+            var day = parts[0];
+            var start = parts[1];
+            var end = parts[2];
+            // console.log(parseTime(start));
+            // console.log(parseTime(end));
+            sessionInstances.push({day: dayTranslate(day), start: parseTime(start), end: parseTime(end)});
+        }
+        return sessionInstances;
+    }
+
+    return $http.get(get_url,{ cache: true}).then(function(response){
+        for (var i = 0; i< response.data.length; i++)
+        {
+            var currentCourse = response.data[i];
+            currentCourse.id = i;
+            var sessionTimes = getSessionTimes(currentCourse);
+            currentCourse.sessions = sessionTimes;
+        }
+        return response.data;
+    });
 })
+
 
 .controller('PlacesCtrl', function($scope, PlaceFactory)
 {
@@ -68,29 +151,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 })
 
 .filter('inRange', function(){
-    function parseTime(timeString){
-        var parts = timeString.split(':');
-        var hour = +parts[0];
-        var minute = +parts[1];
-        var totalMinute = hour * 60 + minute;
-        return totalMinute;
-    }
-    function getSessionTimes(course){
-        var hours = course.hours;
-        var sessions = hours.split('?');
-        var sessionInstances = [];
-        for (var i = 0; i < sessions.length; i++){
-            var currentSession = sessions[i];
-            var parts = currentSession.split('!');
-            var day = parts[0];
-            var start = parts[1];
-            var end = parts[2];
-            // console.log(parseTime(start));
-            // console.log(parseTime(end));
-            sessionInstances.push({day: day, start: parseTime(start), end: parseTime(end)});
-        }
-        return sessionInstances;
-    }
+    
 
     function isSessionInTime(session, timeRange){
         if ((session.start >= timeRange.from) && (session.end <= timeRange.to)){
@@ -105,7 +166,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         }
         var startTime = 7 * 60 + 30 + timeRange.from * 15;
         var endTime = 7 * 60 + 30 + timeRange.to * 15;
-        var sessions = getSessionTimes(course);
+        var sessions = course.sessions;
         for (var i = 0; i < sessions.length; i++){
             var currentSession = sessions[i];
             if (!isSessionInTime(currentSession, {from: startTime, to: endTime})){
@@ -133,9 +194,32 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     }
 })
 
+.filter('inDays', function(){
+
+    function isCourseInDays(course, days){
+        for (var i = 0; i< course.sessions.length; i++){
+            var session = course.sessions[i];
+            if (days.indexOf(session.day) == -1){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    return function(items, days){
+        var filteredItems = [];
+        angular.forEach(items, function(course){
+            if (isCourseInDays(course, days)){
+                filteredItems.push(course);
+            }
+        });
+        return filteredItems;
+    }
+})
+
 .controller('CoursesCtrl', function($scope, CourseFactory)
 {
-    CourseFactory.success(function(data){
+    CourseFactory.then(function(data){
         $scope.courses = data;
         $scope.timeFilterModel = {from : 0, to: 50};
         var timeFilterFrom = 0;
@@ -147,16 +231,27 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             timeFilterFrom = 7 * 60 + 30 + val * 15;
         });
 
-        
+        $scope.daysToFilter = [0,1,2,3,4,5,6];
+
     });
 })
 
 .controller('CourseCtrl', function($scope,$stateParams ,CourseFactory)
 {
     var courseIndex = $stateParams.courseIndex;
-    CourseFactory.success(function(data){
+    function findCourseWithId(courses,id){
+        for (var i = 0;i < courses.length; i++)
+        {
+            var course = courses[i];
+            if (course.id == id) {
+                return course;
+            }
+        }
+    }
+    CourseFactory.then(function(data){
         $scope.courses = data;
-        var course = $scope.courses[courseIndex];
+        // var course = $scope.courses[courseIndex];
+        var course = findCourseWithId(data,courseIndex);
         $scope.course = course;
         var knobValue = course.capacity > 0 ? 100 * course.enrolled_num / course.capacity : 100;
         var displayString = course.enrolled_num.toString() + '/' + course.capacity.toString();

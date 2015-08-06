@@ -1,16 +1,13 @@
 <ion-view view-title="Courses">
-	<script type="text/javascript">
-		function testOnChange(data){
-			console.log(data);
-		}
-	</script>
+
 	<ion-content dir="rtl">
+		<!-- <su-day-picker picked-days="pickedDays"></su-day-picker> -->
 		<div dir="ltr">
-			{{timeFilterModel}}
+			<su-day-picker picked-days="daysToFilter"></su-day-picker>
 			<ionslider grid="true" min="0" max="750" step="15" type="double" from="timeFilterModel.from" to="timeFilterModel.to"></ionslider>
 		</div>
 		<ion-list>
-			<ion-item href="#/app/course/{{$index}}" ng-repeat="course in courses| inRange:timeFilterModel">
+			<ion-item href="#/app/course/{{course.id}}" ng-repeat="course in courses| inRange:timeFilterModel | inDays:daysToFilter">
 				{{course.name}}
 			</ion-item>
 		</ion-list>
