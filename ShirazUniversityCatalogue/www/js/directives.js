@@ -200,6 +200,18 @@ angular.module('ionicApp.directives',['ngSanitize'])
 	}
 })
 
+.directive('suDayShower', function(){
+    var dayLetters = ['ش', 'ی', 'د', 'س', 'چ', 'پ', 'ج'];
+
+    return {
+        templateUrl: '../templates/su-day-shower.html',
+        scope: {selectedDays: '='},
+        link: function(scope, element, attrs){
+            scope.dayLetters = dayLetters;
+        }
+    };
+})
+
 .directive('knob', ['$timeout', function($timeout) {
     'use strict';
 
@@ -239,10 +251,9 @@ angular.module('ionicApp.directives',['ngSanitize'])
             knobOptions: '&'
         },
         link: function($scope, $element, attrs) {
-            $element.css('font-size','5px');
             var knobInit = $scope.knobOptions() || {fgColor: '#000000',
              readOnly: true, format: function(val){
-             	return attrs.enrolled + '/' + attrs.capacity;
+                return (+attrs.enrolled).toPersianString() + '/' + (+attrs.capacity).toPersianString();
              },
              draw: function(){
                 jQuery('#capacity-left').css('font-size','20px');

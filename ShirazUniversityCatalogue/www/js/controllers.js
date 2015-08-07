@@ -1,4 +1,19 @@
-console.log('\u062A\u0633\u062A');
+
+Number.prototype.toPersianString = function(){
+    var persianDigits = '۰۱۲۳۴۵۶۷۸۹'
+    var res = '';
+    var englishString = this.toString();
+    if (englishString[0] == '-'){
+        res += '-';
+        englishString = englishString.slice(1,englishString.length);
+    }
+    for (var i = 0;i< englishString.length; i++){
+        var digitNum = +englishString[i];
+        var translatedDigit = persianDigits[digitNum];
+        res += translatedDigit;
+    }
+    return res;
+};
 angular.module('ionicApp.controllers', ['ngRoute'])
 
 .controller('DashCtrl', function($scope) {})
@@ -93,6 +108,15 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         var totalMinute = hour * 60 + minute;
         return totalMinute;
     }
+    function reverseParseTime(time){
+        var hour = Math.floor(time / 60);
+        var minute = time % 60;
+        var hourString  = hour.toPersianString();
+        var minuteString = minute.toPersianString();
+        if (minuteString.length == 1) minuteString = '0' + minuteString;
+        if (hourString.length == 1) hourString = '0' + hourString;
+        return {hour: hour, minute: minute, showString: hourString + ':' + minuteString};
+    }
     function getSessionTimes(course){
         var hours = course.hours;
         var sessions = hours.split('?');
@@ -132,6 +156,32 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         return sessionInstances;
     }
 
+    function getDays(course){
+        var days = [];
+        for (var i = 0;i< course.sessions.length; i++){
+            var session = course.sessions[i];
+            days.push(session.day);
+        }
+        return days;
+    }
+
+    function getTimes(course){
+        var sessions = [course.sessions[0]];
+        for (var i = 1;i<course.sessions.length;i++){
+            var session = course.sessions[i];
+            if (!(session.start == sessions[0].start && session.end == sessions[0].end)){
+                sessions.push(session);
+            }
+        }
+        var times = [];
+        for (var i = 0;i < sessions.length; i++){
+            var session = sessions[i];
+            times.push({start: reverseParseTime(session.start),
+             end: reverseParseTime(session.end)});
+        }
+        return times;
+    }
+
     return $http.get(get_url,{ cache: true}).then(function(response){
         for (var i = 0; i< response.data.length; i++)
         {
@@ -139,6 +189,8 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             currentCourse.id = i;
             var sessionTimes = getSessionTimes(currentCourse);
             currentCourse.sessions = sessionTimes;
+            currentCourse.days = getDays(currentCourse);
+            currentCourse.times = getTimes(currentCourse);
         }
         return response.data;
     });
