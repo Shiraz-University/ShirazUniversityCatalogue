@@ -1,0 +1,24 @@
+<style type="text/css">
+	.su-day-picker-table td{
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+/*		border: dashed;
+		border-width: 1px;*/
+		/*border-radius: 1px;*/
+		cursor: pointer;
+	}
+	.su-day-selected{
+		background: green;
+	}
+</style>
+
+
+<table class="su-day-picker-table" style="width: 100%">
+	<tr>
+		<td ng-repeat="day in dayNames" su-id="{{$index}}" class="su-day-selected">
+			{{day}}
+		</td>
+	</tr>
+</table>
+
