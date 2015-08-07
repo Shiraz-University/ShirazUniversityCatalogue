@@ -61,11 +61,19 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 .factory('FormFactory', function($http, $cacheFactory)
 {
     get_url = '../json/forms.json';
+    // if (ionic.Platform.isAndroid())
+    // {
+    //     get_url = '/android_asset/www/json/forms.json';
+    // }
     return $http.get(get_url,{ cache: true}).then(function(items){
+        var returnedItems = [];
         for (var i = 0; i< items.data.length; i++){
             items.data[i].id = i;
+            if (items.data[i].title){
+                returnedItems.push(items.data[i]);
+            }
         }
-        return items.data;
+        return returnedItems;
     });
 
 })
@@ -76,7 +84,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
     // if (ionic.Platform.isAndroid())
     // {
-    //     get_url = '/android_asset/www/json/places.json';
+    //     get_url = '/android_asset/www/json/courses.json';
     // }
     function parseTime(timeString){
         var parts = timeString.split(':');

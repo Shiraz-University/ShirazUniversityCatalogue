@@ -239,9 +239,13 @@ angular.module('ionicApp.directives',['ngSanitize'])
             knobOptions: '&'
         },
         link: function($scope, $element, attrs) {
+            $element.css('font-size','5px');
             var knobInit = $scope.knobOptions() || {fgColor: '#000000',
              readOnly: true, format: function(val){
              	return attrs.enrolled + '/' + attrs.capacity;
+             },
+             draw: function(){
+                jQuery('#capacity-left').css('font-size','20px');
              }
          };
             var elementId = attrs.id;

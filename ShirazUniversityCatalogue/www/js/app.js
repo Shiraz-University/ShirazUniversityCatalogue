@@ -3,7 +3,7 @@ var app = angular.module('ionicApp', ['ionic','ionicApp.controllers', 'ionicApp.
 app.config(function($compileProvider)
 	{
 		//to prevent angular from adding :undafe prefix to :geo links
-		$compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|file|tel|geo):/);
+		$compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|file|tel|geo|mailto):/);
 	});
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider)

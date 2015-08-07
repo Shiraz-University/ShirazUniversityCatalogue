@@ -1,4 +1,4 @@
-<ion-view view-title="Courses">
+<ion-view view-title="درس ها">
 
 	<ion-content dir="rtl">
 		<!-- <su-day-picker picked-days="pickedDays"></su-day-picker> -->
@@ -6,8 +6,11 @@
 			<su-day-picker picked-days="daysToFilter"></su-day-picker>
 			<ionslider grid="true" min="0" max="750" step="15" type="double" from="timeFilterModel.from" to="timeFilterModel.to"></ionslider>
 		</div>
+		<label class="item item-input">
+		    <input type="text" placeholder="جستجو" ng-model="search_input">
+		</label>
 		<ion-list>
-			<ion-item href="#/app/course/{{course.id}}" ng-repeat="course in courses| inRange:timeFilterModel | inDays:daysToFilter">
+			<ion-item href="#/app/course/{{course.id}}" ng-repeat="course in courses| inRange:timeFilterModel | inDays:daysToFilter | filter:search_input">
 				{{course.name}}
 			</ion-item>
 		</ion-list>

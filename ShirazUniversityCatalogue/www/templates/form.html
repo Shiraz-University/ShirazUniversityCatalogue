@@ -2,18 +2,60 @@
 	<ion-nav-title>{{form.title}}</ion-nav-title>
 	<ion-content dir="rtl">
 		<table>
-			<tr>
+			<tr ng-if="form.motesadi">
 				<td>متصدی:</td>
 				<td>{{form.motesadi}}</td>
 			</tr>
-			<tr>
+			<tr ng-if="form.internal_line">
 				<td>خط داخلی</td>
-				<td>{{form.internal_line}}</td>
+				<td><a href="tel:{{form.internal_line}}">{{form.internal_line}}</a></td>
 			</tr>
-			<tr>
+			<tr ng-if="form.direct_line">
 				<td>تلفن</td>
-				<td>{{form.direct_line}}</td>
+				<td><a href="tel:{{form.direct_line}}">{{form.direct_line}}</a></td>
 			</tr>
+			<tr ng-if="form.fax">
+				<td>دور نگار</td>
+				<td><a href="tel:{{form.fax}}">{{form.fax}}</a></td>
+			</tr>
+			<tr ng-if="form.email">
+				<td>ایمیل</td>
+				<td><a href="mailto:{{form.email}}">{{form.email}}</a></td>
+			</tr>
+			<tr ng-if="form.place">
+				<td>مکان</td>
+				<td>{{form.place}}</td>
+			</tr>
+			<tr ng-if="form.documents">
+				<td>مدارک مورد نیاز:</td>
+				<td>
+					<ul>
+						<li ng-repeat="document in form.documents">{{document}}</li>
+					</ul>
+				</td>
+			</tr>
+			<tr ng-if="form.visit_time">
+				<td>ساعات مراجعه</td>
+				<td>{{form.visit_time}}</td>
+			</tr>
+			<tr ng-if="form.average_time">
+				<td>مدت زمان متوسط</td>
+				<td>{{form.average_time}}</td>
+			</tr>
+			<tr ng-if="form.forms">
+				<td>فرم های مورد نیاز:</td>
+				<td>
+					<ul>
+						<li ng-repeat="form in form.forms">{{form}}</li>
+					</ul>
+				</td>
+			</tr>
+			<tr ng-if="form.post_code">
+				<td>کد پستی</td>
+				<td>{{form.post_code}}</td>
+			</tr>
+			
+			
 		</table>
 	</ion-content>
 </ion-view>
