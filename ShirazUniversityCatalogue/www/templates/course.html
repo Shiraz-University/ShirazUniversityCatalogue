@@ -9,12 +9,21 @@
 
 		ساعت های تشکیل:
 		<div>
-			<div ng-repeat="session in course.sessions" >{{session.day}} {{session.start}} {{session.end}}</div>
+			<div ng-repeat="session in course.sessions" >{{session.showString}}</div>
 		</div>
 
 		استاد:
 		<div>
 		{{course.professor}}
+		</div>
+		<div>
+			<span ng-repeat="field in course.allowed_fields" style="padding:3px;margin:3px;background: #387EF5;border-radius: 5px;color: white;">{{field}}</span>
+		</div>
+		<div>
+			زمان امتحان نهایی: {{course.final_time}}<br/>
+			تاریخ امتحان نهایی: {{course.final_date}}<br/>
+			<span ng-if="course.allowed_sex">جنسیت: {{course.allowed_sex}}</span><br/>
+			واحد: {{course.units}}<br/>
 		</div>
 		
 	</ion-content>

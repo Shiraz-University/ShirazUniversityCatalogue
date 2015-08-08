@@ -113,8 +113,8 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         var minute = time % 60;
         var hourString  = hour.toPersianString();
         var minuteString = minute.toPersianString();
-        if (minuteString.length == 1) minuteString = '0' + minuteString;
-        if (hourString.length == 1) hourString = '0' + hourString;
+        if (minuteString.length == 1) minuteString = '۰' + minuteString;
+        if (hourString.length == 1) hourString = '۰' + hourString;
         return {hour: hour, minute: minute, showString: hourString + ':' + minuteString};
     }
     function getSessionTimes(course){
@@ -151,7 +151,11 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             var end = parts[2];
             // console.log(parseTime(start));
             // console.log(parseTime(end));
-            sessionInstances.push({day: dayTranslate(day), start: parseTime(start), end: parseTime(end)});
+            sessionInstances.push({day: dayTranslate(day),
+            start: parseTime(start),
+            end: parseTime(end),
+            showString: day + ' ' + reverseParseTime(parseTime(start)).showString +' ' + reverseParseTime(parseTime(end)).showString
+            });
         }
         return sessionInstances;
     }
@@ -191,6 +195,10 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             currentCourse.sessions = sessionTimes;
             currentCourse.days = getDays(currentCourse);
             currentCourse.times = getTimes(currentCourse);
+            var allowedFieldsString = currentCourse.allowed_fields;
+            var allowedFields = allowedFieldsString.split('*').filter(function(x){return x});
+            currentCourse.allowed_fields = allowedFields;
+
         }
         return response.data;
     });
