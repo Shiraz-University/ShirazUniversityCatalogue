@@ -175,7 +175,8 @@ angular.module('ionicApp.directives',['ngSanitize'])
 		'\u062C\u0645\u0639\u0647'
 	];
 	return {
-		templateUrl: '../templates/su-day-picker.html',
+		//templateUrl: '/templates/su-day-picker.html',
+        template: '<table class="su-day-picker-table" style="width: 100%"><tr><td ng-repeat="day in dayNames" su-id="{{$index}}" class="su-day-selected">{{day}}</td></tr></table>',
 		scope: {
 			pickedDays: '=pickedDays',
 
@@ -204,7 +205,7 @@ angular.module('ionicApp.directives',['ngSanitize'])
     var dayLetters = ['ش', 'ی', 'د', 'س', 'چ', 'پ', 'ج'];
 
     return {
-        templateUrl: '../templates/su-day-shower.html',
+        templateUrl: '/templates/su-day-shower.html',
         scope: {selectedDays: '='},
         link: function(scope, element, attrs){
             scope.dayLetters = dayLetters;

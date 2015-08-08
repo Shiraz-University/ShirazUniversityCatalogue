@@ -4,3 +4,17 @@
     font-family: Yekan;
     src: url('../fonts/BYekan.ttf');
 }
+
+.su-day-picker-table td{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+/*		border: dashed;
+	border-width: 1px;*/
+	/*border-radius: 1px;*/
+	cursor: pointer;
+}
+.su-day-selected{
+	background: #387EF5;
+	color: white;
+}

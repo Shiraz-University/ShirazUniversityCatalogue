@@ -64,10 +64,10 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 {
     get_url = '../json/places.json';
 
-    // if (ionic.Platform.isAndroid())
-    // {
-    //     get_url = '/android_asset/www/json/places.json';
-    // }
+    if (ionic.Platform.isAndroid())
+    {
+        get_url = '/android_asset/www/json/places.json';
+    }
     
     return $http.get(get_url,{ cache: true});
 
@@ -76,10 +76,10 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 .factory('FormFactory', function($http, $cacheFactory)
 {
     get_url = '../json/forms.json';
-    // if (ionic.Platform.isAndroid())
-    // {
-    //     get_url = '/android_asset/www/json/forms.json';
-    // }
+    if (ionic.Platform.isAndroid())
+    {
+        get_url = '/android_asset/www/json/forms.json';
+    }
     return $http.get(get_url,{ cache: true}).then(function(items){
         var returnedItems = [];
         for (var i = 0; i< items.data.length; i++){
@@ -97,10 +97,10 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 {
     get_url = '../json/courses.json';
 
-    // if (ionic.Platform.isAndroid())
-    // {
-    //     get_url = '/android_asset/www/json/courses.json';
-    // }
+    if (ionic.Platform.isAndroid())
+    {
+        get_url = '/android_asset/www/json/courses.json';
+    }
     function parseTime(timeString){
         var parts = timeString.split(':');
         var hour = +parts[0];
@@ -338,7 +338,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     var places = PlaceFactory.success(function(data){
         $scope.place = $rootScope.getPlaceWithId(data,$stateParams.placeId);
         allPlaces = data;
-        $scope.descUrl = '../places/' + $scope.place.id + '/desc.html';
+        $scope.descUrl = 'places/' + $scope.place.id + '/desc.html';
     });
 
 
