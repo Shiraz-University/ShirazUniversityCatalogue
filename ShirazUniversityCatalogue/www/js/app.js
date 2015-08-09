@@ -61,6 +61,16 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 		
 	})
 
+	.state('index.departmentCourses', {
+		url: '/courses/:departmentName',
+		views:{
+			main_content: {
+				templateUrl: 'templates/department-courses.html',
+				controller: 'DepartmentCoursesCtrl'
+			}
+		}
+	})
+
 	.state('index.course',{
 		url: '/course/:courseIndex',
 		views:{

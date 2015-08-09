@@ -46,7 +46,6 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
 .controller('FormsCtrl', function($scope, FormFactory){
     FormFactory.then(function(data){
-        console.log(data);
         $scope.forms = data;
     });
 })
@@ -187,18 +186,29 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     }
 
     return $http.get(get_url,{ cache: true}).then(function(response){
-        for (var i = 0; i< response.data.length; i++)
-        {
-            var currentCourse = response.data[i];
-            currentCourse.id = i;
-            var sessionTimes = getSessionTimes(currentCourse);
-            currentCourse.sessions = sessionTimes;
-            currentCourse.days = getDays(currentCourse);
-            currentCourse.times = getTimes(currentCourse);
-            var allowedFieldsString = currentCourse.allowed_fields;
-            var allowedFields = allowedFieldsString.split('*').filter(function(x){return x});
-            currentCourse.allowed_fields = allowedFields;
-
+        for (var j = 0;j < response.data.length; j++){
+            var currentDepartment = response.data[j];
+            var acceptedCourses = [];
+            for (var i = 0; i< currentDepartment.courses.length; i++)
+            {
+                var currentCourse = currentDepartment.courses[i];
+                currentCourse.id = i;
+                try{
+                    var sessionTimes = getSessionTimes(currentCourse);
+                    currentCourse.sessions = sessionTimes;
+                    currentCourse.days = getDays(currentCourse);
+                    currentCourse.times = getTimes(currentCourse);
+                    var allowedFieldsString = currentCourse.allowed_fields;
+                    var allowedFields = allowedFieldsString.split('*').filter(function(x){return x});
+                    currentCourse.allowed_fields = allowedFields;
+                    acceptedCourses.push(currentCourse);
+                }
+                catch(e){
+                    console.log('there was an error in the following course:');
+                    console.log(currentCourse);
+                }
+            }
+            currentDepartment.courses = acceptedCourses;
         }
         return response.data;
     });
@@ -229,6 +239,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     }
 
     function isInTimeRange(course, timeRange){
+        // console.log(course);
         if (!timeRange){
             return true;
         }
@@ -251,6 +262,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     }
 
     return function(items, timeRange){
+        // console.log(items);
         var filteredItems = [];
         var timeRangeFilter = getTimeRangeFilter(timeRange);
         angular.forEach(items, function(item){
@@ -288,7 +300,21 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 .controller('CoursesCtrl', function($scope, CourseFactory)
 {
     CourseFactory.then(function(data){
-        $scope.courses = data;
+        $scope.departmentCourses = data;
+    });
+})
+
+.controller('DepartmentCoursesCtrl', function($scope, $stateParams, CourseFactory){
+    function findDepartmentCourses(departmentCourses, departmentName){
+        for (var i = 0; i < departmentCourses.length; i++){
+            if (departmentCourses[i].name == departmentName){
+                return departmentCourses[i];
+            }
+        }
+    }
+    CourseFactory.then(function(data){
+        $scope.courses = findDepartmentCourses(data, $stateParams.departmentName).courses;
+
         $scope.timeFilterModel = {from : 0, to: 50};
         var timeFilterFrom = 0;
         var timeFilterTo = 0;
@@ -300,8 +326,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         });
 
         $scope.daysToFilter = [0,1,2,3,4,5,6];
-
-    });
+    })
 })
 
 .controller('CourseCtrl', function($scope,$stateParams ,CourseFactory)
