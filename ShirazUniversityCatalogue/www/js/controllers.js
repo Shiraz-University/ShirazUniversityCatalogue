@@ -96,6 +96,23 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 {
     get_url = '../json/courses.json';
 
+    var dayTranslationTable = {
+        'شنبه' : 0,
+        'يک شنبه' : 1,
+        'دو شنبه' : 2,
+        'سه شنبه' : 3,
+        'چهار شنبه' : 4,
+        'پنج شنبه' : 5,
+        'جمعه' : 6,
+    };
+    var reverseDayTranslationTable = (function(table){
+        var res = {};
+        for (var name in table){
+            res[table[name]] = name;
+        }
+        return res;
+    })(dayTranslationTable);
+
     if (ionic.Platform.isAndroid())
     {
         get_url = '/android_asset/www/json/courses.json';
@@ -120,27 +137,14 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         var hours = course.hours;
         var sessions = hours.split('?');
         var sessionInstances = [];
-        var dayTranslationTable = {
-            'شنبه' : 0,
-            'يک شنبه' : 1,
-            'دو شنبه' : 2,
-            'سه شنبه' : 3,
-            'چهار شنبه' : 4,
-            'پنج شنبه' : 5,
-            'جمعه' : 6,
-        };
+        
         function dayTranslate(dayname){
             if (dayname in dayTranslationTable){
                 return dayTranslationTable[dayname];
             }
-            //todo: remove in production
             else{
-                console.log('the dayname was : ');
-                console.log(dayname);
-                console.log('تست');
-                throw "test";
+                throw "invalid day name: " + dayname;
             }
-
         }
         for (var i = 0; i < sessions.length; i++){
             var currentSession = sessions[i];
@@ -148,9 +152,8 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             var day = parts[0];
             var start = parts[1];
             var end = parts[2];
-            // console.log(parseTime(start));
-            // console.log(parseTime(end));
             sessionInstances.push({day: dayTranslate(day),
+            dayName: day,
             start: parseTime(start),
             end: parseTime(end),
             showString: day + ' ' + reverseParseTime(parseTime(start)).showString +' ' + reverseParseTime(parseTime(end)).showString
@@ -185,6 +188,41 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         return times;
     }
 
+
+    function groupCourseSessionsByTime(course){
+        var sessionTimes = {};
+        var sessions = course.sessions;
+
+        angular.forEach(sessions, function(session){
+            if (sessionTimes[[session.start,session.end]] == undefined){
+                sessionTimes[[session.start,session.end]] = [session];
+            }
+            else{
+                sessionTimes[[session.start,session.end]].push(session);
+            }
+        });
+        return sessionTimes;
+    }
+
+    function getFullSessionDayTimeString(course){
+        var groups = groupCourseSessionsByTime(course);
+        var res = '';
+        for(var sessionTime in groups){
+            sessionTimeSplit = sessionTime.split(',');
+            sessionTime = [+sessionTimeSplit[0],+sessionTimeSplit[1]]
+            var sessionsInCurrentSessionTime = groups[sessionTime];
+            
+            angular.forEach(sessionsInCurrentSessionTime, function(session, index, array){
+                var length = array.length;
+                console.log('' + index + ' ' + length);
+                res += reverseDayTranslationTable[session.day] + ' ها ' + (index < (length-1) ? 'و ' : '');
+            });
+            res += ' از' + reverseParseTime(sessionTime[0]).showString + ' تا ' + reverseParseTime(sessionTime[1]).showString + ' - ';
+        }
+        return res.substring(0,res.length-3);
+    }
+
+
     return $http.get(get_url,{ cache: true}).then(function(response){
         for (var j = 0;j < response.data.length; j++){
             var currentDepartment = response.data[j];
@@ -201,6 +239,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
                     var allowedFieldsString = currentCourse.allowed_fields;
                     var allowedFields = allowedFieldsString.split('*').filter(function(x){return x});
                     currentCourse.allowed_fields = allowedFields;
+                    currentCourse.fullSessionTimeString = getFullSessionDayTimeString(currentCourse);
                     acceptedCourses.push(currentCourse);
                 }
                 catch(e){

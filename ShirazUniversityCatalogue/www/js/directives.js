@@ -86,6 +86,7 @@ angular.module('ionicApp.directives',['ngSanitize'])
                     	$scope.from = data.from;
                     	$scope.to = data.to;
                     	$scope.$apply();
+                        //$scope.$digest();
                     	if ($scope.onChange){
                     		eval($scope.onChange);
                     	}
@@ -94,12 +95,12 @@ angular.module('ionicApp.directives',['ngSanitize'])
                     values: createValues()
                 });
             })();
-            $scope.$watch('min', function(value) {
-                $timeout(function(){ $element.data("ionRangeSlider").update({min: value}); });
-            },true);
-            $scope.$watch('max', function(value) {
-                $timeout(function(){ $element.data("ionRangeSlider").update({max: value}); });
-            });
+            // $scope.$watch('min', function(value) {
+            //     $timeout(function(){ $element.data("ionRangeSlider").update({min: value}); });
+            // },true);
+            // $scope.$watch('max', function(value) {
+            //     $timeout(function(){ $element.data("ionRangeSlider").update({max: value}); });
+            // });
             // $scope.$watch('from', function(value) {
             //     $timeout(function(){ $element.data("ionRangeSlider").update({from: value}); });
             // });
@@ -206,9 +207,13 @@ angular.module('ionicApp.directives',['ngSanitize'])
 
     return {
         templateUrl: 'templates/su-day-shower.html',
-        scope: {selectedDays: '='},
+        //template: function(){return '<span></span>';},
+        scope: {selectedDays: '@'},
         link: function(scope, element, attrs){
             scope.dayLetters = dayLetters;
+            //element.html('<span ng-repeat="letter in dayLetters" style="display:inline-block;text-align: center;width:25px;height:25px;' + scope.selectedDays.indexOf($index) != -1 ? "background: #387EF5;color:white;" : "background: white;opacity: 0.3;" + '>{{letter}}</span>');
+            //element.html('test')
+
         }
     };
 })

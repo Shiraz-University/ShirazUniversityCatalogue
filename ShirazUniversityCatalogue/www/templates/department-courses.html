@@ -13,10 +13,11 @@
 			<ion-item href="#/app/course/{{course.id}}" ng-repeat="course in courses| inRange:timeFilterModel | inDays:daysToFilter | filter:search_input">
 				{{course.name}}
 				
-				<span ng-repeat="time in course.times" style="float:left;">
+				<span style="float: left;"> {{course.fullSessionTimeString}} </span>
+				<!-- <span ng-repeat="time in course.times" style="float:left;">
 					از {{time.start.showString}} تا {{time.end.showString}}
-				</span>
-				<su-day-shower selected-days="course.days" style="float:left;padding-left: 1vw;"></su-day-shower>
+				</span> -->
+				<!-- <su-day-shower selected-days="{{course.days}}" style="float:left;padding-left: 1vw;"></su-day-shower> -->
 			</ion-item>
 		</ion-list>
 	</ion-content>
