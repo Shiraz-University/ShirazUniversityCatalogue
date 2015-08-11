@@ -1,11 +1,17 @@
 <ion-view view-title="مکان ها" dir="rtl">
 	<ion-content>
+		<label class="item item-input item-select">
+			<div class="input-label" >Place Type</div>
+			<select ng-model="place_type_input">
+				<option value="">همه</option>
+				<option ng-repeat="placeType in placeTypes" value="{{placeType.english}}" >{{placeType.persian}}</option>
+			</select>
+		</label>
 		<label class="item item-input">
 		    <input type="text" placeholder="جستجو" ng-model="search_input">
 		</label>
-		
 		<ion-list>
-			<ion-item href="#/app/place/{{place.id}}" ng-repeat="place in places | filter:search_input">
+			<ion-item href="#/app/place/{{place.id}}" ng-repeat="place in places | filter:search_input | filter:place_type_input">
 				{{place.name_persian}}
 			</ion-item>
 		</ion-list>

@@ -61,6 +61,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
 .factory('PlaceFactory', function($http, $cacheFactory)
 {
+    
     get_url = '../json/places.json';
 
     if (ionic.Platform.isAndroid())
@@ -76,10 +77,14 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             for (var i = 0; i < placesInType.length; i++){
                 var currentPlace = placesInType[i];
                 currentPlace['placeType'] = placeType;
+                //Persian placeType
+                //currentPlace['pplaceType'] = placeTypeTranslations[placeType];
+                // console.log(placeType);
+                // console.log(placeTypeTranslations[placeType]);
                 returnedData.push(currentPlace);
             }
         }
-        return returnedData;
+        return {allPlaces: returnedData, categorizedPlaces: resp.data};
     });
 
 })
@@ -267,10 +272,25 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
 .controller('PlacesCtrl', function($scope, PlaceFactory)
 {
-    
+    var placeTypeTranslations= {
+        'Buildings': 'ساختمان ها',
+        'Rooms': 'اتاق ها',
+        'Departments': 'دپارتمان ها'
+    };
     PlaceFactory.then(function(data)
     {
-        $scope.places = data;
+        $scope.places = data.allPlaces;
+        $scope.placeTypes = (function(objs){
+            var res = [];
+            for (var i = 0; i<objs.length; i++){
+                res.push({
+                    english: objs[i],
+                    persian: placeTypeTranslations[objs[i]]
+                });
+            }
+            return res;
+        }) (Object.keys(data.categorizedPlaces));
+
     })
     // $http.get('../json/places.json').success(function(resp)
     // {
@@ -418,8 +438,8 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     var placeId = $stateParams.placeId;
     var allPlaces = null;
     var places = PlaceFactory.then(function(data){
-        $scope.place = $rootScope.getPlaceWithId(data,$stateParams.placeId);
-        allPlaces = data;
+        $scope.place = $rootScope.getPlaceWithId(data.allPlaces,$stateParams.placeId);
+        allPlaces = data.allPlaces;
         //$scope.descUrl = 'places/' + $scope.place.id + '/desc.html';
         $scope.descUrl = 'place_templates/' + $scope.place.id + '.html';
     });
