@@ -4,7 +4,6 @@ function call_all_waiting_function()
 {
 	for (var x = 0; x < g_waiting_funcions.length; x++)
 	{
-		console.log("calling the load function!");
 		(g_waiting_funcions[x])();
 	}
 }
@@ -14,7 +13,6 @@ angular.module('ionicApp.directives',['ngSanitize'])
 .filter('unsafe', ['$sce', function($sce) {
 
     return function(text) {
-    	console.log(text);
         return $sce.trustAsHtml(text);
     };
 }])
@@ -64,8 +62,6 @@ angular.module('ionicApp.directives',['ngSanitize'])
         replace:true,
         link:function($scope,$element,attrs){
             (function init(){
-            	// console.log("??#$%#$%#$%");
-            	// console.log($scope);
                 $element.ionRangeSlider({
                     min: $scope.min,
                     max: $scope.max,
@@ -185,7 +181,6 @@ angular.module('ionicApp.directives',['ngSanitize'])
 		link: function(scope, element, attrs){
 			scope.dayNames = dayNames;
 			element.on('click', function(e){
-				//console.log($(e.target).attr('su-id'));
 				jQuery(e.target).toggleClass('su-day-selected');
 				var days = element.children('table').children('tbody').children('tr').children('td');
 				scope.pickedDays = [];
@@ -270,7 +265,6 @@ angular.module('ionicApp.directives',['ngSanitize'])
             knobInit.release = function(newValue) {
                 $timeout(function() {
                     $scope.knobData = newValue;
-                    console.log($scope.knobData);
                     $scope.$apply();
                 });
             };

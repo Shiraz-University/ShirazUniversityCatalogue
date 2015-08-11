@@ -68,7 +68,19 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         get_url = '/android_asset/www/json/places.json';
     }
     
-    return $http.get(get_url,{ cache: true});
+    return $http.get(get_url,{ cache: true}).then(function(resp){
+        var data = resp.data;
+        var returnedData = [];
+        for (placeType in data){
+            var placesInType = data[placeType];
+            for (var i = 0; i < placesInType.length; i++){
+                var currentPlace = placesInType[i];
+                currentPlace['placeType'] = placeType;
+                returnedData.push(currentPlace);
+            }
+        }
+        return returnedData;
+    });
 
 })
 
@@ -214,7 +226,6 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             
             angular.forEach(sessionsInCurrentSessionTime, function(session, index, array){
                 var length = array.length;
-                console.log('' + index + ' ' + length);
                 res += reverseDayTranslationTable[session.day] + ' ها ' + (index < (length-1) ? 'و ' : '');
             });
             res += ' از' + reverseParseTime(sessionTime[0]).showString + ' تا ' + reverseParseTime(sessionTime[1]).showString + ' - ';
@@ -257,7 +268,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 .controller('PlacesCtrl', function($scope, PlaceFactory)
 {
     
-    PlaceFactory.success(function(data)
+    PlaceFactory.then(function(data)
     {
         $scope.places = data;
     })
@@ -278,7 +289,6 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     }
 
     function isInTimeRange(course, timeRange){
-        // console.log(course);
         if (!timeRange){
             return true;
         }
@@ -301,7 +311,6 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     }
 
     return function(items, timeRange){
-        // console.log(items);
         var filteredItems = [];
         var timeRangeFilter = getTimeRangeFilter(timeRange);
         angular.forEach(items, function(item){
@@ -344,6 +353,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 })
 
 .controller('DepartmentCoursesCtrl', function($scope, $stateParams, CourseFactory){
+    $scope.department = $stateParams.departmentName;
     function findDepartmentCourses(departmentCourses, departmentName){
         for (var i = 0; i < departmentCourses.length; i++){
             if (departmentCourses[i].name == departmentName){
@@ -371,19 +381,27 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 .controller('CourseCtrl', function($scope,$stateParams ,CourseFactory)
 {
     var courseIndex = $stateParams.courseIndex;
-    function findCourseWithId(courses,id){
-        for (var i = 0;i < courses.length; i++)
+    var departmentName = $stateParams.departmentName;
+    function findCourseWithIdAndDepartment(departmentCourses, id, departmentName){
+        for (var i = 0;i < departmentCourses.length; i++)
         {
-            var course = courses[i];
-            if (course.id == id) {
-                return course;
+            var currentDepartment = departmentCourses[i];
+            if (currentDepartment.name == departmentName)
+            {
+                console.log(currentDepartment);
+                for (var j = 0; j < currentDepartment.courses.length; j++){
+                    var currentCourse = currentDepartment.courses[j];
+                    if (currentCourse.id == id){
+                        return currentCourse;
+                    }
+                }
             }
         }
     }
     CourseFactory.then(function(data){
         $scope.courses = data;
         // var course = $scope.courses[courseIndex];
-        var course = findCourseWithId(data,courseIndex);
+        var course = findCourseWithIdAndDepartment(data,courseIndex,departmentName);
         $scope.course = course;
         var knobValue = course.capacity > 0 ? 100 * course.enrolled_num / course.capacity : 100;
         var displayString = course.enrolled_num.toString() + '/' + course.capacity.toString();
@@ -399,10 +417,11 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 {
     var placeId = $stateParams.placeId;
     var allPlaces = null;
-    var places = PlaceFactory.success(function(data){
+    var places = PlaceFactory.then(function(data){
         $scope.place = $rootScope.getPlaceWithId(data,$stateParams.placeId);
         allPlaces = data;
-        $scope.descUrl = 'places/' + $scope.place.id + '/desc.html';
+        //$scope.descUrl = 'places/' + $scope.place.id + '/desc.html';
+        $scope.descUrl = 'place_templates/' + $scope.place.id + '.html';
     });
 
 
@@ -433,12 +452,10 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
     $scope.dbClick = function($event)
     {
-        console.log($event.target.getAttribute('href'));
     }
 
     $scope.dbClick2 = function($event)
     {
-        console.log("called!");
         window.open('http://www.google.com', '_blank','location=yes');
     }
 

@@ -72,7 +72,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 	})
 
 	.state('index.course',{
-		url: '/course/:courseIndex',
+		url: '/course/:departmentName/:courseIndex',
 		views:{
 			main_content: {
 				templateUrl: 'templates/course.html',

@@ -10,7 +10,7 @@
 		    <input type="text" placeholder="جستجو" ng-model="search_input">
 		</label>
 		<ion-list>
-			<ion-item href="#/app/course/{{course.id}}" ng-repeat="course in courses| inRange:timeFilterModel | inDays:daysToFilter | filter:search_input">
+			<ion-item href="#/app/course/{{department}}/{{course.id}}" ng-repeat="course in courses| inRange:timeFilterModel | inDays:daysToFilter | filter:search_input">
 				{{course.name}}
 				
 				<span style="float: left;"> {{course.fullSessionTimeString}} </span>
