@@ -82,6 +82,16 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 		
 	})
 
+	.state('index.external_place',{
+		url: '/external-place/:placeId',
+		views: {
+			main_content: {
+				templateUrl: 'templates/external-place.html',
+				controller: 'ExternalPlaceCtrl'
+			}
+		}
+	})
+
 	.state('index.place',{
 		url: '/place/:placeId',
 		views: {

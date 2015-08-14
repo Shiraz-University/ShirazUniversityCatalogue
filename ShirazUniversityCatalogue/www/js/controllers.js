@@ -59,7 +59,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     });
 })
 
-.factory('PlaceFactory', function($http, $cacheFactory)
+.factory('PlaceFactory', function($http, $cacheFactory, ExtraPlaceFactory)
 {
     
     get_url = '../json/places.json';
@@ -68,25 +68,59 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     {
         get_url = '/android_asset/www/json/places.json';
     }
-    
     return $http.get(get_url,{ cache: true}).then(function(resp){
         var data = resp.data;
         var returnedData = [];
-        for (placeType in data){
-            var placesInType = data[placeType];
-            for (var i = 0; i < placesInType.length; i++){
-                var currentPlace = placesInType[i];
-                currentPlace['placeType'] = placeType;
-                //Persian placeType
-                //currentPlace['pplaceType'] = placeTypeTranslations[placeType];
-                // console.log(placeType);
-                // console.log(placeTypeTranslations[placeType]);
-                returnedData.push(currentPlace);
+        return ExtraPlaceFactory.then(function(extraPlaces){
+            extraPlaces = extraPlaces.allExtraPlaces;
+            for (placeType in data){
+                var placesInType = data[placeType];
+                for (var i = 0; i < placesInType.length; i++){
+                    var currentPlace = placesInType[i];
+                    currentPlace['nearbyPlaces'] = [];
+                    currentPlace['placeType'] = placeType;
+                    returnedData.push(currentPlace);
+
+                    for (var j = 0; j < extraPlaces.length; j++){
+                        var currentExtraPlace = extraPlaces[j];
+                        for (var k = 0; k < currentExtraPlace.nearby_places.length; k++){
+                            var currentNearbyPlace = currentExtraPlace.nearby_places[k];
+                            if (currentPlace.id == currentNearbyPlace){
+                                currentPlace.nearbyPlaces.push(currentExtraPlace);
+                                break;        
+                            }
+                        }
+                    }
+                }
             }
-        }
-        return {allPlaces: returnedData, categorizedPlaces: resp.data};
+            return {allPlaces: returnedData, categorizedPlaces: resp.data};
+        });
+        
+        //return {allPlaces: returnedData, categorizedPlaces: resp.data};
     });
 
+})
+
+.factory('ExtraPlaceFactory', function($http){
+    get_url = '../json/extra_places.json';
+    if (ionic.Platform.isAndroid())
+    {
+        get_url = '/android_asset/www/json/extra_places.json';
+    }
+
+    var allExtraPlaces = [];
+    var allPlaceTypes = [];
+    return $http.get(get_url, {cache: true}).then(function(resp){
+        for (var placeType in resp.data){
+            allPlaceTypes.push(placeType);
+            var thisTypePlaces = resp.data[placeType];
+            angular.forEach(thisTypePlaces, function(place){
+                place.placeType = placeType;
+                allExtraPlaces.push(place);
+            })
+        }
+        return {allExtraPlaces: allExtraPlaces, allExtraPlaceTypes: allPlaceTypes};
+    });
 })
 
 .factory('FormFactory', function($http, $cacheFactory)
@@ -365,6 +399,14 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     }
 })
 
+.filter('extraPlaceType', function(){
+    return function(items, placeType){
+        return items.filter(function(item){
+            return item.placeType == placeType;
+        });
+    }
+})
+
 .controller('CoursesCtrl', function($scope, CourseFactory)
 {
     CourseFactory.then(function(data){
@@ -433,7 +475,20 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
 })
 
-.controller('PlaceCtrl', function($rootScope,$scope, $stateParams, PlaceFactory)
+.controller('ExternalPlaceCtrl', function($scope, $stateParams, ExtraPlaceFactory){
+    var placeId = $stateParams.placeId;
+    var allPlaces = null;
+    var allExternalPlaces = ExtraPlaceFactory.then(function(data){
+        allPlaces = data.allExtraPlaces;
+        angular.forEach(allPlaces, function(place){
+            if (place.id == placeId){
+                $scope.place = place;
+            }
+        })
+    })
+})
+
+.controller('PlaceCtrl', function($rootScope,$scope, $stateParams, PlaceFactory, ExtraPlaceFactory)
 {
     var placeId = $stateParams.placeId;
     var allPlaces = null;
@@ -442,6 +497,10 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         allPlaces = data.allPlaces;
         //$scope.descUrl = 'places/' + $scope.place.id + '/desc.html';
         $scope.descUrl = 'place_templates/' + $scope.place.id + '.html';
+    });
+
+    ExtraPlaceFactory.then(function(resp){
+        $scope.allExtraPlaceTypes = resp.allExtraPlaceTypes;
     });
 
 

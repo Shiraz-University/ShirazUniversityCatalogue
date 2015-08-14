@@ -1,0 +1,2918 @@
+{
+    "food": [
+        {
+            "name": "\u0628\u0648\u0641\u0647", 
+            "reference": "CmRbAAAA8IAaggswtkBhWQrM9U4NLLamspZeFbcMMHNDBaxqNp0jaZ2TgMsmr0TPyBxY-pe69PJTpaGUoGuRs6CdqxFt2o258CVVshGaTskHVq1vc7sKT487QyhqufIhwPEiPZLpEhCbIj_vrVKlzPqDFepxv87MGhQJI3UbtnL6tyuO5utjl7cGyv9y5g", 
+            "geometry": {
+                "location": {
+                    "lat": 29.628668, 
+                    "lng": 52.517754
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ9wI-72wSsj8R5reeZ08XVzM", 
+            "vicinity": "Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "d7f4d62d66c4a0070fbca0f92bf562cbbd26033b", 
+            "types": [
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Milad Nuts", 
+            "reference": "CmReAAAAvH4WTp5hXPfawYLQY1WDbHmmnbN4v-UNlh5Ld7iHggHsGOi2UXPy0R9cadGwmPOE69jaB-JqV4Xb_7uHlEv8u9RjFhSi16xsH4h1JMd7s-jeD4KAnGHBTRJ6eJRVXg2yEhCZSvF2IhGi4YGArM40HqcMGhTwQt5WyjCL0YjxPdkF5W4y2CKpGA", 
+            "geometry": {
+                "location": {
+                    "lat": 29.628332, 
+                    "lng": 52.519533
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJxa0NCm0Ssj8RtAB4zxIFmaM", 
+            "vicinity": "Shiraz, Molla Sadra Street", 
+            "scope": "GOOGLE", 
+            "id": "8a60d55beeefa545910b340016b6226eef293ef2", 
+            "types": [
+                "food", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0641\u0633\u062a \u0641\u0648\u062f \u0648\u0646\u06a9", 
+            "reference": "CnRoAAAApnQUj-PiWqFv_SJL_odO2KBbBtkipqDndnGnW4RdAegDmaxE1SRCFOCJJgNwXxRGhMnJIgEwkY5CzraJPYhSzriu3VXPgVUP9-zco9IDCcfy-IJf3X6aifzzY-LsBJyrC3YRVDUFMIXeLcfu8Cj4phIQU-tG3iVHQ7arrVmrTM8XMBoUiId9b39XEqrk7PSufqIoMGonwN0", 
+            "geometry": {
+                "location": {
+                    "lat": 29.629244, 
+                    "lng": 52.520228
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJnTv9cW0Ssj8R27ZRpyYT6sQ", 
+            "vicinity": "Shiraz, Setad square", 
+            "scope": "GOOGLE", 
+            "id": "d559d5ca870dbae374b22c87ca7e0a70ff6bbcd0", 
+            "types": [
+                "restaurant", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "name": "\u067e\u06cc\u062a\u0632\u0627 \u0639\u0644\u0627\u0627\u0644\u062f\u06cc\u0646", 
+            "reference": "CnRuAAAArSAfraG6aNTH9qS0kMFhBvGdVQHDrCE9lqnUNHt6oowtFIOHEAwQ_PMnjU6xp0fmk121q938IAO5EVe1WuFj8LlT-704jjWMkZ-_6TjfmOvFAIRYDzQKO_f1gaAbm2o81ShktL-SekZZ0eTeIrJS4hIQDIJF3gGhgiEjLOPEr_FpjxoULXmwqyeEOzdXO4ZXqnC2PvJAOuM", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625958, 
+                    "lng": 52.517824
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJTypSJWwSsj8RL7NPWfyUNgU", 
+            "vicinity": "Shiraz, \u062e\u06cc\u0627\u0628\u0627\u0646 \u062d\u06a9\u06cc\u0645\u06cc", 
+            "scope": "GOOGLE", 
+            "id": "95012df9c4e03a1e5c1a0e536bc7106baaa965f7", 
+            "types": [
+                "restaurant", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "name": "Restaurant Alaeddin", 
+            "reference": "CnRnAAAAxnwjtCGX9MGK33QSJN6K5Vs-gJvsQXxfTBZqHesNxln12DT8ho45S2zRJ8SdlHVXxwE9XBGtCvGkaDpXuvi_txz8zY1_4oYGeSkeyDBXk7-pD7RxpBAseSHqlyrCWu8PVDL-IIpS-NffGM7c2AWkrRIQOCTuY1Yu-Yx0GfnHisKY3xoUUeNtc-hBt8zG5qStAMhlFQkwCGk", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625874, 
+                    "lng": 52.518628
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJW63V1G0Ssj8RQyHwEQUsjMA", 
+            "vicinity": "Shiraz, Hakimi", 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "scope": "GOOGLE", 
+            "id": "7013ff906211eb965ebc0a09af9cc9182f4fcb96", 
+            "types": [
+                "restaurant", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "name": "Baharan", 
+            "reference": "CmRbAAAA13ddC8z6ymAruPJjMjZbGXiTNipmaEEfiimSAfq2xKgpI0EdiHScaUMp0KOUHSL-pgXDvtOhTJxGu4NyzS4C4cvNQZwCsYMOe3XyrcUrZlX_9RWD_MfoGOlwTUI17jbpEhDvc1njAJZL1CK_7BtCltjQGhQm0LeC6jH2lRgq9pu5tRKJ7wPExg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.630284, 
+                    "lng": 52.521267
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJJ4oVoHISsj8RC-o4zoPo8pI", 
+            "vicinity": "Shiraz, KarimKhan-e-Zand Blv.", 
+            "photos": [
+                {
+                    "width": 450, 
+                    "height": 525, 
+                    "photo_reference": "CmRdAAAADioaQU_V0VD9T4Cei0yjlp2jV-CWvu8mLrpM__s_Oppc8hPgx3gaE6mDk7t58z0aqmaZ9axhj6wNf2ufnkzbyKCBPew4biM0hlszngME5bemlkbLNRPHDXZRjDu-3ZLfEhCiHQ4zCgt4KUBIZHdV34HqGhTxyacwkIHA1AhaOGUxz0J-J7ahfA", 
+                    "html_attributions": [
+                        "<a href=\"https://www.google.com/maps/views/profile/115507516311932744672\">From a Google User</a>"
+                    ]
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "344700232df5930fae4ee9d22266671d4e408635", 
+            "types": [
+                "restaurant", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "name": "\u0645\u0631\u0643\u0632 \u062e\u0631\u064a\u062f \u062a\u0639\u0627\u0648\u0646\u064a \u0628\u0631\u0642", 
+            "reference": "CoQBeAAAAD2JqWDhubDE-o-zDsORqFj4bK7qA6WND5Ka-cg7r3szx-RDLrUk0sLS7XFZymAJkNF-Sx8rQ2mpmE-vt6iscn9HhR2rQOhhd3Q8HpNI7w_94wADsAild38SGkEBY_a5bd2v_5-NINaLigGdSx4fNW3WeYD2GiIb6L7_Kze6nJyfEhDCL0u0BQs6aJCqsrEgdOiTGhQA0T-vhqP0V-s1s8EEEzDba45C1g", 
+            "geometry": {
+                "location": {
+                    "lat": 29.628153, 
+                    "lng": 52.522392
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ-xrbanISsj8RCvFok-zAZVc", 
+            "vicinity": "Shiraz, Setad square", 
+            "scope": "GOOGLE", 
+            "id": "fbfd85b23efb04440f25edc689a06b264167d33f", 
+            "types": [
+                "grocery_or_supermarket", 
+                "food", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0642\u0635\u0627\u0628\u064a", 
+            "reference": "CmReAAAAkD3maKXuqSqmanHI_VkGyL1QsO5-xtRW_ASroO23JQc8Xl7B6Ovr9xwdSqtCqaVi_hZA3mUh8prvDtaiZNzJUyEZFHu2iVzJXbIiVJ9JexRdEDUJfEb-SDIVqnp0hEzOEhCxXvqTAQqNeQFsycW6iHEKGhTyFXEv1CRcJJNsea7ekKcDxXM8HA", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62616, 
+                    "lng": 52.522038
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJqWnS8XESsj8RY1HhPa0Kd7w", 
+            "vicinity": "Shiraz, Felestin Street", 
+            "scope": "GOOGLE", 
+            "id": "56df9dd177dc24d5f7b899e31b32b4b5ed99e2d6", 
+            "types": [
+                "food", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "4 Season", 
+            "reference": "CmRbAAAA7VmL5YjYx4Ov3MYZCV2-Xrs6WVyvaQxj7i--k5gSBv7wwZjsXAc4oAvbS26g6Wl2ECa4-uKQXqD_mLMoAxZ_2puEJoInPZUAUfp18ReCz30cRBdG1CupHiMrqyDy4HiaEhA-x3dEHxnxYmfze_yiE5unGhQc24nWqL27kQF5m9-w_--Kzv56EQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.626188, 
+                    "lng": 52.522066
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJN9_T8XESsj8RuihSULH0Zxk", 
+            "vicinity": "Shiraz, Felestin Street", 
+            "scope": "GOOGLE", 
+            "id": "49471ab218fd4e6e7bc34231594637266b9e5ee5", 
+            "types": [
+                "food", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Baker Lavash", 
+            "reference": "CmRfAAAAxwjTSHFVSu1YoHDgbxFsn2J2Ai4Vt0NQzvJDFqlMRxJqWl8VC0N2boNirYRZZ1SQg-E0aeObf1_Nf7SDPQP2bzzXDH9L118VHjbos_FdbPW7pP_nPlRklEXWNtY4fuh1EhC-TYb1XCHW7v4WQUf7-yxOGhQEAEw9wwpjnDrPjB8yE9vxjsHiZQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.626233, 
+                    "lng": 52.522101
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJy_ga8XESsj8Rl2vGbvV3u2E", 
+            "vicinity": "Shiraz, Felestin Street", 
+            "scope": "GOOGLE", 
+            "id": "08a193eeaab256ec96f42d1660ac8a5bdcc1c9a0", 
+            "types": [
+                "bakery", 
+                "store", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "name": "Parandeh Abi", 
+            "reference": "CmRgAAAAB_dbFOlGrYbH2a1xXLrmsfn_1oOC9iBuX8EBih4zod6Hz3unGPWQ_64S6zrMAT9LmuwWZe1xQs-iLqWjQCHY9OWRqpqCeT45hz7JrD7Nnp3oHDRYnH6TPennBG77PwLVEhCL0UVdWBtglh4-weebPzc8GhRA6YXS85OG9HFMp9nfr_RNYHs7Ew", 
+            "geometry": {
+                "location": {
+                    "lat": 29.624656, 
+                    "lng": 52.520572
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJT5u3JG4Ssj8RR-xoO_NUZMA", 
+            "vicinity": "Shiraz, Felestin Street", 
+            "scope": "GOOGLE", 
+            "id": "35818ddc72d6df487a0b24ecf4c2f97207964d24", 
+            "types": [
+                "restaurant", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "name": "\u06a9\u0627\u0641\u06cc \u0634\u0627\u067e \u0642\u0647\u0648\u0647 \u062a\u0644\u062e (bitter cafe)", 
+            "reference": "CoQBgAAAADun_FAGfPfw3TIFeU1i4HfIbDcQR7X-1zXiKTaiPEr7e015wPyrYVgFY-A8QJtBKtAyQGjIabG4x0WSGLTpHxCddLLI4LLFaHQ8LtevnDghnGD_SKcly6ikZukKGBdaSyBpYtXsUgzN5FaqyrSwYf_Pl96r_hsw3d2cgYhQ5RzOEhD-B13IEJz20N-Dd9bhrIZsGhTFtGeWdYyRZkooMhsyDsRqG_t-7A", 
+            "geometry": {
+                "location": {
+                    "lat": 29.623849, 
+                    "lng": 52.5182
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJt65q924Ssj8RT_29SsB4FCs", 
+            "vicinity": "Shiraz, Qasr-e-Dasht", 
+            "photos": [
+                {
+                    "width": 586, 
+                    "height": 450, 
+                    "photo_reference": "CmRdAAAAuDW3Cww4nsnqcevQPeFPyD5-KQxqpcM_L_29ewHcLem7zTyP80_tsdbTtXgX8muEmh5R3ogRuKboU1_ykc407UL6Sey0N_OoNmIdQpn7-tWyWPgeOIO5NJWAnugTbu96EhDvyTkOlTYNdf0GyweMts2sGhTEZxkYOMIg40CzWuSXXA2J-yqsrQ", 
+                    "html_attributions": [
+                        "<a href=\"https://www.google.com/maps/views/profile/115507516311932744672\">From a Google User</a>"
+                    ]
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "c373d7b1e062f272c022cab9085cbf1e20bf335c", 
+            "types": [
+                "cafe", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png"
+        }, 
+        {
+            "name": "Teen", 
+            "reference": "CmRXAAAAXEXLhkZZMzdHflAMi2liRoQRD3fQ0EyRbqSm3dtlRDSmPt7CVkVZLcLaDx4NBlOzQAf3KpM52r3dleFyK3iJpVdMM5tya1zv4mHB8B3f1kvnSMGsGMLANK4yTU709LDCEhC6G0lo9TxvhuGVxh6o4rizGhRSp04eEspA9VEI7lPW6jAZKNgJpg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.632618, 
+                    "lng": 52.522057
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJC056RA0Ssj8RW1MYW68ZKTM", 
+            "vicinity": "Shiraz, Western Saheli", 
+            "photos": [
+                {
+                    "width": 485, 
+                    "height": 479, 
+                    "photo_reference": "CmRdAAAA8krH1pNCZQ326dS1vg_IJbsSCM58-gdUofCsnGD2zE9TDKr8CG2pVotfeSTxoVTgM0Ua9tzIUA2vEjoSdOp7C6lOYtMETV_TUNMCLZ1PEt2A3bCrqO-jiCWr5VUCHYt9EhBv6S5daVT0hZ2IQkDE1KQXGhSmdhigXTExrFXArt-9yQHRD7Gtkw", 
+                    "html_attributions": [
+                        "<a href=\"https://www.google.com/maps/views/profile/115507516311932744672\">From a Google User</a>"
+                    ]
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "1ba8c40235c176a644911ea54821df3d377449d1", 
+            "types": [
+                "restaurant", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "name": "\u062c\u0647\u0627\u0646 \u0642\u0647\u0648\u0647", 
+            "reference": "CnRkAAAAWnkTx8I42QCMQiXwZpzy8E5i-lhfn2EVXVSgJJRyvBjFJbY67oKIBt0jn8oR9ooHh9Ng1e1rMuL4g-cTwcid-b0x3noA2sbSr93yr9d3qWTQ15EWSb9offzIHrgTBHZXXk4uFpAtneZDLwsdrQdckBIQAZRGkjIDKGeRWYSeDbsHcBoU3kGhY-BeHwcgtaycEUVGBNxjhXQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.622876, 
+                    "lng": 52.521027
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department"
+            ], 
+            "place_id": "ChIJQ48C328Ssj8Rxc1YIxwQfgM", 
+            "vicinity": "Shiraz, Qasr Dasht Street", 
+            "scope": "GOOGLE", 
+            "id": "29175f9f45869a2fb4e7e28026f683b5d94c009e", 
+            "types": [
+                "cafe", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png"
+        }, 
+        {
+            "name": "Cafe Hedayat", 
+            "reference": "CmRgAAAAhudMmzuJcuvvgGloLMyswp9k3Ha0z_gET8mcy7m3d_EgmRKToworRZUrKf7Ys7XujOKiBPinkQ4jsopUHhHMjE-5Hcx42izYlO8ENA4yYM_XYZQvcM6sW3mtDA5vEWzPEhC7fuGfaU-18MeZ-PfE1Wb8GhT3-HjUNEbixfWZTrxv_5LNaAP3Hg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62455, 
+                    "lng": 52.523724
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJSZDFVXASsj8RodGbPGNF-KA", 
+            "vicinity": "Shiraz, Hedayat", 
+            "scope": "GOOGLE", 
+            "id": "9cc82b3aa6d109a23efb6c55ad61fe09144fc1d2", 
+            "types": [
+                "cafe", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png"
+        }, 
+        {
+            "name": "\u06a9\u0627\u0641\u0647 \u0631\u0633\u062a\u0648\u0631\u0627\u0646 \u0647\u062f\u0627\u06cc\u062a", 
+            "reference": "CoQBdgAAANpMWmiXE0xTgUrCs0rHPnw1oqXkKGnJNnjUGdMDANum4G4qe6dgA3swmhXU5Zx2OS9Av33iRNT6sLKSTA95SldPHt-VnBxKRl0LqrixwQjvpuPoK4tl6qyC5FzR8xPXNpcfD7cnCnggqdzfrHKygqfIq_3oC6L-VM3piGXc2bo4EhCkQq9f7Nh6kl-QrQ71ARZlGhR17JID4as5hj9R_nkMvy0ite-pcw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.624567, 
+                    "lng": 52.523773
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJzX3fVXASsj8RG2W_DAbo3MY", 
+            "vicinity": "Shiraz, District 1, Hedayat Street", 
+            "scope": "GOOGLE", 
+            "id": "852d33ec8a60a0b2efaa24a12f868da4c8341048", 
+            "types": [
+                "cafe", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png"
+        }, 
+        {
+            "name": "\u0627\u064a\u0631\u0627\u0646", 
+            "reference": "CmReAAAAYWej262xQ8UWSEYZSJU1yHC0aoaN47fxfMUkM6IoNtwZal4_cRlZQQdASQ5d0fn4jRSCr15RTU1CDkT96pq8r1EVWZYA6s_mhjHjq11QqkpD7cC8w416r1XFPkd9RFDZEhAqXkSuXsododteRawov7NTGhRNHE1Rz6vYsbcazt-3GSLajZ2jLQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.634133, 
+                    "lng": 52.520013
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJi6nVZxISsj8Rty4HW8o4ff4", 
+            "vicinity": "Shiraz, Abiverdi", 
+            "scope": "GOOGLE", 
+            "id": "8dc02d3987693d9074de988de749a951e08411a9", 
+            "types": [
+                "grocery_or_supermarket", 
+                "food", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "mio mio", 
+            "reference": "CmRaAAAAsdHFWRIJX3VDTrBzjctsGYWhy92972tYY_Pv_zwnJtVH8zJdndlzPn-cqsyWWVjoweN2Wa4Bj3_Tyut135HOGCdrqPVwssMvzwsDdid7OAixSKeuUZ0fERnrPa6ZeR1jEhArfZOark5QrnOXOyVA7Nk1GhSVtLQys8uQbtiyvaQ3wsLB5pI6Vg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625455, 
+                    "lng": 52.525133
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": true
+            }, 
+            "place_id": "ChIJnbl2H3ESsj8R6DyYieyFa3Q", 
+            "vicinity": "Shiraz, \u06a9\u0648\u0686\u0647 8", 
+            "photos": [
+                {
+                    "width": 1565, 
+                    "height": 1461, 
+                    "photo_reference": "CmRdAAAAsN-Y_sKdHLjATakx0jd2jk6vhzFBNA9h-nBTrVCAVZFQLOU0-OppFlSfq3I8FQWpOsBtbeUsArD3akhlzCiDiZKspYnNC-vobEjbBY0533yma2HzppqxABpxwyy5S8qZEhBw3Bi5gr-wEhpoAfDjwWHaGhR4k73iPZTs25HBeldayfGuAZAhxg", 
+                    "html_attributions": [
+                        "<a href=\"https://www.google.com/maps/views/profile/105672429562869054562\">From a Google User</a>"
+                    ]
+                }
+            ], 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "scope": "GOOGLE", 
+            "id": "d391b33bd16cf9c3ca674597bef1d8f512554c00", 
+            "types": [
+                "restaurant", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "name": "cafe fastfood IO .", 
+            "reference": "CnRlAAAAdJmonvxdDdPUp2d5HB5DzMh9vXxY9K_0u3wZQRmnsYOu4DUye6GqhCJIYHd4XpMlUMKjhI5J32ci0JVfAuNEhOgplZEUk4ZP0ljEpI6OzN7LRLcd1T1ZAK90t7jdotEKKpYtLMv2CDx3DSKyDZ4DaxIQedpC4kCNV6cpmITf_9PuchoUKulIeEPB7xhsGQ_zJuu6NBYBPJ0", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625455, 
+                    "lng": 52.525133
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJnbl2H3ESsj8R_y-tksC4Fx8", 
+            "vicinity": "Shiraz, \u06a9\u0648\u0686\u0647 8", 
+            "scope": "GOOGLE", 
+            "id": "31510fa5b68e1fcfd0329ecfeb139dbb6707abef", 
+            "types": [
+                "restaurant", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "name": "Avo pizza", 
+            "reference": "CmRdAAAAxHfdg-PriTCGbbd50ihXGffnAJPnpYucuT2ALKqSdnVxlrC-nB_j47wQEYpKmy7JaPXqR_IyuBn_zyvYN2g2JCh5v-HYIjMnhd42Vykvnuc_b0nlrKsmEdUOeEmfjqFkEhC79JXjajKR7ULlodgP4k_DGhSlTikcGtyJCvSILySnCzvBMvfVTg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62521, 
+                    "lng": 52.525003
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJgYbR4XASsj8RLm0YvX9YYbI", 
+            "vicinity": "Shiraz, \u062e\u06cc\u0627\u0628\u0627\u0646 \u0645\u0639\u062f\u0644", 
+            "scope": "GOOGLE", 
+            "id": "d28cf179249c887e4ece423923c539f6f0008c6c", 
+            "types": [
+                "restaurant", 
+                "food", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png"
+        }, 
+        {
+            "name": "Donat", 
+            "reference": "CmRZAAAACB6m1ftcaGbGEFmmLahGx19bH3Fu9Qk2Bpwbvr4d9Pus3GPxFHYFE3jFM4I38wqq6c6_5ok6oIkOx1OqWNr8neh6aMij0iLK1BDy7Lfzhw6LaGJElSViRTOky0133IhTEhBEB0ofzdjZXW5X86bUQH6sGhR2GX9RS6t9O4qs5Kn_JHCKehXY8g", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62951, 
+                    "lng": 52.528363
+                }
+            }, 
+            "nearby_places": [
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJv9QnO3QSsj8RT2FVU5bFauc", 
+            "vicinity": "Shiraz, Western Saheli", 
+            "scope": "GOOGLE", 
+            "id": "aef0dd74c5c150048671c5ad7b3c8cffc6c75e79", 
+            "types": [
+                "food", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }
+    ], 
+    "meal_delivery": [], 
+    "hospital": [
+        {
+            "name": "Dr.Vafajoo Clinic \u06a9\u0644\u06cc\u0646\u06cc\u06a9 \u062a\u062e\u0635\u0635\u06cc \u062f\u06a9\u062a\u0631 \u0648\u0641\u0627\u062c\u0648", 
+            "reference": "CqQBkgAAAPLxySzcRJGz7DXUJqnIyv5BcqmL1AXrl2-WAbCUg-ad_I0QDKQ_-dT1-kr_A69C_94yz7yk-KDtKY4XxU84F1OalpCFabz5WGcKWe23oNiKwlkUmEZQ-Jlj7hnq3FX1RR--WU2H-eCTRPNzoD3obU-WCUmIn1b9kAO0wYrqMtMwXGmGRtjvwZajRynerQve0jxlH6FpvLMZ2PEIBgCo3z8SEKqWBxLLVTxW0ToFQviXjw4aFBZ7wzcAz-GKkdbwWOSDXYIeCTqd", 
+            "geometry": {
+                "location": {
+                    "lat": 29.626739, 
+                    "lng": 52.516546
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJqwPkb2wSsj8RMLBnb8uCyKw", 
+            "vicinity": "Dr.Vafajoo Clinic,Khalili Street, Shiraz, Fars, Iran", 
+            "scope": "GOOGLE", 
+            "id": "09fc0eddf5a073603d7e29d523b1ff8848448b93", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0645\u0637\u0628 \u062f\u06a9\u062a\u0631 \u0633\u06cc\u062f \u0639\u0628\u062f\u0627\u0644\u0631\u062d\u0645\u0646 \u0634\u0627\u0647 \u0627\u0645\u06cc\u0631\u06cc", 
+            "reference": "CpQBjwAAAPcTtuuLcDowEsRU-KqYPM2QK9apI6BY2YosgBPtfQlcMi-7WBBrEk7Q3wIarc_h2DOdNeI8gDIlFM8omFW0S54PqxPCovf4FJGrpY3F3LmQ41OaJB_BUgQKNlbpz7tKfbN2rxIMQXj6a2gEkPsToF-NYXp4xFCediKFB-SAlAnme0as0B9s2Sw5rJQTZDPJQRIQhWHNuJsfvuR4bVQHtootYhoU8qcnrk4dJIpNk5gOZ1NKzZqzXuQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625255, 
+                    "lng": 52.518978
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJaboIe24Ssj8RqzhKmrhir3k", 
+            "vicinity": "Shiraz, \u062e\u06cc\u0627\u0628\u0627\u0646 \u062d\u06a9\u06cc\u0645\u06cc", 
+            "scope": "GOOGLE", 
+            "id": "6d059a0895364fcbdf78696b1d54e36f08fce408", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": ".", 
+            "reference": "CmRUAAAAUqzrndEZh3J3bl4K1XFMFe5V1HdDSZfrnesaBjj5DhnXYmDxIGuIeW8lLWrrGk88lNrmi31vihaic_fbfapip0V5cB2MgMMfECHuduNC5su-ZvwMVVQWVQM3Tle47XcTEhBJybWFsiowQvm8Oc_aoV-yGhSlUi-_MVSl9OMQCGHdmSS9AsF4Wg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.631113, 
+                    "lng": 52.516495
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJm_RwXRMSsj8REK_AME9CglQ", 
+            "vicinity": "Shiraz, Nam\u0101z\u012b, Namazi", 
+            "scope": "GOOGLE", 
+            "id": "08502e50f8008cf25558108721512d1a4357afbe", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "rating": 4.6, 
+            "name": "Namazi Hospital", 
+            "reference": "CnRiAAAAT5ye6FKHy64TKePosimC1TkTEQqfJF3e_98C72zHS-swBEx1s30kRzglCb2H_vy0xgBhTxlhaSAcnLFeBUCIFwEYf0Cm5bHE0soeGW0VlbD7IVUPorYfv0PnZhCAia8HtpMYoEYw90iirIdR-8b8ShIQ2R-4uRzA7hyE-f38D1XtvRoUpALPuLnSEj5ytXuYvG9cSVFemRM", 
+            "geometry": {
+                "location": {
+                    "lat": 29.631331, 
+                    "lng": 52.51619
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJubQmZBMSsj8RcdUR47hA1C8", 
+            "vicinity": "Shiraz, Nam\u0101z\u012b, Namazi", 
+            "photos": [
+                {
+                    "width": 1024, 
+                    "height": 768, 
+                    "photo_reference": "CmRdAAAAa-TE2VmCE-EykQXVE7lDdpp9IE8eoTg7OxackyHMv4FVDmVqtqrf6kXsAkt9bhpJ4ubFCfb7a5NwazVag9iK0v7bl6OGKRNhvhZGAbTZjsXjgpOB-Ws4XRX3OkfxH183EhDc6602hapKAQHNiGcpBLD9GhRdRdK1PWoOE9Ni6rs_Fldg7Xb8aQ", 
+                    "html_attributions": [
+                        "<a href=\"https://www.google.com/maps/views/profile/106483764183006979348\">esmail mohammadi</a>"
+                    ]
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "d1742f6fcfe3a43fa74bc51d7604997aadbb16b2", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u062f\u0643\u062a\u0631 \u0645\u0635\u0644\u062d\u064a \u0641\u0648\u0642 \u062a\u062e\u0635\u0635 \u0631\u064a\u0647 \u0648 \u0628\u0631\u0648\u0646\u0643\u0648\u0633\u0643\u0648\u067e\u064a", 
+            "reference": "CqQBmAAAAKdSCVe8d0PfIh0FTieVk5TOP0hNj2FpcEzEONvm2fopzWrjg9A0ZKQuZom7-8AwGJZbEhKLtudIUJBI8mMuu9hbVKiWruSzEexglzXGikOwVJEoUIKzKt-YDvk0vZ5h6YGdqQPlk6zTy27YjplTvoXhQw_b1pxXNOI1aGTMo6BXQAg5Xc5xZxLrrUnfMS_hZp9CSIif2VbCGM1vcfqdcccSEETElMdvYX7U4ipUnst0n3oaFEIESW6YijnLWC-Y0P8ktHmjgl04", 
+            "geometry": {
+                "location": {
+                    "lat": 29.631834, 
+                    "lng": 52.520576
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJaf32rxISsj8REw-3KEEfnig", 
+            "vicinity": "Shiraz, Setad square", 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "scope": "GOOGLE", 
+            "id": "a2166a9631d8cff051bd84cb00c979b53bba8bc3", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Hospital Khalili", 
+            "reference": "CnRkAAAAsWUmk2PYu09SJGKNgylUFaGj91hKx9VWCIZU_vdUEIlx5VwbZ6ChfDGCdec1O43ldDrCgaVgc3Hwk3qwxhl9lxbXB1V9n5KogaXlTLJkOswm8u5-0hw-0Sua1kuQCVhIXS7YM2mDUo1jAvRhfTI_gRIQEiQxOK5mSfgZxPynyRBqfxoU8MWFY8bh2lcyrCyqLeQh3yzTa08", 
+            "geometry": {
+                "location": {
+                    "lat": 29.630642, 
+                    "lng": 52.512689
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJCTGoBBUSsj8R9XVKLtbZJOc", 
+            "vicinity": "Shiraz, Khalili Street", 
+            "scope": "GOOGLE", 
+            "id": "7684c716878128a0618d5c6b48753adec8702af5", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Shiraz Pars Hospital", 
+            "reference": "CnRnAAAAfGODPZxtTtCjkaZjSgLEDUr417oEqLoLAmbpSfAGefoIjYHO6Z2rpnOn8QnSOAEhWl__ykaAcsXfaj203P1Oa_OywfPHLoUZJX_woYVPOxmSMTvRaz2d0vNipytqUYGYEz4Wfb_3MlVNuXVIK9jffRIQZJEd0SYz5ZUms3bGKsZCrxoU7y5te5-bPxo_3b6VIyfcR4Jlr4k", 
+            "geometry": {
+                "location": {
+                    "lat": 29.623031, 
+                    "lng": 52.519924
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": true
+            }, 
+            "place_id": "ChIJr2lGyG8Ssj8RH4c0kR8C_2w", 
+            "vicinity": "Shiraz, Qasr-e-Dasht, No. 23", 
+            "photos": [
+                {
+                    "width": 800, 
+                    "height": 533, 
+                    "photo_reference": "CmRdAAAAcBkVkItTxdFNGfOV2sO8BW53_x_Dau4KUB24nOqzNLy7zJTikMQ-54FgdAcZrly77TtieTV-8VHR-NxU_88zH2Ply5Hzatxg1PUzmkF8qLxkPJnDQ9IdihKpiaAHLs6SEhDn0mHIiG3hdTlatM-tiHUkGhSMuXgQIMFVlg_7cSKRmq-MkrObfQ", 
+                    "html_attributions": [
+                        "<a href=\"https://www.google.com/maps/views/profile/104784695454584260395\">\u062e\u062f\u0645\u0627\u062a \u0646\u0642\u0634\u0647 \u06af\u0648\u06af\u0644</a>"
+                    ]
+                }
+            ], 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "scope": "GOOGLE", 
+            "id": "b85bea42c8eb325c992d4dd9f6c1597c0e8c9482", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Zand medical building", 
+            "reference": "CnRpAAAAdzfTVMKbdhT9p3mps4uyor77uwYJOjrpFK-Gi434dBeEosTJUYpR-fWS63Izc9Cgaw29eezHhbhG1rIGZ-lOT03EGCTuC1nwlLUKKhdhww_7Oa0_R-6v9thsxPn81KGi-58VvVaho-NFBl98AOZCRxIQCpLLv3FbqeGicw7JlBRzJBoUG8xX4jK1kvs05uPWz6XS4JMq8wI", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62801, 
+                    "lng": 52.524963
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJr9Wd3nMSsj8RRyFHpAPKKa0", 
+            "vicinity": "Shiraz, Setad square", 
+            "scope": "GOOGLE", 
+            "id": "843563943c7ce097cfe964357934e80d18a04431", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0645\u0637\u0628 \u062f\u06a9\u062a\u0631 \u0627\u0633\u062f\u0627\u0644\u0644\u0647 \u062d\u0628\u06cc\u0628", 
+            "reference": "CoQBewAAAJnsgmO51pPjihGh2CDHWK0d0q3XPkyeTPa5B7sqE2n0VXmMUSFEFlP1INqPDxaG_jl7QTrjGj9ORyNrmmM9L8zzwZ-lNafqRweD0eQ6R93zEztD9FfPi-JCxUAfYesu8z6zFbMcevWMFJ2ONKs-ArMeON_z21IwnznXWrWPvGAVEhBtkSKYARS6h_VwD7e_bpMBGhTbLSRYZx6I0emZZA0Es-Qc9g3a2g", 
+            "geometry": {
+                "location": {
+                    "lat": 29.628397, 
+                    "lng": 52.525098
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJbXXJwnMSsj8R3nf52-302cQ", 
+            "vicinity": "Shiraz, \u0628\u0648\u0644\u0648\u0627\u0631 \u06a9\u0631\u06cc\u0645 \u062e\u0627\u0646 \u0632\u0646\u062f", 
+            "scope": "GOOGLE", 
+            "id": "a5b6e77ffb670e045157eb588273234385104473", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0628\u06cc\u0645\u0627\u0631\u0633\u062a\u0627\u0646 \u062f\u06a9\u062a\u0631 \u0641\u0631\u0647\u0645\u0646\u062f\u0641\u0631", 
+            "reference": "CoQBgAAAAPJhjTwZKV4SzZfzQl6H9GhjMO8znJwP6z0IPEwpPDv57tyWi1VPR1VH2qZdcz0SGnpb7EgXd-YdPl_OyMHG-5uAL6LOK4uOZw0wYuYaNj_AGXYYBfjQ1o91iFHak6Y1CoRiPX0ZLMx06t6JW6kTzl9rTLnAXpN4bPEUwxqLOMMjEhCoO60ZBopk4bsiDUOVoeqnGhRS4q8jAXArUm7ICBhaX0m2RchFRg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.627382, 
+                    "lng": 52.511148
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJI5TUpGoSsj8RNlMuG0kjP6g", 
+            "vicinity": "Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "88fe0392fc8b5141fd94a78afc5a64ee0868bb69", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Dr Motamedi", 
+            "reference": "CmRfAAAAkBzfYPK7qOQ-klMRFTt_mZ3c1cGjOoRimnfneQQiu9OB7abXkM5sjOFmGXZnEMd3cdFvN75O5z2gCrI0elaWmdnshYwsVxxh43p20dcGTGvKxTwfnwdbgtbQe-mD_V-MEhD_pQe6Sbv3rrX1BlgJigaMGhQGlEB5wn4kiTRHAo5Y86tTaHE3Dw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.629003, 
+                    "lng": 52.525334
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJc8zd6nMSsj8RSOhwvYaLGO4", 
+            "vicinity": "Shiraz, Setad square", 
+            "scope": "GOOGLE", 
+            "id": "3ee32724476027781cf51984665b42a23b89dbf2", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Shafa", 
+            "reference": "CmRYAAAAR3kKdW7HAT2metuKza8sQ7YTUnxobY2NnDZQQdcHN6xO2yp7xwpnbDYjiuj6z645eH_l1h7MOXpSHQPVn2gn4Iw4GhFNRe8pN3JdO2DasqywigX7NVABxk4gxQ-NBGwcEhD5M70F7ddPBamjin_CY9PbGhQuzJyoaCak7MznT1WvDVgFllTjvw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625987, 
+                    "lng": 52.525448
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJjY5JI3ESsj8ROfiRmVsS7iM", 
+            "vicinity": "Shiraz, Ordibehesht", 
+            "scope": "GOOGLE", 
+            "id": "c39cd99ab1267fa35ebc0a5d68075a8ca4b1793b", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u06a9\u0627\u0644\u0627\u06cc \u067e\u0632\u0634\u06a9\u06cc \u0648\u0644\u06cc \u0639\u0635\u0631 \u0639\u062c", 
+            "reference": "CoQBewAAALBYEIkP-oZUa7Ifdrlb8LXOzdWIGaxYbdNq0F3bQ04QeeSoX9qmJ5WkYudQf7wWJjZ9yRvTVd49mYiUqW5TOFzJG1dhTUlcjN3g5NmrlIQ7u9mvrvRzOMlGrMC6ifS_pJUegxO0awAMK7YPaseoauxDOUmeLLckowcDZGnZ48MREhAioH1UhIdNyozL5DriWCyYGhQs2u3uzpVch26wbutVk3laIns8vg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625425, 
+                    "lng": 52.525305
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJy--HIHESsj8Ry2Df--6XJE4", 
+            "vicinity": "Shiraz, 7 Tir", 
+            "scope": "GOOGLE", 
+            "id": "61358d7dc91eaf98801cbf6a7a82c91926fbdfb7", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Hafez hospital", 
+            "reference": "CnRhAAAAuaYgfbEsD2l8WrTKyLtYmq3cCBG8x1qIJWc1R4QvkNWwjswSTk_puYLrJB9sl_AVzrKxuS1oWJUapF1Ak1J2_WXmb4lqXGX17hzr2-uUOwKsdGp2xcnntsdrznz5-0ksLwI7pBd-w4n6_hCIsUBJXRIQLY3W57jM8JB6ddsNM7fgnRoUI94VjYMsShpVqTJkm5XAYMbDiBU", 
+            "geometry": {
+                "location": {
+                    "lat": 29.634682, 
+                    "lng": 52.515698
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJgVyRqhYSsj8R3idTgbOmRwU", 
+            "vicinity": "Shiraz, Abiverdi", 
+            "scope": "GOOGLE", 
+            "id": "3d5c420ddf7b643167ad8bb9306f921d46d5d670", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0628\u06cc\u0645\u0627\u0631\u0633\u062a\u0627\u0646 \u0634\u0641\u0627", 
+            "reference": "CnRsAAAALhhOQGv_G5M1qAbe75_Ej3oDXylmYaxvBAPXIFzZjh-ODofg64HRYQXrMN-tDdKl4WxDWjSRnlNX5tmFUDOwHiOuLUbZGcFBQuMhRzRjmh6_HB5lASAlSARiVU9Hqdl7s2N2HmUCPbyNa5ytPUYiwBIQol5cpfRnU8rAlvNDfAx5nRoUMJghW1cNp4tg0OZmJR-9GUo8rsE", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625934, 
+                    "lng": 52.525585
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJRwWOJHESsj8RWASGfWCh1j8", 
+            "vicinity": "\u062e\u06cc\u0627\u0628\u0627\u0646 \u0627\u0631\u062f\u06cc\u0628\u0647\u0634\u062a", 
+            "scope": "GOOGLE", 
+            "id": "4898f68ef94a97a394e30090a61d3257de0aadb4", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0645\u062c\u062a\u0645\u0639 \u067e\u0632\u0634\u0643\u064a \u067e\u0627\u0631\u0633\u064a\u0627\u0646", 
+            "reference": "CoQBdwAAAG1-ElKKWkx4fGrLgwwnLrza5VOt01WO8J3SyX2jUTJLSn-PcTwYTAuZ6eeZ826PASwFGvQ9fhum1XGSrRm8ypDrkBAONo8BLHcpuxS1cSggTkpMZORltaAebwWihRz_CZ3L9E4LyMv-tTWXE9RieeXP9n_lXRbkcXfRQahwOQG0EhBmezsWdFw_E7BxG5VZWt8GGhSPpV9Z1-_Kauwn2UwLZy0wfTNJgw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.627165, 
+                    "lng": 52.527414
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJb-0Qx3YSsj8RapLGM40xWw8", 
+            "vicinity": "Shiraz, Setad square", 
+            "scope": "GOOGLE", 
+            "id": "ad285b652769792039cb680ac2da67e109d94b03", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Vali e Asr Clinic", 
+            "reference": "CnRkAAAAPFjiFmz1B-Lh3xbOq0e3l7L1rzQO5A2VOlLS5mqtXeJxVR5ih7aqbh17_58eDLqXr-sj5F-vBsNIiKFeLX-XfP1hqTx-QQusUsOoiQPX-z7B7phHwb7ujRmr416zzr6lAXKk8-8yFvaVz171WrOepxIQJ8S9el65eJXcB_BqxqV0NRoUnhPUbAzO-1zrmc4kRRsou1DWxfw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62001, 
+                    "lng": 52.517482
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department"
+            ], 
+            "place_id": "ChIJn-kFjGUSsj8R0P1pggd7mGY", 
+            "vicinity": "Shiraz, Bargh", 
+            "scope": "GOOGLE", 
+            "id": "2ad73ee5dd254536dd227e3c0398f7035adbb5f7", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0628\u06cc\u0645\u0627\u0631\u0633\u062a\u0627\u0646 \u062f\u06a9\u062a\u0631 \u0645\u06cc\u0631", 
+            "reference": "CoQBdgAAADaZL9SSuQScNTWb3cD0VG5W_ks6oVYgX76siXecR6fcB--zNjDelmWvYa40DqKmcevPXhQJNrj77yG9vExgzTysbKA3EaYBGuu8SR-EjkLS9ZDVmoimNSqEwkg8tkdJlKv_zc3xDZBaq-q8oOXjNbzSkvGNt9Easc6EC-vRr8gHEhCT0KVWXeHra2sk3mzd1DklGhRNj2VInz9cisxVD5lzzbDk8yY72Q", 
+            "geometry": {
+                "location": {
+                    "lat": 29.628055, 
+                    "lng": 52.50805
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2"
+            ], 
+            "place_id": "ChIJT0mEnj8Ssj8RpMl_EIMxjfs", 
+            "vicinity": "Shiraz, \u062e\u06cc\u0627\u0628\u0627\u0646 \u0639\u0641\u06cc\u0641 \u0622\u0628\u0627\u062f", 
+            "scope": "GOOGLE", 
+            "id": "b92b2aa9670aca0afec88d0d6bf2015966783d95", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Kimia medical comex", 
+            "reference": "CnRmAAAAkw6nPT42q_hmk154y2GKVlPpeLXd59WwLKNMprj7zCu__YTPxv7RPYHifm2Eicf9NIVMCe4V97hHLQgbtD1iiecORL3gxYIep3Xg_WClGSh_n9X-nZfcyaQrGk_xDQc1l_4F7SIAPjCCfbuOpFozSxIQnabn8V2LBFeJxliyqnI5wRoU6LpP8RajypiJrJdmFcAJrIq_400", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625792, 
+                    "lng": 52.528426
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJX2u6GncSsj8RA2n3c4H_M0M", 
+            "vicinity": "Shiraz, Setad square", 
+            "scope": "GOOGLE", 
+            "id": "851eccedb5137f3b07f88b14bae9f143179a4937", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Faghihi Hospital", 
+            "reference": "CnRjAAAAdIeC3BSbNyfl7JrIQlurVkVDD7NoM5quU2648nf_7ruo2NbNRlSD4mWo-nbJEnb5LusuYe3k_dHYxIEKhR_AwMuDhMgrp6gTSo8JoebBqt_Lxif2oPPt42gwpOjP99pxMrvavW0hbWEL7iHV18w3HRIQpHVJtbVDvGjaC54xLXfvLhoUsajxsiiVYcBYs3eKpRnIQANod-Y", 
+            "geometry": {
+                "location": {
+                    "lat": 29.626738, 
+                    "lng": 52.529248
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJpe1bqncSsj8RSBpIG3uRICs", 
+            "vicinity": "Shiraz, Namazi", 
+            "photos": [
+                {
+                    "width": 1024, 
+                    "height": 768, 
+                    "photo_reference": "CmRdAAAAxoU1PlhNVPntnc7f9d1o3PYWR0z1eylWKELNm6sIYDGRe3JJbmO22FPNZzSLQIZ-saHHesDQ0vjlCWvSQ9Gktqy21e3jZVSnJLvs-riWHQd-BY6VwJO3rLCwrQGHJ9cAEhCKRYZ-fi7YsJsxL101KB3uGhQgT3yVTxLTz0GI_3xO3gKX5Spi7A", 
+                    "html_attributions": [
+                        "<a href=\"https://www.google.com/maps/views/profile/106483764183006979348\">esmail mohammadi</a>"
+                    ]
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "73732a01d5fe7ebfcec3cfb3a486a7aa41004716", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0622\u0632\u0645\u0627\u064a\u0634\u06af\u0627\u0647 \u062a\u0646\u062f\u0631\u0633\u062a\u064a \u062f\u0627\u0646\u0634\u06af\u0627\u0647 \u0634\u064a\u0631\u0627\u0632", 
+            "reference": "CpQBkAAAAJuyX6bGxKJPjBg6xE2qzKbqsFKSxV5QHtPVM7cPNMY-CGWEkXW1_khoyjhkxgSBLIcSapWhVc6WQVodyQ3rc5vDl9FAOjjYXKvv91p3nY0PhcNo2VkARi4OPIXF574qUSwKXTYgQML-nMDTJt8J-CwrEqtjpNXzQS9Z4fz49ZaRQfF4fEeldpqI26R_vCaClBIQZ9ld8LJiZqvyXtiejIy7URoUBjQMfYmfvq0Lz8bAGiDijWDTIaU", 
+            "geometry": {
+                "location": {
+                    "lat": 29.629982, 
+                    "lng": 52.529213
+                }
+            }, 
+            "nearby_places": [
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJb_-zzHUSsj8Rjjerfl354uQ", 
+            "vicinity": "Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "42143061be0f464a6f395708dcee8c6522feea15", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0645\u0633\u062a\u0634\u0641\u0649 \u062a\u062e\u0635\u0635\u064a \u0639\u064a\u0648\u0646", 
+            "reference": "CoQBdAAAAH9AvfFmqdV4-m3LfQgEIHvlVhX06JSWRjw12z78QleUhEmg5yxJ_z_8ikBdZvF8TjqF4OngyBPuxPEjl2l3pOfKuG_0VGv2NC9gX4aaz-jvbqvyZvDgCAbqRkQFGG4bCt4ztJ4rKAVtfUMOiTF4gdsuSu71v7jQJss5cNisVoK9EhDZ-t77dWp-dDtbMa2r7y1gGhQRI0JQlOhc-xxQmzM_RowAxbx_kg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.635648, 
+                    "lng": 52.525525
+                }
+            }, 
+            "nearby_places": [
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ____YwwSsj8RsAuouaLmJ6I", 
+            "vicinity": "Shiraz, \u0625\u064a\u0631\u0627\u0646, Eram Garden", 
+            "scope": "GOOGLE", 
+            "id": "a1785c93adf35506ef7810375925726d15622af1", 
+            "types": [
+                "hospital", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }
+    ], 
+    "library": [
+        {
+            "name": "\u0643\u062a\u0627\u0628\u062e\u0627\u0646\u0647 \u0628\u062e\u0634 \u062a\u0631\u0628\u064a\u062a \u0628\u062f\u0646\u064a \u062f\u0627\u0646\u0634\u06af\u0627\u0647 \u0634\u064a\u0631\u0627\u0632", 
+            "reference": "CqQBmgAAAF-swgACRADgmGNRI7dUluU88PTb0fqWFkWgNIGaPqACjyzesgVuvd3HU4LY8Q8pjs3YOArOTc0mJc1fY7NOYXZd_3z0swK2VLBsT6y_nMgocszjajcd-4S4XRtZcU7heePmZuEpuXlERVHUJcdEcmZb9uIn2atg7i4ENTN8nuXNMfdmbrLfZ1G_71Qcle5fLVcv3XNWoCpFr_wdk7WdfdgSEMHIPKVgOTviTGyckEFWZp8aFFQ0JRqLftCfdnAmfXLGe_tbn4Ri", 
+            "geometry": {
+                "location": {
+                    "lat": 29.630124, 
+                    "lng": 52.529124
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJtznDNHQSsj8R2jy5C-71Prs", 
+            "vicinity": "Shiraz, Western Saheli", 
+            "scope": "GOOGLE", 
+            "id": "3f8d88f8a48fc15ffaee8f01fb467e8901579ef9", 
+            "types": [
+                "library", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/library-71.png"
+        }, 
+        {
+            "name": "Library Tabatabai", 
+            "reference": "CnRlAAAAGqvksJpteLQQiWwKx9IijggowSK4Qtmdan_6Mbd3RWzIVJGc5XcFqLjZ-WSv1_ArkKn524P9eAGziSyCIcIajou1tE0Xuda2669m34tCDH0r-ASYke1JKTxfu2QTsi09p4KBlWyULLbIWGLxKnY3KBIQWZ7kFfPAu86bjsHMKHLrMRoUZOEfQFzbsmXuGxzlBTt8BOErNBU", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625605, 
+                    "lng": 52.531054
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ_Qci73cSsj8RQKvQaIlYi5A", 
+            "vicinity": "Shiraz, Namazi", 
+            "scope": "GOOGLE", 
+            "id": "9853c9363332e47a156a0becd0e871bf30b1128e", 
+            "types": [
+                "library", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/library-71.png"
+        }, 
+        {
+            "name": "Abdullah Khafif Library", 
+            "reference": "CnRqAAAAjTgZBGrW4cj_59QExSrzPYk23CXwZfhSwSwklK1_I5zjCB5jtHUilqm4qliMrtyUxzocg27rtk9J39FItDmhIth0r-hBaZgniI4Mm_oqg1c_IzZAcJnZ0K1SQhwsf4FeoV0HfDTnYayKung2eWkD6BIQYv1WfodnyCoYK2pcOHtSnRoUzdR6bryjYsvr7yXCyvcQ5ttLdok", 
+            "geometry": {
+                "location": {
+                    "lat": 29.616545, 
+                    "lng": 52.547757
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJl7xNoHYNsj8RPDkWjt5Iej0", 
+            "vicinity": "Shiraz, \u0634\u06cc\u0631\u0627\u0632 - \u0627\u0646\u062a\u0647\u0627\u06cc \u062e\u06cc\u0627\u0628\u0627\u0646 \u0622\u06cc\u062a \u0627\u0644\u0644\u0647 \u0637\u0627\u0644\u0642\u0627\u0646\u06cc - \u062c\u0646\u0628 \u067e\u0627\u0631\u0643\u06cc\u0646\u06af, Vakil Bazaar", 
+            "scope": "GOOGLE", 
+            "id": "9487b493a0d2b8f1c5fb62e30b10d62d87b48e74", 
+            "types": [
+                "library", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/library-71.png"
+        }, 
+        {
+            "name": "Hashemi Park Public Library", 
+            "reference": "CnRvAAAApxIA5kYMq50QwHpgP8ciX7zo3HPJQxMDt6kbCDFy7BZXV6OEAl_YgjHm5tPQy7T3NuUVmhBtoz4t9-HCGXBdJX9zDwIpQUsWA_bpQuFwDqMunkxluNSv1TXfJhgissK-BzeyVjHMJ6qIX3bnxhhyRRIQGALg08mcSxxdbwqScvsDyxoUkYU9CInikUmH5y3M_T_WqAYhojU", 
+            "geometry": {
+                "location": {
+                    "lat": 29.597659, 
+                    "lng": 52.512803
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJjQCzjJISsj8RmMk5skAyUqs", 
+            "vicinity": "Shiraz, Sepasi Street", 
+            "scope": "GOOGLE", 
+            "id": "2835ccccd46ae2275224a53a2a537a367030ebfc", 
+            "types": [
+                "library", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/library-71.png"
+        }, 
+        {
+            "name": "National Library & Archives of IR of Iran", 
+            "reference": "CoQBfAAAAF1WEqg0TkiVjS8bMHZMvYGDZmUfyZ8ApdU3Y9jUv0qLinaIkdaia78Nalxv1ZbrzUf6GOLBoE5V358wYhMP7Pzaq-7Wswn1vllZPFnkRA3gbRL6W5U0q3xiKSqqu6VfGzgFQXrU62oYpfdtwC6At39rOVuF9ECPOvH7WEN60TDLEhAYFPTj3dE3qGtVZr8zvCl8GhSRgsgS0IRqcz8EcW-x9UqrkQPhiw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.627418, 
+                    "lng": 52.557548
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJS-8qR6ENsj8RUN_cxOU3LmM", 
+            "vicinity": "Shiraz, Hafez", 
+            "scope": "GOOGLE", 
+            "id": "151acb8434cea8b44e892723ff8f2bc52cf847d7", 
+            "types": [
+                "library", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/library-71.png"
+        }, 
+        {
+            "name": "\u06a9\u062a\u0627\u0628\u062e\u0627\u0646\u0647 \u0639\u0644\u0648\u0645", 
+            "reference": "CnRsAAAANTtoNiJDVRKiPVyKXSVbPCAtGtMEYHxeNgkJTth_mLFYrokiUAhiF9OjGc1BHBOPv0BpuhLgs8qTKWfJcLXgKurM8U4lHpsOXwAcjsNFUHwVsvXcfjzioGSD87gRdSzN8qlYYxQCbUHPZ1csB0fw7BIQpt8XzoZ8xqqzByLNKZT29BoUWANbKATztkiijx8n6MUjGuvAmJY", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62391, 
+                    "lng": 52.557602
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJpRQapKANsj8RaGCszvFohX0", 
+            "vicinity": "Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "6db4dca7133a3b37345ce0f5cd97cc9791f96a26", 
+            "types": [
+                "library", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/library-71.png"
+        }, 
+        {
+            "name": "Mafakher", 
+            "reference": "CmRbAAAA6eaFYBvTbsNkZOopz9npfTJY5XQsnaqYhIdLPErtB2Zg2NLIUoVVBTe-FOXYtG28Flp4ZwopQTzGYwxNSRE-KCLd9V_NyMPuOs9P5ZkEcrcBUtki5woGMP7C4FFK0HErEhBsKsuyGmo-sFOk-yd3r6k7GhT0-gDSLvFDjE_4JeH6OiLk-hsE1g", 
+            "geometry": {
+                "location": {
+                    "lat": 29.629326, 
+                    "lng": 52.561464
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJUXeIfKYNsj8RehmJyxne4Vo", 
+            "vicinity": "Shiraz, Haft Tanan Boulevard", 
+            "scope": "GOOGLE", 
+            "id": "16615e5ba8fa1f91f84f4e0bc96d4c2814549010", 
+            "types": [
+                "library", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/library-71.png"
+        }, 
+        {
+            "name": "Mollasadra", 
+            "reference": "CmRdAAAANqSqQlo4nhl52E6s11xvvME7GJrObITipTengLMaHYhVlGmWw18i68FUGJFABgPnV1M503CzhcgoTFA2re0dj-vbYzygR0Q1_MUr4xOWTrcQXTwLeu4Ln-aefy9oPNzgEhBTGcRsoxg8QaHdsfiKjupGGhTKEbGAN80x-tMbGKPnvCq3IMU16Q", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62401, 
+                    "lng": 52.593366
+                }
+            }, 
+            "nearby_places": [
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJo3n3Cu0Msj8R4hF8NnPArnQ", 
+            "vicinity": "Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "3def386dfee1cc0fb7d30adc6396bbdcedd86135", 
+            "types": [
+                "library", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/library-71.png"
+        }
+    ], 
+    "movie_theater": [
+        {
+            "name": "Cinema Shiraz", 
+            "reference": "CnRhAAAAKfcqitDTwHoHmNGIJDXW-R5FNkSKEieNDHcbPajHCPtNwtYTeTu2uv763d6eV4b1SEBVquT0j52KaJGDoM1DmqsN7o5A4ayy858vIBgrPeIoSbPLE-hJyAmg1DEdwIfQJhm7QyKtp8gPA5m5tQ1ZIBIQFL-Wd3VSR9IDIeJcgcTrXhoUKi7SupMNIWMgNGLYCV2-Sdm6qTs", 
+            "geometry": {
+                "location": {
+                    "lat": 29.617802, 
+                    "lng": 52.53337
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJU5rWXYANsj8RRofw2vm7i70", 
+            "vicinity": "Shiraz, Lotf Ali Khan Zand Street", 
+            "scope": "GOOGLE", 
+            "id": "b402e3cd24790c05c028929408689c32de8ca69a", 
+            "types": [
+                "movie_theater", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "name": "Payam Cinema Hall", 
+            "reference": "CnRkAAAAQ2N2zBnJ5mZWbWt8W8hahlUk2FDq1aVXJy1uoqjzNYY9OErTHEY8L0MxNjcmeg5BgREGf1p7MpIDaE6cyHwvtCwiQeX7JgIXxqCAkD63CXFZ3XspD8foRmE_Lxt6rzUjGrW50ZMqUUgFH-0nCLq1ZBIQ5bM3r-Ib44EOEzvjmZB0kRoUbgvwniUtlKMWZdR6VeJLmp1z_-4", 
+            "geometry": {
+                "location": {
+                    "lat": 29.619692, 
+                    "lng": 52.539778
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJY0YvVoINsj8RGhb1OOKzVAE", 
+            "vicinity": "Shiraz, Zand", 
+            "scope": "GOOGLE", 
+            "id": "64f0f6c5f971945543bb83157b9233aed01818b7", 
+            "types": [
+                "movie_theater", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }, 
+        {
+            "name": "Hafez Cinema", 
+            "reference": "CmRgAAAAopUBYd70Vd5opb6rOBuqEdO2tBDIg_kLZCeYJSRwd9g4plRC1MBofKM6nVp6a_5r7xBT73-0u39vA7VIUqYqMuizLA5HnJPTe3uDVbtOUZvKQTSy0EKY2EnIA4eBHz2SEhBuGOGRxYZbHIWZ6yNZN2r0GhTB5rUs-El4PQr8fvaQxIDZpygrPw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.618945, 
+                    "lng": 52.541886
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJNS0Kr4INsj8RH3jYOcmnubo", 
+            "vicinity": "Shiraz, Saadi Street", 
+            "scope": "GOOGLE", 
+            "id": "920f560485b3bd74eecd41338a71ef40c96645f8", 
+            "types": [
+                "movie_theater", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/movies-71.png"
+        }
+    ], 
+    "bookstore": [
+        {
+            "name": "\u0628\u0686\u0647 \u0647\u0627\u06cc \u06a9\u062a\u0627\u0628", 
+            "reference": "CnRpAAAA5kVbeYyvUkl9RnMbvKjMD9DBCFr4PkH032LwXU8Z5NZVQivWWH4ZozALFq_SzJDjJtlQNzRGDK9v7fHzyJCD9tG1gbFpYAxy8EsjywG63WSIoflFCWOsaYBItd_8U4tuAN4qtdiOfpjn-zhGwiJ-UhIQK0UR19BfX4koU9B6PhWBsBoUZ7UhlTNdRO5wBM4UjoO4XWdhwRU", 
+            "geometry": {
+                "location": {
+                    "lat": 29.628402, 
+                    "lng": 52.519948
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJIyiin20Ssj8Rl7-OEJSA5Sc", 
+            "vicinity": "Shiraz, Moadel", 
+            "scope": "GOOGLE", 
+            "id": "10c3c163128cd42c63fcd5bc019e920fbdc03f96", 
+            "types": [
+                "book_store", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png"
+        }, 
+        {
+            "name": "Mohammadi bookstore", 
+            "reference": "CnRmAAAAX7KHmnd923esHQ0EqpddGU5GjkcBpedDar_4B7QeOIq8Gqa9_ggXn3vOnJ7OYXbNCV9KI9r0hWGkI0unCsP6H_iCBBD9PakJ31FfOtVELMXkyl32QSP7BNix7d_ErRVveqtPfydrXdxi_pBzIMqZ3RIQ3Jl_tns7ub9dy-P0sVqTshoUEPFPrmQvd6nrKVOO_BOBq5exnMU", 
+            "geometry": {
+                "location": {
+                    "lat": 29.630047, 
+                    "lng": 52.519576
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": false
+            }, 
+            "place_id": "ChIJHwZoOW0Ssj8Rpqm9WbiNxBU", 
+            "vicinity": "Shiraz, Nam\u0101z\u012b, Namazi", 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "scope": "GOOGLE", 
+            "id": "f5e4ba766e0014a4b77276e34f25545f7dfd4b1b", 
+            "types": [
+                "book_store", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png"
+        }, 
+        {
+            "name": "Ketab Esfand", 
+            "reference": "CmRfAAAAaVYVr5PhloaSe8C1Ny5J9o3DItitm8dvNJmrndHTyjLWUKgNY0ZCPkbLkVnCBwOSmJuTAmYWCX7s3wNa8slXfUDfBtZM-LctPuAvf6zIhSsZLa9Cuqe1sA8XMO8jC3hBEhDif3NKu0eux7dhmJN8IWxNGhRSDtc0Atr-EOHClJ1iIITgoYI5CA", 
+            "geometry": {
+                "location": {
+                    "lat": 29.632566, 
+                    "lng": 52.522254
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJtTSJRg0Ssj8R3LvoqiXhAn4", 
+            "vicinity": "Shiraz, 26", 
+            "scope": "GOOGLE", 
+            "id": "fb4baee86c74888db90823374d0f9ade1554cf81", 
+            "types": [
+                "book_store", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png"
+        }, 
+        {
+            "name": "Iran Zamin book shop \u062e\u0627\u0646\u0647 \u0643\u062a\u0627\u0628 \u0627\u064a\u0631\u0627\u0646 \u0632\u0645\u064a\u0646", 
+            "reference": "CpQBjwAAAGjxSr-Gg6N6AqQn9qJefMI0hXGEErwPCksJmPo92ktUB80MIGoFYTzNPugpzJb2gmzj8tpBxcCkTJPmoNdsGxUUtrd6AkrNyMH842pWRURWjvCOYPhcxRbwI5cCuQSTlWqtE3P2yAxhd1QMEJufDzaEaPgJagrTeCbYQe1kEYcwT4Bw2qvg3OgnupCJahrV-xIQ2qg8iS79wNzcKmxq6gzM2BoUf4ksdiH4S2S5S3s-yKr95l8SRQ0", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625623, 
+                    "lng": 52.528668
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJW8lbDncSsj8R66Yk86W-h6k", 
+            "vicinity": "Shiraz, Setad square", 
+            "scope": "GOOGLE", 
+            "id": "0d370b6492bc75de9fbddd4b3a90869d947ed7b8", 
+            "types": [
+                "book_store", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png"
+        }, 
+        {
+            "name": "\u06a9\u0627\u0641\u0647 \u06a9\u062a\u0627\u0628 \u0628\u0647\u0628\u0648\u062f\u06cc", 
+            "reference": "CoQBcQAAAFaBOpjjK230-iygQ9NcCHOp0Rb145ssTO65ZprspqrfyrXfWDr-37lkYmrn-DOiPkX21xHM8DunOWnxmEVqzU7a4RXFz0LbVzp4DPuTXDHLcifyaJskWMvuF0RYx0kwHY-LwYPCy-3qC4HNrrMLg6LnTefEh3d9qrrkhxkqit-CEhBqcfLlrS4tuFCKCKeoDltiGhQ4skb52R8aFR04Vwmu85SJ8-9zkw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62248, 
+                    "lng": 52.530747
+                }
+            }, 
+            "opening_hours": {
+                "weekday_text": [], 
+                "open_now": true
+            }, 
+            "place_id": "ChIJX1gLX3gSsj8R4XrzfS_GMXI", 
+            "vicinity": "\u0634\u06cc\u0631\u0627\u0632\u060c \u0645\u0646\u0637\u0642\u0647 \u06f2\u060c \u0628\u06cc\u0646 \u067e\u0627\u0633\u0627\u0698 \u0642\u0627\u0626\u0645 \u0648 \u06a9\u0648\u0686\u0647 3 , \u062e\u06cc\u0627\u0628\u0627\u0646 \u0645\u0634\u06cc\u0631 \u0641\u0627\u0637\u0645", 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "scope": "GOOGLE", 
+            "id": "4346dbf7e95a8a67ce9c310212d78f6895394aa9", 
+            "types": [
+                "book_store", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png"
+        }, 
+        {
+            "name": "Shiraz University Press", 
+            "reference": "CnRrAAAA0jIo3cG0YW2gNaA8rdrK0YwOgH7jdFO1x2QG3KnuT7EHErZIZUNqxssUfJvRITEAXQQZb6PqsHCJbKP1B7eYuaRf_FBDt2Gg7qtYOa1n7DUDVchS0qBQEmxObzynv7xUEI_cxK4noUZeqRnHF3MdPRIQQlu4O195WfMMCVUcySH2AhoUNSo-jlK1flLdfXahqD17-o1P7kw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.63896, 
+                    "lng": 52.52522
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJaQpVlQ4Ssj8Rgas5_lVcZqQ", 
+            "vicinity": "Shiraz, \u0686\u0648\u06af\u06cc\u0647\u0627, Pardis Of Eram", 
+            "scope": "GOOGLE", 
+            "id": "156703cd087a60dc25e25491cb096528dab5b5cc", 
+            "types": [
+                "book_store", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png"
+        }, 
+        {
+            "name": "khaneh ketab darsi", 
+            "reference": "CnRlAAAAXG4Hl-9skna_XN99KVxhWQekDn6V3Aeuz8FSpb4WKZ9tuO3FnIrDLRIam0BDbv-PCxLvf_sXostNz4545cmhPuM02YAlcF0AIpRlTaxbEYjYk4-eXoihVwd3V2B6HOE5Q5gGSTyD-hpoHaIEwEnlTBIQUDJnazl5gDW-KjP0XlgquhoUwyobEvd2Aqt3NZwHnJem6n3eP1E", 
+            "geometry": {
+                "location": {
+                    "lat": 29.617387, 
+                    "lng": 52.541815
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ-b1EF3gNsj8R3A7ReBxftRM", 
+            "vicinity": "\u0634\u06cc\u0631\u0627\u0632\u060c \u062f\u0647\u0646\u0627\u062f\u06cc\u060c \u067e\u0644\u0627\u06a9 \u062e\u06cc\u0627\u0628\u0627\u0646 \u0632\u0646\u062f", 
+            "scope": "GOOGLE", 
+            "id": "f50542b440fc9b437a200912919e9f1e4310027a", 
+            "types": [
+                "book_store", 
+                "store", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png"
+        }
+    ], 
+    "parking": [
+        {
+            "name": "Neshat Elevated Parking Lot", 
+            "reference": "CnRuAAAAw9yP2_IpeopOSFRFe5hJbpsJwOUrpMsgFDr5VGbQ8aUKJ91xp5fSyzdCz6iLIArT9ITcWNYjQHZYwRZOjoCqvUhioo01bIeIJnUBifZfQr1LiwvBImQAGsIig1R9pjS36y0-iW3yZykoX6wscwly6RIQ3u_QrOzIZQ7qi9aQYDkRyhoURbEOfhNQZ5cFQ_ch82EyZweQrNQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.629902, 
+                    "lng": 52.524742
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ1dHtpnMSsj8R7hjaqkphslk", 
+            "vicinity": "Shiraz, District 1, Neshat Street", 
+            "scope": "GOOGLE", 
+            "id": "881c9a62172d9dda0a1c082b89f2bc1bddd5b0f9", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u067e\u0627\u0631\u06a9\u06cc\u0646\u06af \u0647\u062f\u0627\u06cc\u062a", 
+            "reference": "CnRsAAAAV-DV67LO-UYZiGCZUXLq8J41sBEi09bpccWGkc5CnxnOBAnUWCzXTQcieZpvGCA--4Hsi-pmsRZB-cAL9YF89Gs7Zl3YK343z8xOZVqQ_MR08yyt7UXfsUk_MHH6o75k7cbLzP6cbz2a8amAyX3X8hIQp4NwAxqT_Lhyk2xRDNuwkRoU-ZXNDMQOXCGYA4mgE5E-wT76sB8", 
+            "geometry": {
+                "location": {
+                    "lat": 29.621576, 
+                    "lng": 52.52903
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJiWTpqXkSsj8RqoR2XeOwbXA", 
+            "vicinity": "Shiraz, Hedayat", 
+            "scope": "GOOGLE", 
+            "id": "aa552c8535d33b2d251c48d6374c322fca7300b4", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Zeytoon", 
+            "reference": "CmRaAAAAblMh_30ucaUZ8ksIWvcoyzLGtKtCbFa5CCg1xNLhWVYFPmaryzcP_4BziN57dmk6uPjWs2HYTARBNpH9nr6s43bMKak7qKXLkJdNYGSplt8Nrl5nts_4abm7HdQdQiwzEhC5o3Yp04eq5HX7SFppAJ9sGhTDpHRa0ZOw2uvwdMzHsQqgabI1lg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.619155, 
+                    "lng": 52.526976
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJMwNDWnkSsj8RBUm3x7ur1Qk", 
+            "vicinity": "Shiraz, 1", 
+            "photos": [
+                {
+                    "width": 960, 
+                    "height": 640, 
+                    "photo_reference": "CmRdAAAAsdbi5Gt35rfLJ5kvyMjpDws0CiHWWloXswuLb3Kwb9xMG469iI1hMHYFAj2cNrPo59_vH22Imd-RYuCQur0prtPg5rB5A7jUps-u_GsNm7EZYZDAeW9MZpP_68WLwrNAEhBBMAI7XFUFaChTJYJpRRAOGhTFO31HLBx5c8JxLvJL07sWkAYfTQ", 
+                    "html_attributions": [
+                        "<a href=\"https://www.google.com/maps/views/profile/115772459923949501433\">\u0645\u062d\u0645\u062f \u0631\u0636\u0627 \u062e\u0636\u0631\u06cc</a>"
+                    ]
+                }
+            ], 
+            "scope": "GOOGLE", 
+            "id": "ed73e7bfce93b703f2715193e433aabc08404641", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u067e\u0627\u0631\u06a9\u06cc\u0646\u06af \u0634\u0631\u06a9\u062a \u0646\u0641\u062a", 
+            "reference": "CoQBcgAAANrpHoJ4t3qF7-Z0rD6Wne6Xe_B7a5snCodvIF-u-91orVzqFbhSCGE9l-pN91SBN4ZswgEeZWPF3Ygi2UhlLQA0FhZ_KZMk9b8k7K-svr2bhpZTUhddZ81Zg0ScZCbOBl13dqLHfiCbW_i-i5MwYkg8XE57JMDWVwMkLc-LGsLeEhDLhVyEymWpnsFJNCl_52sOGhT_cDdzPijDF1HY84BbF4m5YDjPZg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.623725, 
+                    "lng": 52.535344
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJZU9jWIYNsj8RIsWZs0dUhf0", 
+            "vicinity": "Shiraz, 18 Road", 
+            "scope": "GOOGLE", 
+            "id": "7ee5e828de19ab3819d8315efd61e4c63aeb876c", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u067e\u0627\u0631\u06a9\u06cc\u0646\u06af \u0627\u0646\u0642\u0644\u0627\u0628", 
+            "reference": "CnRvAAAAMy2F6Wzw4U_C3zx3SIcyMC25rk8Xdk3fMuOF4uGnVy6Hs8Db1-hH8lFvI10K83Le83ddh6njv7tfNuNXspSih7ibqCtyciKkvDfzOSkCd_IdotVHaT-x_wAYlhDmzYY3vkIRLc-w1amEjsn4hMN3lxIQ1yHVJWYNU5lUNCIleJFaJhoU9nnuq_cAJoRYhR8_OGTvFw6mEQA", 
+            "geometry": {
+                "location": {
+                    "lat": 29.612859, 
+                    "lng": 52.524261
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ28-8hn0Ssj8Rf3w_LqJTtfM", 
+            "vicinity": "Shiraz, \u0646\u0627\u062f\u0631", 
+            "scope": "GOOGLE", 
+            "id": "aef5cb97f9c9db1cdbb946eb32502c60a8e7790a", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Mahestan Parking & Shopping Mall", 
+            "reference": "CoQBcwAAAAoTzmg6WMX21nHPERGEC9mUpLfOtaNMYss7oKE2hUV-fa-dwsGiEyNbzhdc1PvjT_Ai8oax4sESgkHaKMxQ9uYfmVUjhJfa33tNpbMjr07PJfP41bZhfGC5hJoYM8DKwWrB-wbUCg90Ac6i5lyMIrAxHsSh07-y_3PEH-KW4Z2HEhBROJ2xSSm-qqKElyqDuwdEGhT3pp3k5mIfLbTBc-Co3b7OELTh0g", 
+            "geometry": {
+                "location": {
+                    "lat": 29.619846, 
+                    "lng": 52.537112
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJkSRkfYENsj8R0UaAkYrHfEw", 
+            "vicinity": "Shiraz, Anvari", 
+            "scope": "GOOGLE", 
+            "id": "56bc24e9bdc804b0c0a12711bc2ab87ae6479ef8", 
+            "types": [
+                "shopping_mall", 
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u067e\u0627\u0631\u06a9\u06cc\u0646\u06af \u067e\u0627\u0631\u06a9 \u0628\u0639\u062b\u062a", 
+            "reference": "CoQBdAAAAMNGeSTyDQLVf1JRCc6_iB8jcB0mkWlFpkPBAXT5_yzMOVBCOhchvnyEz_0kPYkHXQclR8I4JGi4s654vk-XbApn89K0N-Sn9DJ-7ROdVJgjokoNY__Bv_BpslwAoiDL1M8vH8X-Ir_gNuVtSQSQ0m6PeT41S379bIDQ9W_l-TtTEhDvb1EqcQVfPgedMzmSE8yfGhQ64DG7-NJMLF31d8IdyrRnNciGUQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.618622, 
+                    "lng": 52.499942
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJGxrb90USsj8Rn_2vgecSEZI", 
+            "vicinity": "Shiraz, Besat Boulevard", 
+            "scope": "GOOGLE", 
+            "id": "845f24016fc381f1dc1855c2d9758ea59d11410a", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Azadi", 
+            "reference": "CmRYAAAA6WPbrsGe2ztfPilchcYV4dIS1hfDnMPPm5mmSGChCRPA5kMVX2YKcs0slOCJus5v2Llg_B3RMRNL4YH1vpxlwttMIsOX5gmxotYuohanGAPGGyZ2rgiPR5B2UsAWudtMEhC9ZtNW4_QL35ml4m_xTa46GhQXqytCOzOE2mlPl7113RM9t_rytw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.627297, 
+                    "lng": 52.539542
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJCYRLgYUNsj8RrMAchEB79z4", 
+            "vicinity": "\u0634\u06cc\u0631\u0627\u0632\u060c \u0645\u0634\u06a9\u06cc\u0646 \u0641\u0627\u0645", 
+            "scope": "GOOGLE", 
+            "id": "2bf45ab100ac6670319106341a904e9b553b3fdb", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Farhang Public Parking", 
+            "reference": "CnRpAAAADstHbBTf041wgh-bnkkvQo64sRQ0e-EyXabXZf1nOLAKHQRg9QMU3sDbtBOt2v7HPP_BkMWWu_SlUjZB0vUPR_2ZnrQ4PIM951rD0U1Futjwr4piJ4qGSiP7Qse6bhK6guPP1sEESsbB7QNawLcfNhIQiXaWBTIf1NG2rIyJ4r8nFBoUZzZ3AQ_8pV-5lgS_CzXuQdy9Pg0", 
+            "geometry": {
+                "location": {
+                    "lat": 29.615594, 
+                    "lng": 52.54246
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJkTHG13kNsj8RLEzX_VuaPU4", 
+            "vicinity": "Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "12a6ba530b5c16d08514c31b274b0c855beab8d6", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Parking", 
+            "reference": "CmRaAAAAFfCFzT9bzzqPuTCV7FVkRcgg5t-l-w3TwzCKoTXU5cRrX0GWDs8fgx9NP4Ji6oO7UMoxugqCJbojvUISHs3xl7P8_vSdDuHxkSKRcw5R9RKXkRyKF0mc2w2ovztxvHqJEhBumNh1kQbYYZKRy8td96bXGhTxQvYH3sv-U_Yl92Yd0W04YYRheg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.637532, 
+                    "lng": 52.488663
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJJbtJ0NQTsj8Rb91UoRSxeWQ", 
+            "vicinity": "Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "d338c479e6afc520572a0243a0567b04cc5e0416", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u067e\u0627\u0631\u06a9\u06cc\u0646\u06af \u0639\u0645\u0648\u0645\u06cc", 
+            "reference": "CnRsAAAAwx-EIPNDdOn3ZvMCl8HuN7K7_23iZmHkm8VK9S4jXCEXuVcY3wRt7qTe1zCH0U1pw4d2s9ZcH1hlJcBWAJT66dJJsGAk34TwbbwZXk05ati1MIMqgoODbElQ_YfFivhZGJoZvWilkMOp6VYZi-MUmhIQZ_x8ykdzStEa6fhQ1rFzIRoUZj4waG4iCe-4Lli97qS31OrVdqY", 
+            "geometry": {
+                "location": {
+                    "lat": 29.609214, 
+                    "lng": 52.541377
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJScgruXoNsj8RYGx4eGRvZVs", 
+            "vicinity": "Shiraz, Dozak, \u0627\u06cc\u0631\u0627\u0646", 
+            "scope": "GOOGLE", 
+            "id": "33aa682a45be5ae5331deeb6d115cb573884a4c8", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Atlasi", 
+            "reference": "CmRZAAAAJbuIpVquics-gpsnj0yuL5SoUn_-3ZH8HYxSuOp2WD56bkaDueFkFC5WXkz3MitM2MsqpUmKc5vS-uGMxtWbIv0PlDRf_4BxvMNXQ1pG8N4cM3hqepw_Wclzvw6vpF6fEhDur0USUKOcNWZCAStVDrpLGhTBdRqHO4ij6ZlUwiFBioX9T5EzPw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62968, 
+                    "lng": 52.551089
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ1ywOT5gNsj8RS6VLNPyEx18", 
+            "vicinity": "Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "0639306aad6f42d4fef692e922403330c89dc0af", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u067e\u0627\u0631\u06a9\u06cc\u0646\u06af \u0639\u0645\u0648\u0645\u06cc \u0628\u06cc\u0646 \u0627\u0644\u062d\u0631\u0645\u06cc\u0646", 
+            "reference": "CpQBgwAAAOaXV7ue7tsuwu_OY_w4WJPEZimzd15yUOWxLsnBvCCa66L3dMe2cU9tHFDX6LQZzbcrzLXwkou9oCgcVkvb_9-wv9A_RoCGpn452RJ65Ef7WZMWoEQ24zzDIjpSwI46boTY8fBTNxwGogdkC7UZIt3TkHVciEtgfWNIGZpR6snAuNpsIXe5PCQUA_gn_Hr4hhIQxIkssW9PA3ycjEp4lOKsZRoU-oQJS0582n67KxR-POkyxCD3zc4", 
+            "geometry": {
+                "location": {
+                    "lat": 29.60836, 
+                    "lng": 52.541959
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJBWzHU2UNsj8RXqEIqKGbnF0", 
+            "vicinity": "\u0634\u06cc\u0631\u0627\u0632\u060c \u062d\u0636\u0631\u062a\u06cc", 
+            "scope": "GOOGLE", 
+            "id": "a8cac2c6eaa0c45cf7af02122d633586a1c08d1e", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "parking", 
+            "reference": "CmRaAAAAo0k9NL--eU1HVq2CONi_2f11mpaTvw4CXLNTcF5cyCwAlJcQCJVj_45dWEz_OwwNbmP9f3UooDlEwBrQ7YtLS1OeISwhR4McEfOMBOtT_8-rMxmfz-IY5sruhytyebgkEhDtmSNYEqQvUIte-Tgw_evSGhT6G5zOWCFfLuim6dohqx1SLXOrWg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.610528, 
+                    "lng": 52.544201
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJX1ZLR3ANsj8R9AVyyOpBZFo", 
+            "vicinity": "Shiraz, Lotf Ali Khan Zand Street", 
+            "scope": "GOOGLE", 
+            "id": "329f2fdef964ef4535844112811939c9c1274b32", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u067e\u0627\u0631\u06a9\u06cc\u0646\u06af \u0627\u062e\u062a\u0635\u0627\u0635\u06cc \u067e\u0627\u0633\u0627\u0698 \u0648\u0644\u06cc\u0639\u0635\u0631", 
+            "reference": "CpQBiQAAAJk-0Bm9MdXH9p0zVbrgCvNkUW-D3XZy345G_ja9J_vNfuP37KC5NfgOAazVdBwXURc58-TPawjYZXl8DzCQP_GgbAvd18R9qaSPxwjiZIri-c_MMy-hRxCf9M7JnFcm9sNFNv0nuAwnR5OJ6k6cXcZB8qNN_FpJLBuNCzDViUWdxrImHWxdkRGPO4y64ImJkxIQNmFDL8GbCRl6OJgEdZi25BoU_syXRlo3TL-veaQ5lg2c-SGbyx0", 
+            "geometry": {
+                "location": {
+                    "lat": 29.609602, 
+                    "lng": 52.557334
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJGTwX6xMNsj8RU579olp7P2o", 
+            "vicinity": "Shiraz, District 3, \u0634\u06cc\u0631\u0627\u0632 - \u0645\u06cc\u062f\u0627\u0646 \u0648\u0644\u06cc\u0639\u0635\u0631 - \u062c\u0646\u0628 \u067e\u0627\u0633\u0627\u0698 \u0648\u0644\u06cc\u0639\u0635\u0631 - \u067e\u0627\u0631\u06a9\u06cc\u0646\u06af \u0627\u062e\u062a\u0635\u0627\u0635\u06cc \u067e\u0627\u0633\u0627\u0698 \u0648\u0644\u06cc\u0639\u0635\u0631, Valiasr Square", 
+            "scope": "GOOGLE", 
+            "id": "57168f73cf7f959f41e3ed4b913d2af5a4cb32b4", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Kowsar Parking Lot", 
+            "reference": "CnRlAAAAyznlCFe72pcAnAU0azMlBmwRg9rZ70fzTs6mBB3948HcLk5xcY8JaGDspbdKiVJD0ysODCEZc71y_jBelTQTM5BvEajaa_eEkm0LKgX4Zf9dFfmuv6Ne0vRt1LzWwPdJbUcXIHKdcURBf7JZbXaBNhIQgsD1H7kcNKliaBOxE0KeFRoUYRbOX9ZeXw_nqEr0lQ_iKaPLyn8", 
+            "geometry": {
+                "location": {
+                    "lat": 29.648249, 
+                    "lng": 52.457378
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJx-nM2UcRsj8R9l-Ew6WfTzU", 
+            "vicinity": "Shiraz, Farhang Shahr, Rajaei Boulevard", 
+            "scope": "GOOGLE", 
+            "id": "9d12088110defa1ceb3e6b2f7fbfdcdbfbbc6cf4", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Golestan", 
+            "reference": "CmRbAAAAJBPvt9A-4mFKieGuaHK-fz1oxc9EPfaGU0ay0cm1GIDNq1RiSfauV6KWf-iDePloB4sv1Za0ny5AZIvMe0XgFIgGkEqTOiQNxRIMoOKiLBkI0C7-csiSmGK_oPVhOwWNEhCANV94e-iqy2QCgDSi7NkIGhQxLTl29KKYGLBhWnoICIC5BeVM_Q", 
+            "geometry": {
+                "location": {
+                    "lat": 29.621534, 
+                    "lng": 52.583887
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJrwB5OOUMsj8RAaXr5Vzd0UI", 
+            "vicinity": "Shiraz, West Sadie", 
+            "scope": "GOOGLE", 
+            "id": "aebef36323cda9d9e59eb33852de826dadd42fd7", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Safkari Karim Zare", 
+            "reference": "CnRmAAAAsRdgUIK24tM2biF7FKgRo5XqNayg3_SOpAhLiNgfDOUajuyiCqhM2x70VFSNf536l3eAll1G9QoSpwPEJaIPnQcTspwmmryZaYu6TmKbgSqF8URafGr1cFtp4NqVmOSshU60tLfqgjkfk_-Hkkv2hhIQglxplvFjV-0_p7d-cRXbmBoUKbyq2NPc5oizk6actFo6wCatGaY", 
+            "geometry": {
+                "location": {
+                    "lat": 29.630389, 
+                    "lng": 52.594933
+                }
+            }, 
+            "nearby_places": [
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJV_h7W_MMsj8RM4oJifIy4_8", 
+            "vicinity": "District 3, Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "ded017a6f709d36b0ea860f8ff904118266156ff", 
+            "types": [
+                "parking", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }
+    ], 
+    "bank": [
+        {
+            "name": "Mollasadra Mellat Bank", 
+            "reference": "CnRqAAAAoeWOjJc8pqC3_zyNWsMbR8CatqggmgVnpHCcHInssmHW4x6wq3UrVTw60-lCA6ahXymFDeX_i0fH0b5fz74eqIL8wym936vc6kzvi9PQxcSMZtLbJNc8m8jZZ9Q3wdr4idtnCbNQ9CDTF8HDzCziXRIQIIrT8xi9Wf7xwKsU2fpC5RoUuZon2z6DTPfpxDIdRAYkWaqeeLc", 
+            "geometry": {
+                "location": {
+                    "lat": 29.626916, 
+                    "lng": 52.518137
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ1cM-SWwSsj8RUhKEULUXGb0", 
+            "vicinity": "Shiraz, Molla Sadra Street", 
+            "scope": "GOOGLE", 
+            "id": "297819448d9e8389d9f3b60e14ef239aac234845", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Zand Eghtesad e Novin Bank", 
+            "reference": "CnRtAAAAMFk_QxZZnAHD1VV-6qbtDie9Gerj6v47WvMKI05d9Xtnol_S7KqyxMbCJ8mnSAaqo5KVwJDGPMFr_PelqXVU9mvZn_Mya7ROz_IeZjuFJWcto8LrVywK_ixANzRmEe4g-CnKtB7Fsi7Y7_zXX94NYRIQxXo7rrIfPmPgUmU2CINrYxoU_c6y_aoB3FUi6vosJR58RHt5dus", 
+            "geometry": {
+                "location": {
+                    "lat": 29.630332, 
+                    "lng": 52.521232
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJjQVyoHISsj8R0bfB2ygWRlo", 
+            "vicinity": "Shiraz, Zand", 
+            "scope": "GOOGLE", 
+            "id": "1e61b2e2e5826e2b0e856b0caebc305dd2fa0af0", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Sepah bank", 
+            "reference": "CmReAAAAEhcdm_qeJB30opMp-pQOSf9U1o9PJFv_SrvyH4sPN5zJO1HdNGP8Kg5uE_yPcqSpyXoYQwezenjAEcWddsziNkhik9q1afEFc5CBM9nHpQKRQYYMMCJFQPqjoXWubxd6EhDpbZEAa3u-Yzjy7Bsw0ks4GhQHeJUAaE8MbwpVAHh7lm1G1vVj_Q", 
+            "geometry": {
+                "location": {
+                    "lat": 29.624616, 
+                    "lng": 52.517108
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJXR6Kom4Ssj8RS82VHnRUMa4", 
+            "vicinity": "Shiraz, Qasr-e-Dasht", 
+            "scope": "GOOGLE", 
+            "id": "ffa25d426e182b0aff34f8b8b7337d539e32f1a0", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Mollasadra Melli Bank", 
+            "reference": "CnRpAAAAlHERyPm5gRDD5PTrl8sT7PDC2a-AEuEMfDuaTemjcjBw6cwo6CS0d4_B2UoTfg0O8i6TGZlxXCA0xrq1QMUuOkfvERfKbLlwJO_akN-X9MJAMuHVWht02-KrNJGy1InxinGaQtWhZ2HdPS0xtwBIhhIQTnMLxSuqzwU--7piM5qKvhoU3dQgXGpGTAS5FarK4G23hFwk-CU", 
+            "geometry": {
+                "location": {
+                    "lat": 29.624788, 
+                    "lng": 52.516095
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ30dxqm4Ssj8RYBX6lDIEOeU", 
+            "vicinity": "Shiraz, Qasr-e-Dasht", 
+            "scope": "GOOGLE", 
+            "id": "01cc98da0e48749aef24a17f27b3654d1364ff1f", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Rahmat Abad Melli Bank", 
+            "reference": "CnRpAAAAM85gjJ5lYNnP3s2F6f83RGwq9qKDt1hmBpU0W0YVxxMqLNuT8-aM566ZkZRzfEIkoP46DTPH6NfOpe-pp8lBIq27K9IUApj1jVxRN5yO3Uon6J4X2_RbQzyWchNV1hO-uxfxHVxgfTWYCFQ1s7P9rhIQkZokczWPdC09s3bT6i2RCBoULAfrD_mc4JSqY0Adirng9zx82k8", 
+            "geometry": {
+                "location": {
+                    "lat": 29.624939, 
+                    "lng": 52.515716
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJq_Qm_2sSsj8RElCSl0Dj9Do", 
+            "vicinity": "Shiraz, Qasr-e-Dasht", 
+            "scope": "GOOGLE", 
+            "id": "e2c3379533012d25af27fc56304dc71c8e2d5c6d", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Parsian Bank", 
+            "reference": "CmRfAAAA5NwQ79mNxRsEvZ_u3RsAnUVA5iINoWbH7kSH-bN2GE1Ty0U0vnhB1ZNcur3Xf1_4ACqqMB5wXTNzE8yfxua5OfC87hf5w7RgczVK2cXQwmvtSKO8BMP8-WwmoDJAz6XVEhCo1NA8Aq9jZRytKs6AwTKqGhQWyBllbcDrtOAnLudF1OQtAuoM_g", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62432, 
+                    "lng": 52.517223
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ2f0dlm4Ssj8R0xEagD1Jeg4", 
+            "vicinity": "Shiraz, Qasr-e-Dasht", 
+            "scope": "GOOGLE", 
+            "id": "ca8753be50360e5ad4a8702aea0f28246305ae0c", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Bank Shahr", 
+            "reference": "CmReAAAAXsUClRkKp8oLAyw_P056xtLMj0KmmVMGhPLQg9H-4fRMKcZO-3uqIlGkD2TYxsDUXJFZ81rRo_3eb_jP7wQOGC2wbCGRmq6BOFqAjXAFowRCy5fnFEyvP3XuU-Ovxh7DEhD4gm94ygz3pchcXpuInniTGhQD1R63PzxcR-iK3OPp7Kbe7w54WQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62429, 
+                    "lng": 52.517073
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJQ-a6vW4Ssj8RtUO7YdGlEvg", 
+            "vicinity": "Shiraz, Qasr Dasht Street", 
+            "scope": "GOOGLE", 
+            "id": "c73995f7e84d66972679204586767ef2b6f606ff", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Yakh Sazi Saderat Bank", 
+            "reference": "CnRpAAAAtEl-BFQk1accKA_MPlLNNQUh2C8pYyZShUB56Q3oD7QjUKXggGQ44dNmxZ18b1RJMEbIUHIPOzctIQ_fyGFwGNv1iAjmeFea_1TBEtxaNWRgMcmOPk9S0_AaW-H0o1MLGgpXOtxCNuY7KejbunSjqBIQfeFuBFO08kJ9L9OnZxY1TxoURh486NsvbBDHkU9JORxtlUdj90c", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62414, 
+                    "lng": 52.517714
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJkx0rk24Ssj8RQZmBEqtxb3U", 
+            "vicinity": "Shiraz, Qasr-e-Dasht", 
+            "scope": "GOOGLE", 
+            "id": "2e86e6634d50009bae01b4c8c70d48fe01cec0e1", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Tejarat Bank", 
+            "reference": "CmRfAAAA9IJ2G73L7RrCc3Av1B8zr5U40Se75-ypdg4_SeIxxA1PivhTqMZm7Yn0PGTSVn1UiYcXcwfX-tFKn0Rv7n_2gPJ21mYoXyXom-PlRCPDMmg4ZyJwxIr3iwiFPGQEtYdlEhB6WWsOOFL7B02BO2xcJo5WGhSnZK3j7W6eOjIajNJILJDmW1KJbQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.624335, 
+                    "lng": 52.516411
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department"
+            ], 
+            "place_id": "ChIJ35O4r24Ssj8R6t0fB8jB7lY", 
+            "vicinity": "Shiraz, Besat Boulevard", 
+            "scope": "GOOGLE", 
+            "id": "3c8bd0820904b21504b29212c000c994935089f1", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Bank Tejarat", 
+            "reference": "CmRfAAAAUtMsP1WCq_KhWZ7KXYXOeCwAJgHwV3qUJspLJfjYRXDu4Q62ZbtJJe_jH1OYL6BYQiuuLhmzliRRECwFgMXHEh5QveF8cHf_el0aRaCQ95t4aF27IM-GVBdSKF02S5MCEhBv81MT-jW74ywXFTVehewqGhQEzf_8Bh2c6tlQSWYZoxH7VYn8Xw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.624574, 
+                    "lng": 52.520713
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJh2n6JW4Ssj8RrUhOIjiRdmc", 
+            "vicinity": "Shiraz, Felestin Street", 
+            "scope": "GOOGLE", 
+            "id": "5e96297841ac0110060a5b40f7b2bccafaa7b821", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Bank Mellat", 
+            "reference": "CmReAAAAgMdihOFozL9SVe3HuIOkIFjAZO27o4VV0lJ3NmOnUGKGAikdauAArqbgZ55bmqWlfFPU-DUN4gJ-HIOyxnqtlhFxeTcGQ-6pAWdRxR3kZwiS698BEyf-d40izlZpzVReEhD9Y1EdcjMz_ZUkN9WfWQ9UGhQMT5cueeG8r2Q4-RhVC2JW_qu_2w", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62351, 
+                    "lng": 52.519965
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJiTvCym8Ssj8RiCY4dMp9oSY", 
+            "vicinity": "Shiraz, Felestin Street", 
+            "scope": "GOOGLE", 
+            "id": "a7606e29f467293d1346da39fa5ea7de1a009b8a", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0645\u0648\u0633\u0633\u0647 \u0627\u0639\u062a\u0628\u0627\u0631\u06cc \u0639\u0633\u06a9\u0631\u06cc\u0647 - \u0634\u0639\u0628\u0647 \u0642\u0635\u0631\u062f\u0634\u062a (\u0634\u06cc\u0631\u0627\u0632) - \u0634\u0627\u062e\u0635 371", 
+            "reference": "CrQBrgAAAOZ_Yb_lzBq4tBqu69LSChCCIoi4jMoTHs-ZcanFNlQi38IOIWg6s9Y1E2RIIWLYRZp7vpSJDMnw5olnzUUtRsUcm9m20ffdKATw8SnIPWlXYYUvBw6sILLKgSK61zSJLm-egkaFOQH0PYe1taE_itSXUVRaKdFC1cwBFa3rdtAeobYsGrQx8n2LmAD2ST552on0awtVer6cEAkNDU9v6LfcymFTo90L--TPhn9C3xp_EhBbGUjE2iPCZgtpVqaKRKPSGhQAM4C0G_jxVuSql6BSK2czPYGERw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62346, 
+                    "lng": 52.519938
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJq7CSym8Ssj8RLReeLoaCpnA", 
+            "vicinity": "Shiraz, District 1, Qasr Dasht Street", 
+            "scope": "GOOGLE", 
+            "id": "ab53767d7b100b9499f3c3ec42b544742ded14af", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Bank Melli", 
+            "reference": "CmReAAAAMByCxmIrAMmHUXSi3sQMG65ZkYtdhoVjsJLzwUIxGIlUa92leEl8KcniXAe0TgVZibNWOTDTvQhy6NHUXN-b40jOS_KKXEe8GW04EWUF5mjfHunBdksE5WB6P8jxae5iEhDyGqIi1A51Q8p-6uxDcPX8GhRrelf0Me0nb8NisoInWDK4-FqDvg", 
+            "geometry": {
+                "location": {
+                    "lat": 29.623344, 
+                    "lng": 52.520278
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ0WCYzm8Ssj8R9EZfgXC5bfI", 
+            "vicinity": "Shiraz, Qasr Dasht Street", 
+            "scope": "GOOGLE", 
+            "id": "8bbd9cddee4a5d42e9024d5736fd5057d9729e4a", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Samen Al Hojaj Bank - Shiraz HQ", 
+            "reference": "CoQBcgAAAOUwdWOyNTeozbbh7yob7il2B3TjZ8D6-PPZofUrZgD2pYHY3C8ddJ2AbBunHOpgB5AYECd0p96Txhl4gXbkhZ1sGnpFN3metWNd6cj-JeYn4vmygx9rDZOAckN87zxP4UcugpaijFBfBvVGw63V79SCgq4YKeYWq4j59T-HCjL3EhBhl6c3A3Pyh2mTGhXqgd6MGhQHEwGD4HW_YeFKFmwQQXkSIH4HJA", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625968, 
+                    "lng": 52.512792
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department"
+            ], 
+            "place_id": "ChIJh_yTVmoSsj8RlIofWkkVciU", 
+            "vicinity": "Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "984caec6f21210732af928abcb796d71a71a0c17", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0645\u0648\u0633\u0633\u0647 \u0627\u0639\u062a\u0628\u0627\u0631\u06cc \u062b\u0627\u0645\u0646-\u0634\u0639\u0628\u0647 \u062e \u0642\u0635\u0631\u062f\u0634\u062a-\u06a9\u062f 427", 
+            "reference": "CqQBmAAAAM4usIO8fcA8ukzUMVylpPpJFciUqsYJP165sB-LoPY2Yg1e4z-_LIdgbzqEnnqwhsvKS_96urh8i5NmE16N0DrErNJ_qYy5alYBn9lWnO4397tlypAyNutbxsURAS6TfrvXvRe-Vu2U5y3VR71Adrhyj-1TVw-hhP8EWFaUJKxh3uPgZ59f3Ij65aXJaMjVEzBBt_z6hBCSYjIWqLUSd60SELSkCr0zil0LsJ_idjIFF4caFGvbT18kp3DDb8EtO0aKoQJ_UZwc", 
+            "geometry": {
+                "location": {
+                    "lat": 29.626242, 
+                    "lng": 52.512603
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department"
+            ], 
+            "place_id": "ChIJ-c03-GoSsj8Rgc2ujgXzISA", 
+            "vicinity": "\u0634\u064a\u0631\u0627\u0632 \u060c \u0631\u062d\u0645\u062a \u0622\u0628\u0627\u062f \u060c \u062e\u064a\u0627\u0628\u0627\u0646 \u0642\u0635\u0631\u062f\u0634\u062a \u060c \u062c\u0646\u0628 \u0645\u0633\u062c\u062f\u0627\u0644\u0631\u062c\u0627\u0621", 
+            "scope": "GOOGLE", 
+            "id": "b1aae6e5ea0413c0b8c159cb393d29a501e88f1f", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Melli bank", 
+            "reference": "CmReAAAAKscYM-fTfirIxN-2F7LEMegKD1V3i4odpJSEjvEHeV5-Whn0B8jJDGkXNETkpBlPmbvHCMziN7YKg1BwEFN4ZkIJ2AHvxzU355M21BL0Cl4WvpBFlV-Suezp-OAGxC8nEhDksZPW3rI5vtAF54evbfr8GhT5eRR-3uOsKOj4ngMRn5OIwcfBvQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.634462, 
+                    "lng": 52.521013
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ-b3UeRISsj8RSMP_-UQzd8o", 
+            "vicinity": "Shiraz, 16 Azar Square", 
+            "scope": "GOOGLE", 
+            "id": "732f3983c19be38d0db0355ded0e0015758626c6", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0628\u0627\u0646\u06a9 \u0633\u067e\u0647", 
+            "reference": "CnRjAAAA7el9ZhVkeYlD_N_dRwocmwGbzyLOzoNZJXAk9xX6aS23NNy32Tn9vD4si4i2BIEbXtVGRVJP6-n-UCh-Dc8jC1j7s8kWMQPRqThP5gdE2wTsmkfXArpxrt5v0OVC5spR-ZwlwS4FGYBW6tvioubXSRIQzWJkzxOMnGjiK5eBw60YWhoU_q-vyotOnLuGH82LGOCjQHfwKP8", 
+            "geometry": {
+                "location": {
+                    "lat": 29.634149, 
+                    "lng": 52.51428
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJPc8inhYSsj8Rg4pYTu0Ca8U", 
+            "vicinity": "Shiraz, Daneshjoo", 
+            "scope": "GOOGLE", 
+            "id": "01a89a3cd25e03cb9638de7247ae2172da3433dc", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Keshavarzi bank", 
+            "reference": "CnRiAAAAd1NfxoiHWH-zdYQfZT4Nm4jL-lwl8gU-MROdByf24ZsvcoEDrmb1eNn49oL_S78us71devjYo_6bvvI5ROOX5NvYhd6OG3BZqm0KiZCA2jaEmoEFfTm2-wdkQzfs35IOsVKSQomj01HT_E4mMIhfYRIQkkfgmx0PGVcNgtCbMEeE0xoUD2ca-eZT5-97gRPEzPrdvQINPkc", 
+            "geometry": {
+                "location": {
+                    "lat": 29.628632, 
+                    "lng": 52.509888
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2"
+            ], 
+            "place_id": "ChIJn3n95T8Ssj8RDrdsyVRUiWI", 
+            "vicinity": "Shiraz, Qasr-ol-Dasht", 
+            "scope": "GOOGLE", 
+            "id": "38adf499c65ced4d12892fb43cabb179dfe3d0c4", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0645\u0648\u0633\u0633\u0647 \u0627\u0639\u062a\u0628\u0627\u0631\u06cc \u062b\u0627\u0645\u0646-\u0634\u0639\u0628\u0647 \u0634\u0647\u064a\u062f \u0641\u0642\u064a\u0647\u064a \u0634\u064a\u0631\u0627\u0632-\u06a9\u062f 305", 
+            "reference": "CrQBpwAAALkTgRRWAzudab9JVOw_jpVt2edhkZ0acs4ivsDeMR91IT6IYOp0fvsZc1MZS6WxBg3Zfi_oe-uUCxY2IYMCr8v5a97JvCjW1VAlzUId3qp0weSLDlr8xymymGsIjjeV_Pu7qxKjoF2HE4HtvciiBdt4A1hklEpDB6eR8BBUYz6MTV53rtrY2YU5_LyYjeAcWj61MW61N8-u6aobN_J_EJApxf8YC_fXB48OQfR2e6SlEhBNMe6r6mT2ijRa5x1-EGMNGhTF8D9K2NndeXZugb3XZ9EOyKGxUA", 
+            "geometry": {
+                "location": {
+                    "lat": 29.62664, 
+                    "lng": 52.526332
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJkwx7NHESsj8RZM_El3z7ARk", 
+            "vicinity": "\u0634\u064a\u0631\u0627\u0632- \u062e\u064a\u0627\u0628\u0627\u0646 \u0632\u0646\u062f \u0627\u0628\u062a\u062f\u0627\u064a \u062e\u064a\u0627\u0628\u0627\u0646 \u0647\u0641\u062a \u062a\u064a\u0631 \u062c\u0646\u0628 \u0628\u0627\u0646\u06a9 \u0635\u0627\u062f\u0631\u0627\u062a", 
+            "scope": "GOOGLE", 
+            "id": "a9d979e94cb69c8ac1eab0d6a1188bda3eb9cb95", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Eskan", 
+            "reference": "CmRZAAAA_UrQBEYeZ8PVzB5rzw729Z7WY4K6cqiH9f_Sq2ZpYAyAWMXr1c1S1p4HyY_jCMjMmtFDL3O-HmxJpZq6UXwahqi3iVh1CFrkqI9NW5iqCk1Si7V33zDXv34O_VqIYSNDEhAN-xHpZEhBBYnlg07oHMTOGhTy5TZLAW1kOFhPqfyfFh2GRiKuzw", 
+            "geometry": {
+                "location": {
+                    "lat": 29.626507, 
+                    "lng": 52.526424
+                }
+            }, 
+            "nearby_places": [
+                "mohandesi2", 
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ30QZM3ESsj8RtCt7805xFek", 
+            "vicinity": "Shiraz, Setad square", 
+            "scope": "GOOGLE", 
+            "id": "183c873f0a148ee2423c0105ab8a6bb03ab624a7", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Sepah Bank Management", 
+            "reference": "CnRpAAAAv3-lBUgPJ3NOshK3Z5fBt-WoqASX0VJXwwOAOXEdTYqciUOBgVOLt26vFJjuL1Ps3kel7fwKhZdgSMy130HJ_SnsBM60Syd53Ew0YDLBxpK3nZ86RFs0XtAvOYKMQOEJauqr1sZG0MbYH_Klb7hoOxIQm7k7YsYxD95QM291sYGa8RoUlbrQPpfCkErXE8QlfhUEz_UmH3k", 
+            "geometry": {
+                "location": {
+                    "lat": 29.627183, 
+                    "lng": 52.527781
+                }
+            }, 
+            "nearby_places": [
+                "computer_department_ict", 
+                "computer_department_pc", 
+                "computer_department", 
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJmVTLwXYSsj8ReTAEAuOJ7cM", 
+            "vicinity": "Shiraz, Setad square", 
+            "scope": "GOOGLE", 
+            "id": "14c4392d866d134ea917834c98bfdaced18b7c3c", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "\u0628\u0627\u0646\u06a9 \u0634\u0647\u0631", 
+            "reference": "CnRjAAAAdt35gEnjNzws7RCxIvcHjzydNSkIy8ndYMpxu3Viyxb6dY1SmXuiaP9VERTyUsyDtB-L7DT1_gpMwKPybpgbA5IyYHzK-dtTGyBYgdyHngQ6_mrAt6tzzqe4UqDz00lN_7AQRN8SmPgAjDqF4DPmUhIQjbXf1ukfFRTJ3QS0szX_URoUyLaRmdUN3tiymej6tn7Yp9wVrIs", 
+            "geometry": {
+                "location": {
+                    "lat": 29.6265, 
+                    "lng": 52.528378
+                }
+            }, 
+            "nearby_places": [
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJmV7rH3cSsj8Rd1aZzxNMGrA", 
+            "vicinity": "Shiraz, \u0634\u064a\u0631\u0627\u0632- \u0628\u0644\u0648\u0627\u0631 \u06a9\u0631\u064a\u0645 \u062e\u0627\u0646 \u0632\u0646\u062f- \u0631\u0648\u0628\u0631\u0648\u064a \u0628\u064a\u0645\u0627\u0631\u0633\u062a\u0627\u0646 \u0634\u0647\u064a\u062f \u0641\u0642\u064a\u0647\u064a, KarimKhan-e-Zand Blv.", 
+            "scope": "GOOGLE", 
+            "id": "7fe78fff90dc2bd9ac3ba42ff6243c5cb654b5fd", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Samen Alhojaj Finance & Credit Institute", 
+            "reference": "CoQBewAAAIL_qsIjNwxDnSiBNd0_d650hcwtWhMr3vpKTFQVGVY0qjUDIJlua50UtK0mhoOdwOZPnhDS38nqJyqF7G1NYFBiojDqH_YjmLsBM4KedVtOSOZu2KRaQu1WoC1E7v611TdIKyf2ehzkM14WelwzizljeNx5GrY-uMRdsK9L3jCyEhDzxfN-4tKGM0PJ0VSNeYJwGhSyjdok82ce4j5NncUL0ejYU_klug", 
+            "geometry": {
+                "location": {
+                    "lat": 29.625385, 
+                    "lng": 52.528472
+                }
+            }, 
+            "nearby_places": [
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJ9wYTEncSsj8RqeWW7y0_1Ek", 
+            "vicinity": "Shiraz, Setad square", 
+            "scope": "GOOGLE", 
+            "id": "cfce6aae0d92775d66831f277ef8a46637b5f0d5", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }, 
+        {
+            "name": "Tejarat Bank", 
+            "reference": "CmRgAAAAGqT6-tt0NYa_Mulrp1FxcwPj72zjx6Nv-FOwXKnrgCLQYUrq6X4CWS14SKNtXtlMIyPVKAb3ogyoT1H5SOU_zVi98S61GdDtU41Y5-qhAO3WCeLG0FUThem6SCGWZJncEhAOxmWVihUB21dYp_xup9fVGhTe_UM444p4O9Fie5yaxMXAG_9dCQ", 
+            "geometry": {
+                "location": {
+                    "lat": 29.63832, 
+                    "lng": 52.526046
+                }
+            }, 
+            "nearby_places": [
+                "electrical_engineering"
+            ], 
+            "place_id": "ChIJObvWrg4Ssj8RZSdiZd4VtIE", 
+            "vicinity": "Shiraz", 
+            "scope": "GOOGLE", 
+            "id": "be53982511ae0b04ebaece685041ba32e37d7a8b", 
+            "types": [
+                "bank", 
+                "finance", 
+                "point_of_interest", 
+                "establishment"
+            ], 
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"
+        }
+    ]
+}
