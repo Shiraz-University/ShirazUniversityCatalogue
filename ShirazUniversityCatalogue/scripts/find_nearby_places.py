@@ -68,7 +68,17 @@ def download_nearby_places(((placetype,query), places)):
 		request_content = urllib2.urlopen(requst).read()
 		nearby_places = json.loads(request_content)['results']
 		merger.add_places(nearby_places, place['id'])
-	return (placetype,merger.places)
+
+	detail_request = 'https://maps.googleapis.com/maps/api/place/details/json?placeid={}&key=' + my_key.key
+	all_places = []
+	for place in merger.places:
+		this_request = detail_request.format(place['place_id'])
+		response = urllib2.urlopen(this_request).read()
+		place_object = json.loads(response)['result']
+		place_object['nearby_places'] = place['nearby_places']
+		all_places.append(place_object)
+
+	return (placetype,all_places)
 
 
 if __name__ == '__main__':
@@ -86,5 +96,4 @@ if __name__ == '__main__':
 	
 	p = Pool(10)
 
-	# download_nearby_places((nearby_requests.items()[0], all_places))
 	print json.dumps(dict(p.map(download_nearby_places, zip(nearby_requests.items(), repeat(all_places)))), indent = 4)

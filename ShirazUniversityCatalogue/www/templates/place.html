@@ -59,6 +59,10 @@
 						<ion-list>
 							<ion-item href="#/app/external-place/{{epl.id}}" ng-repeat="epl in place.nearbyPlaces | extraPlaceType:external_place_type_input">
 								{{epl.name}}
+								<a style="float: left;padding-left: 3px;padding-right: 3px;" href="tel:{{epl.international_phone_number}}"><i ng-if="epl.formatted_phone_number" class="button button-small icon ion-android-call"></i>
+								</a>
+								<a style="float: left;padding-left: 3px;padding-right: 3px;" ng-click="openLink($event);" href="{{epl.website}}" ng-if="epl.website"><i  class="button button-small icon ion-social-chrome"></i>
+								</a>
 							</ion-item>
 						</ion-list>
 					</ion-content>

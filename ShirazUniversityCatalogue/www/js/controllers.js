@@ -38,6 +38,12 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     $rootScope.getPlaceWithId = function(places,iden){
         return places.filter(function(x){return x.id == iden})[0];
     }
+
+    $rootScope.openLink = function($event)
+    {
+        var url = $event.currentTarget.getAttribute('href');
+        window.open(url, '_system','location=yes');      
+    }
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
@@ -490,6 +496,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
 .controller('PlaceCtrl', function($rootScope,$scope, $stateParams, PlaceFactory, ExtraPlaceFactory)
 {
+    $scope.external_place_type_input = 'bank';
     var placeId = $stateParams.placeId;
     var allPlaces = null;
     var places = PlaceFactory.then(function(data){
@@ -538,11 +545,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         window.open('http://www.google.com', '_blank','location=yes');
     }
 
-    $scope.openLink = function($event)
-    {
-        var url = $event.currentTarget.getAttribute('href');
-        window.open(url, '_system','location=yes');      
-    }
+    
     $scope.isMapsLoaded = false;
     try{
         $scope.isMapsLoaded = (google != undefined)
