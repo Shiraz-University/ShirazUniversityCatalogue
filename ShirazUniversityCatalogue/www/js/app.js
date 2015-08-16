@@ -61,6 +61,25 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 		
 	})
 
+	.state('index.signup',{
+		url: '/signup',
+		views:{
+			main_content: {
+				templateUrl: 'templates/signup.html',
+				controller: 'SignupCtrl'
+			}	
+		}
+	})
+
+	.state('index.faq',{
+		url: '/signup/faq',
+		views:{
+			main_content: {
+				templateUrl: 'templates/signup-faq.html',
+			}	
+		}
+	})
+
 	.state('index.departmentCourses', {
 		url: '/courses/:departmentName',
 		views:{
