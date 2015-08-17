@@ -17,7 +17,9 @@ Number.prototype.toPersianString = function(){
 angular.module('ionicApp.controllers', ['ngRoute'])
 
 .controller('DashCtrl', function($scope) {})
-
+.controller('introductionCtrl', function(){
+      
+})
 .controller('SignupCtrl', function(){
       
 })

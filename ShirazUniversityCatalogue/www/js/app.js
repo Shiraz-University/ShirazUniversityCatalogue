@@ -16,6 +16,14 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 		templateUrl: 'templates/menu.html'
 	})
 
+	.state('index.introduction',{
+		url:'/introduction',
+		views:{
+			main_content:{
+				templateUrl: 'templates/introduction.html',
+				controller: 'introductionCtrl'
+			}}
+	})
 	.state('index.places',{
 		url: '/places',
 		views:{
