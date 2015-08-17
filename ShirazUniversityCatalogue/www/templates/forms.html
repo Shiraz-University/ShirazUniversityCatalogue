@@ -1,12 +1,22 @@
 <ion-view view-title="فرم ها">
 	<ion-content dir="rtl">
-		<label class="item item-input">
-		    <input type="text" placeholder="جستجو" ng-model="search_input">
-		</label>
+        <div class="bar bar-header item-input-inset">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios-search placeholder-icon"> </i>
+                <input type="text" placeholder=" جستجو " ng-model="search_input">
+            </label>
+            <button class="button button-clear">
+                <i class="icon ion-ios-close-empty placeholder-icon"> </i>
+            </button>
+        </div>
+		<!--<label class="item item-input">-->
+		    <!--<input type="text" placeholder="جستجو" ng-model="search_input">-->
+		<!--</label>-->
 		<ion-list>
 			<ion-item href="#/app/form/{{form.id}}" ng-repeat="form in forms | filter:search_input">
 				{{form.title}}
 			</ion-item>
 		</ion-list>
 	</ion-content>
+
 </ion-view>
