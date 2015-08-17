@@ -17,9 +17,20 @@ Number.prototype.toPersianString = function(){
 angular.module('ionicApp.controllers', ['ngRoute'])
 
 .controller('DashCtrl', function($scope) {})
+.controller('searchCtrl', function(){
+      
+})
+
+.controller('educationCtrl', function(){
+      
+})
 .controller('introductionCtrl', function(){
       
 })
+.controller('constructionCtrl', function(){
+      
+})
+
 .controller('SignupCtrl', function(){
       
 })

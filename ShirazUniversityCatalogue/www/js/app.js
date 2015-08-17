@@ -24,6 +24,18 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 				controller: 'introductionCtrl'
 			}}
 	})
+
+	.state('index.construction',{
+		url: '/construction',
+		views:{
+			main_content: {
+				templateUrl: 'templates/construction.html',
+				controller: 'constructionCtrl'
+			}	
+		}
+		
+	})
+
 	.state('index.places',{
 		url: '/places',
 		views:{
@@ -67,6 +79,27 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 			}	
 		}
 		
+	})
+
+	.state('index.search',{
+		url: '/search',
+		views:{
+			main_content: {
+				templateUrl: 'templates/search.html',
+				controller: 'searchCtrl'
+			}	
+		}
+		
+	})
+
+	.state('index.Education',{
+		url: '/Education',
+		views:{
+			main_content: {
+				templateUrl: 'templates/Education.html',
+				controller: 'educationCtrl'
+			}	
+		}
 	})
 
 	.state('index.signup',{
