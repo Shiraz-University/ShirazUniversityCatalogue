@@ -9,9 +9,6 @@
 				<i class="icon ion-ios-close-empty placeholder-icon"> </i>
 			</button>
         </div>
-		<!--<label class="item item-input">-->
-		    <!--<input type="text" placeholder="جستجو" ng-model="search_input">-->
-		<!--</label>-->
 		<ion-list>
 			<ion-item href="#/app/form/{{form.id}}" ng-repeat="form in forms | filter:search_input">
 				{{form.title}}
