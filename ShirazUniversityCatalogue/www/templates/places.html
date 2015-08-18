@@ -7,9 +7,15 @@
 				<option ng-repeat="placeType in placeTypes" value="{{placeType.english}}" >{{placeType.persian}}</option>
 			</select>
 		</label>
-		<label class="item item-input">
-		    <input type="text" placeholder="جستجو" ng-model="search_input">
-		</label>
+		<div class="bar bar-header item-input-inset">
+			<label class="item-input-wrapper">
+				<i class="icon ion-ios-search placeholder-icon"> </i>
+				<input type="search" placeholder=" جستجو " ng-model="search_input">
+			</label>
+			<button class="button button-clear" ng-click="search_input = null">
+				<i class="icon ion-ios-close-empty placeholder-icon"> </i>
+			</button>
+		</div>
 		<ion-list>
 			<ion-item href="#/app/place/{{place.id}}" ng-repeat="place in places | filter:search_input | filter:place_type_input">
 				{{place.name_persian}}
