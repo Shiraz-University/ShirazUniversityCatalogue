@@ -1,9 +1,21 @@
 /* Empty. Add your own CSS if you like */
 
 @font-face {
-    font-family: Yekan;
-    src: url('../fonts/BYekan.ttf');
+	font-family: IRAN;
+	src: url('../fonts/IRAN_Sans.ttf');
 }
+@font-face {
+	font-family: IRANBold;
+	src: url('../fonts/IRAN_Sans_Bold.ttf');
+}
+body {
+	font-family: "IRAN", Tahoma;
+}
+ion-nav-bar,ion-side-menus{
+	font-family: "IRANBold", Tahoma;
+}
+
+
 
 .su-day-picker-table td{
 	text-align: center;
