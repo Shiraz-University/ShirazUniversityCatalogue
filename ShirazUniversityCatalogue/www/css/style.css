@@ -14,6 +14,9 @@ body {
 ion-nav-bar,ion-side-menus{
 	font-family: "IRANBold", Tahoma;
 }
+ion-header-bar{
+    direction: ltr;
+}
 
 
 
