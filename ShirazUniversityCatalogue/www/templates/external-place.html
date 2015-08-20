@@ -1,56 +1,94 @@
-<ion-view >
-	<ion-nav-title>{{place.name_persian}}</ion-nav-title>
-	<!-- <ion-content> -->
+<ion-view dir="rtl">
 
-		<ion-tabs>
-			<ion-tab title="Desc" icon="ion-document-text">
-				<ion-view>
-					<ion-content class="has-header">
-						<div ng-if="place.formatted_phone_number">
-							phone number: {{place.formatted_phone_number}}
-						</div>
-						<div ng-if="place.formatted_address">
-							address: {{place.formatted_address}}
-						</div>
-					</ion-content>
-				</ion-view>
-			</ion-tab>
-			<ion-tab title="Map" icon="ion-map">
-				<ion-view>
-					<ion-content has-subheader="true" scroll="false">
-						<div style="display: block; height: 100%;">
-							<div ng-if="!isOffline" su-google-maps lat="{{place.geometry.location.lat}}" lng="{{place.geometry.location.lng}}" ng-attr-zoom="17" style="height: 100%;"></div>
-							<a ng-if="isOffline" href="http://maps.google.com/?q={{place.geometry.location.lat}},{{place.geometry.location.lng}}" ng-click="openLink($event)" class="maps-placeholder">
-								<img style="width: 100%" ng-attr-src="img/map/roadmap/1280x1200/{{place.id}}_map.png" />
-							</a>
-						</div>
-					</ion-content>
-				</ion-view>
-			</ion-tab>
-			<ion-tab title="Subsets" icon="ion-network" ng-if="getSubPlaces().length">
-				<ion-view>
-					<ion-content class="has-header" dir="rtl">
-						<ion-list>
-							<ion-item href="#/app/place/{{pl.id}}" ng-repeat="pl in getSubPlaces()">
-								{{pl.name_persian}}
-							</ion-item>
-						</ion-list>
-					</ion-content>
-				</ion-view>
-			</ion-tab>
-			<ion-tab title="Nearby Places" icon="ion-location" ng-if="place.nearbyPlaces">
-				<ion-view>
-					<ion-content class="has-header" dir="rtl">
-						<ion-list>
-							<ion-item href="#/app/external-place/{{pl.id}}" ng-repeat="epl in place.nearbyPlaces">
-								{{epl.name}}
-							</ion-item>
-						</ion-list>
-					</ion-content>
-				</ion-view>
-			</ion-tab>
-		</ion-tabs>
-		
+    <ion-nav-title>{{place.name_persian}}</ion-nav-title>
+    <ion-tabs>
+        <ion-tab title="Desc" icon="ion-document-text">
+            <ion-view>
+                <ion-content class="has-header" scroll="true">
+                    <div class="card" ng-if="place.name">
+                        <div class="item item-divider">
+                            <span><p>نام</p></span>
+                        </div>
+                        <div class="item item-text-wrap">
+                            {{place.name}}
+                        </div>
+                    </div>
 
-	<!-- </ion-content> -->
+                    <div class="card" ng-if="place.formatted_address">
+                        <div class="item item-divider">
+                            <span><p>آدرس</p></span>
+                        </div>
+                        <div class="item item-text-wrap">
+                            {{place.formatted_address}}
+                        </div>
+                    </div>
+
+                    <div class="card" ng-if="place.formatted_phone_number">
+                        <div class="item item-divider">
+                            <span><p>شماره تلفن</p></span>
+                        </div>
+                        <div class="item item-text-wrap" dir="ltr">
+                            <a href="tel:{{place.formatted_phone_number}}">{{place.formatted_phone_number}}</a>
+                        </div>
+                    </div>
+
+                    <div class="card" ng-if="place.website">
+                        <div class="item item-divider">
+                            <span><p>نشانی وب سایت</p></span>
+                        </div>
+                        <div class="item item-text-wrap">
+                            <a href="{{place.website}}">{{place.website}}</a>
+                        </div>
+                    </div>
+
+                    <div class="card" ng-if="place.vicinity">
+                        <div class="item item-divider">
+                            <span><p>محدوده</p></span>
+                        </div>
+                        <div class="item item-text-wrap">
+                            {{place.vicinity}}
+                        </div>
+                    </div>
+
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+        <ion-tab title="Map" icon="ion-map">
+            <ion-view>
+                <ion-content has-subheader="true" scroll="false">
+                    <div style="display: block; height: 100%;">
+                        <div ng-if="!isOffline" su-google-maps lat="{{place.geometry.location.lat}}"
+                             lng="{{place.geometry.location.lng}}" ng-attr-zoom="17" style="height: 100%;"></div>
+                        <a ng-if="isOffline"
+                           href="http://maps.google.com/?q={{place.geometry.location.lat}},{{place.geometry.location.lng}}"
+                           ng-click="openLink($event)" class="maps-placeholder">
+                            <img style="width: 100%" ng-attr-src="img/map/roadmap/1280x1200/{{place.id}}_map.png"/>
+                        </a>
+                    </div>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+        <ion-tab title="Subsets" icon="ion-network" ng-if="getSubPlaces().length">
+            <ion-view>
+                <ion-content class="has-header" dir="rtl">
+                    <ion-list>
+                        <ion-item href="#/app/place/{{pl.id}}" ng-repeat="pl in getSubPlaces()">
+                            {{pl.name_persian}}
+                        </ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+        <ion-tab title="Nearby Places" icon="ion-location" ng-if="place.nearbyPlaces">
+            <ion-view>
+                <ion-content class="has-header" dir="rtl">
+                    <ion-list>
+                        <ion-item href="#/app/external-place/{{pl.id}}" ng-repeat="epl in place.nearbyPlaces">
+                            {{epl.name}}
+                        </ion-item>
+                    </ion-list>
+                </ion-content>
+            </ion-view>
+        </ion-tab>
+    </ion-tabs>
 </ion-view>
