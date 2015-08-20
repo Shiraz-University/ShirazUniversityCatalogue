@@ -69,7 +69,7 @@ def download_nearby_places(((placetype,query), places)):
 		nearby_places = json.loads(request_content)['results']
 		merger.add_places(nearby_places, place['id'])
 
-	detail_request = 'https://maps.googleapis.com/maps/api/place/details/json?placeid={}&key=' + my_key.key
+	detail_request = 'https://maps.googleapis.com/maps/api/place/details/json?language=fa&placeid={}&key=' + my_key.key
 	all_places = []
 	for place in merger.places:
 		this_request = detail_request.format(place['place_id'])
