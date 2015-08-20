@@ -29,10 +29,10 @@ def get_map_image((lat,lng), zoom = 17, size = '500x500',scale = 2,format = 'png
 		'format': format,
 		'maptype': maptype,
 		'language': language,
-		'markers': markers
+		'markers': '{},{}'.format(lat,lng)
 	}
-	if markers == []:
-		del param_dict['markers']
+	# if markers == []:
+	# 	del param_dict['markers']
 	get_url = create_request(url_prefix,**param_dict)
 	resp = requests.get(get_url, stream = True)
 	return resp
