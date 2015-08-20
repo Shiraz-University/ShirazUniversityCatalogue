@@ -48,6 +48,17 @@ def parse_cl_args(cl_args):
 def filter_args(args):
 	acceptable = ['zoom','size','scale','format','maptype','language','markers']
 	return {x:args[x] for x in args if x in acceptable}
+
+def flatten_places(places_dict):
+	'''
+	The places json file is a dictionary whose keys are the place type. for example:
+	"buildings": [...]
+	this function takes this dictionary and returns a flat array of places.
+	'''
+
+	return sum([places_dict[key] for key in places_dict],[])
+
+
 if __name__ == '__main__':
 
 	args = parse_cl_args(sys.argv[2:])
@@ -63,11 +74,11 @@ if __name__ == '__main__':
 		json_file_addr = sys.argv[1]
 		json_file = open(json_file_addr, 'r')
 
-		data = json.loads(json_file.read())
+		data = flatten_places(json.loads(json_file.read()))
 
 		for location in data:
-			lat = location['location']['latlng']['lat']
-			lng = location['location']['latlng']['lng']
+			lat = location['latitude']
+			lng = location['longtitude']
 			
 			resp = get_map_image((lat,lng), **filter_args(args))
 
