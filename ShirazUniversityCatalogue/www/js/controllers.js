@@ -142,6 +142,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
                 allExtraPlaces.push(place);
             })
         }
+        allPlaceTypes.sort();
         return {allExtraPlaces: allExtraPlaces, allExtraPlaceTypes: allPlaceTypes};
     });
 })
@@ -473,7 +474,6 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             var currentDepartment = departmentCourses[i];
             if (currentDepartment.name == departmentName)
             {
-                console.log(currentDepartment);
                 for (var j = 0; j < currentDepartment.courses.length; j++){
                     var currentCourse = currentDepartment.courses[j];
                     if (currentCourse.id == id){
@@ -513,7 +513,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
 .controller('PlaceCtrl', function($rootScope,$scope, $stateParams, PlaceFactory, ExtraPlaceFactory)
 {
-    $scope.external_place_type_input = 'bank';
+    
     var placeId = $stateParams.placeId;
     var allPlaces = null;
     var places = PlaceFactory.then(function(data){
@@ -525,6 +525,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
     ExtraPlaceFactory.then(function(resp){
         $scope.allExtraPlaceTypes = resp.allExtraPlaceTypes;
+        $scope.external_place_type_input = resp.allExtraPlaceTypes[0];
     });
 
 
