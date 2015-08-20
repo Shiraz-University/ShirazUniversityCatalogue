@@ -9,7 +9,7 @@ if __name__ == '__main__':
 #    add the trailing / or \ os independently
     in_directory = os.path.join(sys.argv[1], '')
     #csv_out_file = os.path.join(sys.argv[2], '')
-    csv_out_file = sys.argv[2]
+    json_out_file = sys.argv[2]
     html_out_directory = os.path.join(sys.argv[3], '')
 
 #   list the place type folders
@@ -37,5 +37,5 @@ if __name__ == '__main__':
             print os.path.join(html_out_directory, dic_object['id'])
             shutil.copyfile(place_desc_filename, os.path.join(html_out_directory, current_dict['id']) + '.html')
 
-    with open(csv_out_file, 'w') as csv_out:
+    with open(json_out_file, 'w') as csv_out:
         csv_out.write(json.dumps(places))
