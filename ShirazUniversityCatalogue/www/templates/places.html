@@ -1,25 +1,24 @@
 <ion-view view-title="مکان ها" dir="rtl">
-	<ion-content>
-		<label class="item item-input item-select">
-			<div class="input-label" >Place Type</div>
-			<select ng-model="place_type_input">
-				<option value="">همه</option>
-				<option ng-repeat="placeType in placeTypes" value="{{placeType.english}}" >{{placeType.persian}}</option>
-			</select>
-		</label>
-		<div class="bar bar-header item-input-inset">
-			<label class="item-input-wrapper">
-				<i class="icon ion-ios-search placeholder-icon"> </i>
-				<input type="search" placeholder=" جستجو " ng-model="search_input">
-			</label>
-			<button class="button button-clear" ng-click="search_input = null">
-				<i class="icon ion-ios-close-empty placeholder-icon"> </i>
-			</button>
-		</div>
-		<ion-list>
-			<ion-item href="#/app/place/{{place.id}}" ng-repeat="place in places | filter:search_input | filter:place_type_input">
-				{{place.name_persian}}
-			</ion-item>
-		</ion-list>
-	</ion-content>
+    <ion-content>
+        <div class="bar bar-header item-input-inset">
+            <label class="item-input-wrapper col-75" >
+                <i class="icon ion-ios-search placeholder-icon"> </i>
+                <input type="search" placeholder=" جستجو " ng-model="search_input">
+            </label>
+            <select class="item-input-wrapper" ng-model="place_type_input" style="border: none; height: 136.65%; margin-right: 1%;">
+                <option value="">همه</option>
+                <option ng-repeat="placeType in placeTypes" value="{{placeType.english}}">{{placeType.persian}}
+                </option>
+            </select>
+            <button class="button button-clear" ng-click="search_input = null; place_type_input = '';">
+                <i class="icon ion-ios-close-empty placeholder-icon"> </i>
+            </button>
+        </div>
+        <ion-list>
+            <ion-item href="#/app/place/{{place.id}}"
+                      ng-repeat="place in places | filter:search_input | filter:place_type_input">
+                {{place.name_persian}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
 </ion-view>
