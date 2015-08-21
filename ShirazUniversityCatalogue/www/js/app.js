@@ -8,7 +8,7 @@ app.config(function($compileProvider)
 
 app.run(function($rootScope, $location){
 	$rootScope.location = $location;
-})
+});
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 {

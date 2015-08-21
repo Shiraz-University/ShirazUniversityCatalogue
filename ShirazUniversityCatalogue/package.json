@@ -25,10 +25,5 @@
     "cordova-plugin-network-information",
     "org.apache.cordova.splashscreen"
   ],
-  "cordovaPlatforms": [
-    {
-      "platform": "android",
-      "locator": "windows8"
-    }
-  ]
+  "cordovaPlatforms": []
 }
