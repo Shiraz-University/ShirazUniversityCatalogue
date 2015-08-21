@@ -167,6 +167,20 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
 })
 
+.factory('ContentFactory', function($http, $cacheFactory)
+{
+    get_url = '../json/contents.json';
+    if (ionic.Platform.isAndroid())
+    {
+        get_url = '/android_asset/www/json/contents.json';
+    }
+    return $http.get(get_url,{ cache: true}).then(function(items){
+        
+        return items.data;
+    });
+
+})
+
 .factory('CourseFactory', function($http, $cacheFactory)
 {
     get_url = '../json/courses.json';
@@ -354,6 +368,34 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     // {
     //     $scope.places = resp;
     // });
+})
+
+.controller('ContentCtrl', function($scope, $stateParams,ContentFactory){
+    var pathDelim = '/';
+    var pathParts = $stateParams.path.split(pathDelim);
+    function findChild(children, name){
+        return children.filter(function(ch){
+            return ch.name == name;
+        })[0];
+    }
+    function findRootContent(contentData, path){
+        var currentRoot = contentData;
+        for (var i = 1;i < path.length; i++){
+            var currentElem = path[i];
+            var currentRoot = findChild(currentRoot.children, currentElem);
+        }
+        return currentRoot;
+    }
+    ContentFactory.then(function(data){
+        $scope.contents = findRootContent(data, pathParts);
+        $scope.folders = $scope.contents.children.filter(function(elem){
+            return elem.type == 'folder';
+        });
+        $scope.docs = $scope.contents.children.filter(function(elem){
+            return elem.type == 'content';
+        });
+        console.log($scope.contents);
+    })
 })
 
 .filter('inRange', function(){

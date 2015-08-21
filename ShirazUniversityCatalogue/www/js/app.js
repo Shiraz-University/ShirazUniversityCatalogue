@@ -6,6 +6,10 @@ app.config(function($compileProvider)
 		$compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|file|tel|geo|mailto):/);
 	});
 
+app.run(function($rootScope, $location){
+	$rootScope.location = $location;
+})
+
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 {
 	$stateProvider
@@ -120,6 +124,16 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 			}	
 		}
 	})
+
+	.state('index.content', {
+		url: '/content/*path',
+		views:{
+			main_content: {
+				templateUrl: 'templates/content.html',
+				controller: 'ContentCtrl'
+			}
+		}
+	})	
 
 	.state('index.departmentCourses', {
 		url: '/courses/:departmentName',
