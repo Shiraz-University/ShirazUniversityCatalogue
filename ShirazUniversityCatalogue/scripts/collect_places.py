@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     for place_type_dir in place_type_dirs:
         places[place_type_dir] = []
-        places_in_place_type_dirs = os.listdir(os.path.join(in_directory, place_type_dir))
+        places_in_place_type_dirs = os.listdir(unicode(os.path.join(in_directory, place_type_dir), 'utf8'))
 
         for placedir in places_in_place_type_dirs:
             base_path = os.path.join(in_directory, place_type_dir, placedir)
