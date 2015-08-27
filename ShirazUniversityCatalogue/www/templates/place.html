@@ -51,7 +51,7 @@
 						<label class="item item-input item-select">
 							<div class="input-label" >External Place Type</div>
 							<select ng-model="external_place_type_input">
-								<option ng-repeat="placeType in allExtraPlaceTypes" value="{{placeType}}" >{{placeType}}</option>
+								<option ng-repeat="placeType in allExtraPlaceTypes" value="{{placeType}}" >{{translatePlaceType(placeType)}}</option>
 							</select>
 						</label>
 						<ion-list>

@@ -85,6 +85,38 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 		
 	})
 
+	.state('index.persons',{
+		url: '/persons',
+		views:{
+			main_content: {
+				templateUrl: 'templates/persons.html',
+				controller: 'PersonsCtrl'
+			}	
+		}
+		
+	})
+
+	.state('index.departmentPersons',{
+		url: '/persons/:departmentName',
+		views:{
+			main_content: {
+				templateUrl: 'templates/departmentPersons.html',
+				controller: 'DepartmentPersonsCtrl'
+			}	
+		}
+		
+	})
+
+	.state('index.person',{
+		url: '/person/:departmentName/:personId',
+		views:{
+			main_content: {
+				templateUrl: 'templates/person.html',
+				controller: 'PersonCtrl'
+			}	
+		}
+	})
+
 	.state('index.search',{
 		url: '/search',
 		views:{

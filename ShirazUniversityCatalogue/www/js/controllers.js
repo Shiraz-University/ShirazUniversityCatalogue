@@ -14,6 +14,29 @@ Number.prototype.toPersianString = function(){
     }
     return res;
 };
+
+Array.prototype.groupBy = function(groupFn){
+    var res = {};
+    this.forEach(function(elem){
+        var groupToken = groupFn(elem);
+        if (res[groupToken] == undefined){
+            res[groupToken] = [elem];
+        }
+        else{
+            res[groupToken].push(elem);
+        }
+    }); 
+    return res;
+}
+
+function getKeys(obj){
+    var res = [];
+    for (var x in obj){
+        res.push(x);
+    }
+    return res;
+}
+
 angular.module('ionicApp.controllers', ['ngRoute'])
 
 .controller('DashCtrl', function($scope) {})
@@ -73,12 +96,36 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     });
 })
 
+.controller('PersonsCtrl', function($scope, PersonFactory){
+    PersonFactory.then(function(data){
+        $scope.departments = getKeys(data);
+    });
+})
+
+.controller('DepartmentPersonsCtrl', function($scope,$stateParams, PersonFactory){
+    var departmentName = $stateParams.departmentName;
+
+    PersonFactory.then(function(data){
+        $scope.persons = data[departmentName];
+        $scope.department = departmentName;
+    });
+})
+
 .controller('FormCtrl', function($scope,$stateParams, FormFactory){
     var formId = $stateParams.formId;
     FormFactory.then(function(data){
         var allForms = data;
         var currentForm = data.filter(function(x){return x.id == formId;})[0];
         $scope.form = currentForm;
+    });
+})
+
+.controller('PersonCtrl', function($scope,$stateParams, PersonFactory){
+    var personId = $stateParams.personId;
+    var departmentName = $stateParams.departmentName;
+    PersonFactory.then(function(data){
+        var currentForm = data[departmentName].filter(function(x){return x.id == personId;})[0];
+        $scope.person = currentForm;
     });
 })
 
@@ -165,6 +212,24 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         return returnedItems;
     });
 
+})
+
+.factory('PersonFactory', function($http, $cacheFactory){
+    get_url = '../json/Persons.json';
+    if (ionic.Platform.isAndroid())
+    {
+        get_url = '/android_asset/www/json/Persons.json';
+    }
+    return $http.get(get_url,{ cache: true}).then(function(items){
+        var returnedItems = [];
+        for (var i = 0; i< items.data.length; i++){
+            items.data[i].id = i;
+            returnedItems.push(items.data[i]);
+        }
+        return returnedItems.groupBy(function(person){
+            return person.bakhsh;
+        });
+    });
 })
 
 .factory('ContentFactory', function($http, $cacheFactory)
@@ -570,6 +635,21 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         $scope.external_place_type_input = resp.allExtraPlaceTypes[0];
     });
 
+    $scope.translatePlaceType = function(placeType){
+        console.log(placeType);
+        var translationTable = {
+            'bank': 'بانک',
+            'bookstore': 'کتاب فروشی',
+            'food': 'غذا',
+            'hospital': 'بیمارستان',
+            'library': 'کتابخانه',
+            'movie_theater': 'سینما',
+            'meal_delivery': 'غذای بیرون بر',
+            'parking': 'پارکینگ'
+        }
+
+        return translationTable[placeType];
+    }
 
 
     $scope.getSubPlaces = function()

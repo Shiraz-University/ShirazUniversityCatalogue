@@ -1,0 +1,19 @@
+<ion-view view-title="افراد">
+	<ion-content dir="rtl">
+        <div class="bar bar-header item-input-inset">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios-search placeholder-icon"> </i>
+                <input type="text" placeholder="جستجو " ng-model="search_input">
+            </label>
+			<button class="button button-clear" ng-click="search_input = null">
+				<i class="icon ion-ios-close-empty placeholder-icon"> </i>
+			</button>
+        </div>
+		<ion-list>
+			<ion-item href="#/app/persons/{{department}}" ng-repeat="department in departments | filter:search_input">
+				{{department}}
+			</ion-item>
+		</ion-list>
+	</ion-content>
+
+</ion-view>
