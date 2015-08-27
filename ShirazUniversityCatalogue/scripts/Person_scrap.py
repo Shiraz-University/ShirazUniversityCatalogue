@@ -37,7 +37,7 @@ def main():
 				elem.click()
 				nprop = len(driver.find_elements_by_xpath('/html/body/form/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr'))
 				dic = {'fname' : '', 'lname': '','birth':'','tahol':'','madrak':'','estekhdam':'','martabe':'','bakhsh':'','daneshkade':'','address':'','phone':'','mobile':'','email':'','interest':''}
-				for i in xrange(1,nprop):
+				for i in xrange(1,nprop+1):
 					if len(driver.find_elements_by_xpath('/html/body/form/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr['+str(i)+']/td'))>1:
 						prop_xpath = driver.find_element_by_xpath('/html/body/form/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr['+str(i)+']/td[1]').text
 						ansprop_xpath = driver.find_element_by_xpath('/html/body/form/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr['+str(i)+']/td[3]').text.encode('utf8')
