@@ -85,6 +85,16 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 		
 	})
 
+	.state('index.person',{
+		url: '/person/:personId',
+		views:{
+			main_content: {
+				templateUrl: 'templates/person.html',
+				controller: 'PersonCtrl'
+			}	
+		}
+	})
+
 	.state('index.persons',{
 		url: '/persons',
 		views:{
@@ -100,22 +110,28 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 		url: '/persons/:departmentName',
 		views:{
 			main_content: {
-				templateUrl: 'templates/departmentPersons.html',
+				templateUrl: 'templates/persons.html',
 				controller: 'DepartmentPersonsCtrl'
 			}	
 		}
 		
 	})
 
-	.state('index.person',{
-		url: '/person/:departmentName/:personId',
+	.state('index.sectionPerson',{
+		url: '/persons/:departmentName/:sectionName',
 		views:{
 			main_content: {
-				templateUrl: 'templates/person.html',
-				controller: 'PersonCtrl'
+				templateUrl: 'templates/departmentPersons.html',
+				controller: 'SectionPersonsCtrl'
 			}	
 		}
 	})
+
+	
+
+	
+
+	
 
 	.state('index.search',{
 		url: '/search',

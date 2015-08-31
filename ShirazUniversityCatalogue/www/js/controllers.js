@@ -96,9 +96,21 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     });
 })
 
-.controller('PersonsCtrl', function($scope, PersonFactory){
+.controller('PersonsCtrl', function($scope, $stateParams, PersonFactory){
+
     PersonFactory.then(function(data){
         $scope.departments = getKeys(data);
+    });
+})
+
+.controller('SectionPersonsCtrl', function($scope, $stateParams, PersonFactory){
+
+    PersonFactory.then(function(data){
+        var departmentName = $stateParams['departmentName'];
+        var sectionName = $stateParams['sectionName'];
+        data = data[departmentName][sectionName];
+
+        $scope.persons = data;
     });
 })
 
@@ -106,7 +118,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     var departmentName = $stateParams.departmentName;
 
     PersonFactory.then(function(data){
-        $scope.persons = data[departmentName];
+        $scope.departments = getKeys(data[departmentName]);
         $scope.department = departmentName;
     });
 })
@@ -123,8 +135,9 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 .controller('PersonCtrl', function($scope,$stateParams, PersonFactory){
     var personId = $stateParams.personId;
     var departmentName = $stateParams.departmentName;
+    var sectionName = $stateParams.sectionName;
     PersonFactory.then(function(data){
-        var currentForm = data[departmentName].filter(function(x){return x.id == personId;})[0];
+        var currentForm = data[departmentName][sectionName].filter(function(x){return x.id == personId;})[0];
         $scope.person = currentForm;
     });
 })
@@ -226,9 +239,19 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             items.data[i].id = i;
             returnedItems.push(items.data[i]);
         }
-        return returnedItems.groupBy(function(person){
-            return person.bakhsh;
+        var groupByDaneshkade = returnedItems.groupBy(function(person){
+            return person.daneshkade;
         });
+        var res = {};
+
+        for (var key in groupByDaneshkade){
+            var personsInThisDaneshkade = groupByDaneshkade[key];
+            var groupByBakhsh= personsInThisDaneshkade.groupBy(function(person){
+                return person.bakhsh;
+            });
+            res[key] = groupByBakhsh;
+        }
+        return res;
     });
 })
 
