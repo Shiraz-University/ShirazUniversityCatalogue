@@ -490,6 +490,34 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     })
 })
 
+.filter('persianCompare', function(){
+    return function(items, string){
+        string = string || '';
+        var res = [];
+        var changedString = string.
+            replace(RegExp('ی','g'),"\u064a").replace(RegExp('ک','g'),"\u0645");
+        angular.forEach(items, function(item){
+            if (typeof item == 'string'){
+                if ((item.indexOf(string) > -1)
+                || (item.indexOf(changedString) > -1)){
+                    res.push(item);
+                }
+            }
+            else{
+                for (var key in item){
+                    var currentElem = String(item[key]);
+                    if ((currentElem.indexOf(string) > -1) ||
+                        (currentElem.indexOf(changedString) > -1)){
+                        res.push(item);
+                        break;
+                    }
+                }
+            }
+        });
+        return res;
+    };
+})
+
 .filter('inRange', function(){
     
 

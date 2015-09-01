@@ -10,7 +10,7 @@
 			</button>
         </div>
 		<ion-list>
-			<ion-item href="#{{location.path()}}/{{department}}" ng-repeat="department in departments | filter:search_input">
+			<ion-item href="#{{location.path()}}/{{department}}" ng-repeat="department in departments | persianCompare:search_input">
 				{{department}}
 			</ion-item>
 		</ion-list>
