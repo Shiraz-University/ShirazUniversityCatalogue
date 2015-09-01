@@ -10,7 +10,7 @@
 			</button>
         </div>
 		<ion-list>
-			<ion-item href="#/app/person/{{department}}/{{person.id}}" ng-repeat="person in persons | filter:search_input">
+			<ion-item href="#/app/person/{{department}}/{{section}}/{{person.id}}" ng-repeat="person in persons | filter:search_input">
 				{{person.fname}} {{person.lname}}
 
 				<a style="float: left;padding-left: 3px;padding-right: 3px;" href="mailto:{{person.email}}"><i ng-if="person.email" class="button button-small icon ion-email"></i>

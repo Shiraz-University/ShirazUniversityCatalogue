@@ -7,6 +7,13 @@
 				</ion-item>
 				<ion-item href="#/app/content//%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C" menu-close>
 					آموزشی
+					<i ng-hide="showEducationMenu" class="icon ion-arrow-down-b" ng-click="toggleEdu($event)" style="float: left;" ></i>
+					<i ng-show="showEducationMenu" class="icon ion-arrow-right-b" ng-click="toggleEdu($event)" style="float: left;" ></i>
+					<ion-list ng-show="showEducationMenu">
+						<ion-item href="#/app/persons">
+							افراد
+						</ion-item>
+					</ion-list>
 				</ion-item>
 				<ion-item href="#/app/content//%D8%B3%DA%A9%D9%88%D9%86%D8%AA" menu-close>
 					سکونت
@@ -17,13 +24,11 @@
 				<ion-item href="#/app/content//%D8%AD%D9%85%D9%84%20%D9%88%20%D9%86%D9%82%D9%84" menu-close>
 					حمل و نقل
 				</ion-item>
-				<ion-item href="#/app/places" >
+				<ion-item href="#/app/places" menu-close >
 					مکان ها
 				</ion-item>
-				<ion-item href="#/app/persons" menu-close>
-					افراد
-				</ion-item>
-				<ion-item href="#/app/forms" >
+
+				<ion-item href="#/app/forms" menu-close >
 					فرم ها
 				</ion-item>
 

@@ -108,6 +108,8 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     PersonFactory.then(function(data){
         var departmentName = $stateParams['departmentName'];
         var sectionName = $stateParams['sectionName'];
+        $scope.department = departmentName;
+        $scope.section = sectionName;
         data = data[departmentName][sectionName];
 
         $scope.persons = data;
@@ -116,7 +118,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
 .controller('DepartmentPersonsCtrl', function($scope,$stateParams, PersonFactory){
     var departmentName = $stateParams.departmentName;
-
+    $scope.department = departmentName;
     PersonFactory.then(function(data){
         $scope.departments = getKeys(data[departmentName]);
         $scope.department = departmentName;
@@ -136,6 +138,8 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     var personId = $stateParams.personId;
     var departmentName = $stateParams.departmentName;
     var sectionName = $stateParams.sectionName;
+    $scope.department = departmentName;
+    $scope.section = sectionName;
     PersonFactory.then(function(data){
         var currentForm = data[departmentName][sectionName].filter(function(x){return x.id == personId;})[0];
         $scope.person = currentForm;

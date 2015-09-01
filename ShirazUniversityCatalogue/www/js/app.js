@@ -8,6 +8,11 @@ app.config(function($compileProvider)
 
 app.run(function($rootScope, $location){
 	$rootScope.location = $location;
+	$rootScope.showEducationMenu = false;
+	$rootScope.toggleEdu = function($event){
+		$rootScope.showEducationMenu = !$rootScope.showEducationMenu;
+		$event.stopPropagation();
+	}
 });
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
@@ -86,7 +91,7 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider)
 	})
 
 	.state('index.person',{
-		url: '/person/:personId',
+		url: '/person/:departmentName/:sectionName/:personId',
 		views:{
 			main_content: {
 				templateUrl: 'templates/person.html',
