@@ -1,47 +1,67 @@
-<ion-side-menus>
-	<ion-side-menu dir="rtl" side="right">
-		<ion-content>
-			<ion-list>
-				<ion-item href="#/app/introduction" menu-close>
-					دانشگاه شیراز
-				</ion-item>
-				<ion-item href="#/app/content//%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C" menu-close>
-					آموزشی
-					<i ng-hide="showEducationMenu" class="icon ion-arrow-down-b" ng-click="toggleEdu($event)" style="float: left;" ></i>
-					<i ng-show="showEducationMenu" class="icon ion-arrow-right-b" ng-click="toggleEdu($event)" style="float: left;" ></i>
-					<ion-list ng-show="showEducationMenu">
-						<ion-item href="#/app/persons">
-							افراد
-						</ion-item>
-					</ion-list>
-				</ion-item>
-				<ion-item href="#/app/content//%D8%B3%DA%A9%D9%88%D9%86%D8%AA" menu-close>
-					سکونت
-				</ion-item>
-				<ion-item href="#/app/content//%D8%AA%D8%BA%D8%B0%DB%8C%D9%87" menu-close>
-					تغذیه 
-				</ion-item>
-				<ion-item href="#/app/content//%D8%AD%D9%85%D9%84%20%D9%88%20%D9%86%D9%82%D9%84" menu-close>
-					حمل و نقل
-				</ion-item>
-				<ion-item href="#/app/places" menu-close >
-					مکان ها
-				</ion-item>
+<ion-side-menus ng-controller="MyCtrl">
+    <ion-side-menu dir="rtl" side="right">
+        <ion-content>
+            <ion-list>
 
-				<ion-item href="#/app/forms" menu-close >
-					فرم ها
-				</ion-item>
+                <div ng-repeat="group in groups">
+                    <ion-item class="item-positive"
+                              ng-click="toggleGroup(group)"
+                              ng-class="{active: isGroupShown(group)}">
+                        <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+                        &nbsp;
+                        Group {{group.name}}
+                    </ion-item>
+                    <ion-item class="item-accordion"
+                              ng-repeat="item in group.items"
+                              ng-show="isGroupShown(group)">
+                        {{item}}
+                    </ion-item>
+                </div>
 
-			</ion-list>
-		</ion-content>
-	</ion-side-menu>
-	<ion-side-menu-content drag-content="false">
-		<ion-nav-bar align-title="right" class="bar-positive">
-			<ion-nav-back-button style="border: none; font-family: 'IRANBold', Tahoma;"><i class="icon ion-ios-arrow-back placeholder-icon"></i></ion-nav-back-button>
-			<ion-nav-buttons side="right">
-				<button menu-toggle="right" class="button button-icon icon ion-navicon" ></button>
-			</ion-nav-buttons>
-		</ion-nav-bar>
-		<ion-nav-view name="main_content"></ion-nav-view>
-	</ion-side-menu-content>
+                <ion-item href="#/app/introduction" menu-close>
+                    دانشگاه شیراز
+                </ion-item>
+                <ion-item href="#/app/content//%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C" menu-close>
+                    آموزشی
+                    <i ng-hide="showEducationMenu" class="icon ion-arrow-down-b" ng-click="toggleEdu($event)"
+                       style="float: left;"></i>
+                    <i ng-show="showEducationMenu" class="icon ion-arrow-right-b" ng-click="toggleEdu($event)"
+                       style="float: left;"></i>
+                    <ion-list ng-show="showEducationMenu">
+                        <ion-item href="#/app/persons">
+                            افراد
+                        </ion-item>
+                    </ion-list>
+                </ion-item>
+
+                <ion-item href="#/app/content//%D8%B3%DA%A9%D9%88%D9%86%D8%AA" menu-close>
+                    سکونت
+                </ion-item>
+                <ion-item href="#/app/content//%D8%AA%D8%BA%D8%B0%DB%8C%D9%87" menu-close>
+                    تغذیه
+                </ion-item>
+                <ion-item href="#/app/content//%D8%AD%D9%85%D9%84%20%D9%88%20%D9%86%D9%82%D9%84" menu-close>
+                    حمل و نقل
+                </ion-item>
+                <ion-item href="#/app/places" menu-close>
+                    مکان ها
+                </ion-item>
+
+                <ion-item href="#/app/forms" menu-close>
+                    فرم ها
+                </ion-item>
+
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+    <ion-side-menu-content drag-content="false">
+        <ion-nav-bar align-title="right" class="bar-positive">
+            <ion-nav-back-button style="width: 10%;border: none; font-family: 'IRANBold', Tahoma;"><i
+                    class="icon ion-ios-arrow-back placeholder-icon"></i></ion-nav-back-button>
+            <ion-nav-buttons side="right">
+                <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="main_content"></ion-nav-view>
+    </ion-side-menu-content>
 </ion-side-menus>
