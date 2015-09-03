@@ -505,7 +505,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             }
             else{
                 for (var key in item){
-                    var currentElem = String(item[key]);
+                    var currentElem = String(item[key]).replace(RegExp('ی','g'),"\u064a").replace(RegExp('ک','g'),"\u0645");
                     if ((currentElem.indexOf(string) > -1) ||
                         (currentElem.indexOf(changedString) > -1)){
                         res.push(item);
