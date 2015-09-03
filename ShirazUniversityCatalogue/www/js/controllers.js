@@ -763,17 +763,23 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     })
 
 
-    .controller('MyCtrl', function ($scope) {
-        $scope.groups = [];
-        i = 0;
-        $scope.groups[i] = {
-            name: i,
-            items: [],
-            show: false
-        };
-        for (var j = 0; j < 3; j++) {
-            $scope.groups[i].items.push(i + '-' + j);
-        }
+    .controller('MenuController', function ($scope) {
+        $scope.groups = [
+            {name: 'دانشگاه شیراز', href:'#/app/introduction'},
+            {
+                name: 'آموزشی',
+                items : [
+                    {name: 'راهنما', href: '#/app/content//%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C'},
+                    {name: 'افراد', href: '#/app/persons'}
+                ]
+            },
+            {name: 'سکونت', href:'#/app/content//%D8%B3%DA%A9%D9%88%D9%86%D8%AA'},
+            {name: 'تغذیه', href:'#/app/content//%D8%AA%D8%BA%D8%B0%DB%8C%D9%87'},
+            {name: 'حمل و نقل', href:'#/app/content//%D8%AD%D9%85%D9%84%20%D9%88%20%D9%86%D9%82%D9%84'},
+            {name: 'مکان ها', href:'#/app/places'},
+            {name: 'فرم ها', href:'#/app/forms'},
+            
+        ];
 
         $scope.toggleGroup = function (group) {
             group.show = !group.show;

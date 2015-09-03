@@ -13,6 +13,7 @@ app.run(function($rootScope, $location){
 		$rootScope.showEducationMenu = !$rootScope.showEducationMenu;
 		$event.stopPropagation();
 	}
+	
 });
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider)

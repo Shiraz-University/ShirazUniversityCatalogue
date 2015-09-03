@@ -1,4 +1,4 @@
-<ion-side-menus ng-controller="MyCtrl">
+<ion-side-menus ng-controller="MenuController">
     <ion-side-menu dir="rtl" side="right">
         <ion-content>
             <ion-list>
@@ -6,19 +6,31 @@
                 <div ng-repeat="group in groups">
                     <ion-item class="item-positive"
                               ng-click="toggleGroup(group)"
-                              ng-class="{active: isGroupShown(group)}">
+                              ng-class="{active: isGroupShown(group)}"
+                              href=""
+                              ng-if="group.items">
                         <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
                         &nbsp;
-                        Group {{group.name}}
+                        {{group.name}}
                     </ion-item>
-                    <ion-item class="item-accordion"
+                    <ion-item class="item-positive"
+                              ng-click="toggleGroup(group)"
+                              ng-class="{active: isGroupShown(group)}"
+                              href="{{group.href}}"
+                              ng-if="!group.items" menu-close>
+                        <i class="icon" ng-class="group.items ? (isGroupShown(group) ? 'ion-minus' : 'ion-plus') : ''"></i>
+                        &nbsp;
+                        {{group.name}}
+                    </ion-item>
+                    <ion-item class="item-royal item-accordion"
                               ng-repeat="item in group.items"
-                              ng-show="isGroupShown(group)">
-                        {{item}}
+                              ng-show="isGroupShown(group)"
+                              href="{{item.href}}" menu-close>
+                        {{item.name}}
                     </ion-item>
                 </div>
 
-                <ion-item href="#/app/introduction" menu-close>
+                <!-- <ion-item href="#/app/introduction" menu-close>
                     دانشگاه شیراز
                 </ion-item>
                 <ion-item href="#/app/content//%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C" menu-close>
@@ -49,7 +61,7 @@
 
                 <ion-item href="#/app/forms" menu-close>
                     فرم ها
-                </ion-item>
+                </ion-item> -->
 
             </ion-list>
         </ion-content>
