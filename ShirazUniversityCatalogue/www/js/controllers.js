@@ -477,13 +477,6 @@ angular.module('ionicApp.controllers', ['ngRoute'])
                 var currentElem = path[i];
                 var currentRoot = findChild(currentRoot.children, currentElem);
             }
-<<<<<<< HEAD
-            else{
-                for (var key in item){
-                    var currentElem = String(item[key]).replace(RegExp('ی','g'),"\u064a").replace(RegExp('ک','g'),"\u0645");
-                    if ((currentElem.indexOf(string) > -1) ||
-                        (currentElem.indexOf(changedString) > -1)){
-=======
             return currentRoot;
         }
 
@@ -509,7 +502,6 @@ angular.module('ionicApp.controllers', ['ngRoute'])
                 if (typeof item == 'string') {
                     if ((item.indexOf(string) > -1)
                         || (item.indexOf(changedString) > -1)) {
->>>>>>> sidebar
                         res.push(item);
                     }
                 }
