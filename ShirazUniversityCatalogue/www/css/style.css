@@ -95,10 +95,10 @@ table th {
 
 
 .list .item.item-accordion {
-	line-height: 38px;
+	line-height: 18px;
 	padding-top: 0;
 	padding-bottom: 0;
-	transition: 0.09s all linear;
+	transition: 0.1s all linear;
 }
 .list .item.item-accordion.ng-hide {
 	line-height: 0px;

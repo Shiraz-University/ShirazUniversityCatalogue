@@ -1,19 +1,87 @@
-<ion-view >
-	<ion-nav-title>{{person.fname}} {{person.lname}}</ion-nav-title>
-	<ion-content dir="rtl">
-		نام 	: 	{{person.fname}}<br>
-		نام خانوادگي 	: 	{{person.lname}}<br>
-		سال تولد 	: 	{{person.birth}}<br>
-		وضعيت تاهل 	: 	{{person.tahol}}<br>
-		مدرک تحصيلي 	: 	{{person.madrak}}<br>
-		سال استخدام 	: 	{{person.estekhdam}}<br>
-		مرتبه علمي 	: 	{{person.martabe}}<br>
-		بخش 	: 	{{person.bakhsh}}<br>
-		دانشکده 	: 	{{person.daneshkade}}<br>
-		آدرس 	: 	{{person.address}}<br>
-		تلفن 	: 	{{person.phone}}<br>
-		تلفن همراه 	: 	{{person.mobile}}<br>
-		پست الکترونيک 	:	{{person.email}}<br>
-		علاقه مندی ها 	:	{{person.interest}}<br>
-	</ion-content>
+<ion-view>
+    <ion-nav-title>{{person.fname}} {{person.lname}}</ion-nav-title>
+    <ion-content dir="rtl">
+        <div class="row">
+            <div class="col col-50">
+                <div class="card">
+                    <div class="item item-divider">نام و نام خانوادگی :</div>
+                    <div class="item item-text-wrap">
+                        {{person.fname+" "+person.lname}}
+                    </div>
+                </div>
+            </div>
+            <div class="col col-25">
+                <div class="card">
+                    <div class="item item-divider">
+                        سال تولد:
+                    </div>
+                    <div class="item item-text-wrap">
+                        {{person.birth}}
+                    </div>
+                </div>
+            </div>
+            <div class="col col-25">
+                <div class="card">
+                    <div class="item item-divider">
+                        وضعيت تاهل:
+                    </div>
+                    <div class="item item-text-wrap">
+                        {{person.tahol}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col col-25">
+                <div class="card">
+                    <div class="item item-divider">مدرک تحصیلی :</div>
+                    <div class="item item-text-wrap">
+                        {{person.madrak}}
+                    </div>
+                </div>
+            </div>
+            <div class="col col-25">
+                <div class="card">
+                    <div class="item item-divider">سال استخدام :</div>
+                    <div class="item item-text-wrap">
+                        {{person.estekhdam}}
+                    </div>
+                </div>
+            </div>
+            <div class="col col-25">
+                <div class="card">
+                    <div class="item item-divider">مرتبه علمی :</div>
+                    <div class="item item-text-wrap">
+                        {{person.martabe}}
+                    </div>
+                </div>
+            </div>
+            <div class="col col-25">
+                <div class="card">
+                    <div class="item item-divider">بخش و دانشکده :</div>
+                    <div class="item item-text-wrap">
+                        {{person.bakhsh+" - "+person.daneshkade}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="item item-divider">پست الکترونیک :</div>
+                <div class="item item-text-wrap">
+                    {{person.email}}
+                </div>
+            </div>
+        </div>
+        <div class="col" ng-if="person.interest">
+            <div class="card">
+                <div class="item item-divider">علاقه مندی ها :</div>
+                <div class="item item-text-wrap">
+                    {{person.interest}}
+                </div>
+            </div>
+        </div>
+    </ion-content>
 </ion-view>
