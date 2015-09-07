@@ -153,9 +153,9 @@ angular.module('ionicApp.controllers', ['ngRoute'])
     .factory('PlaceFactory', function ($http, $cacheFactory, ExtraPlaceFactory) {
         get_url = '../json/places.json';
 
-        // if (ionic.Platform.isAndroid()) {
-        //     get_url = '/android_asset/www/json/places.json';
-        // }
+        if (ionic.Platform.isAndroid()) {
+            get_url = '/android_asset/www/json/places.json';
+        }
         return $http.get(get_url, {cache: true}).then(function (resp) {
             var data = resp.data;
             var returnedData = [];
@@ -191,9 +191,9 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
     .factory('ExtraPlaceFactory', function ($http) {
         get_url = '../json/extra_places.json';
-        // if (ionic.Platform.isAndroid()) {
-        //     get_url = '/android_asset/www/json/extra_places.json';
-        // }
+        if (ionic.Platform.isAndroid()) {
+            get_url = '/android_asset/www/json/extra_places.json';
+        }
 
         var allExtraPlaces = [];
         var allPlaceTypes = [];
@@ -213,9 +213,9 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
     .factory('FormFactory', function ($http, $cacheFactory) {
         get_url = '../json/forms.json';
-        // if (ionic.Platform.isAndroid()) {
-        //     get_url = '/android_asset/www/json/forms.json';
-        // }
+        if (ionic.Platform.isAndroid()) {
+            get_url = '/android_asset/www/json/forms.json';
+        }
         return $http.get(get_url, {cache: true}).then(function (items) {
             var returnedItems = [];
             for (var i = 0; i < items.data.length; i++) {
@@ -231,9 +231,9 @@ angular.module('ionicApp.controllers', ['ngRoute'])
 
     .factory('PersonFactory', function ($http, $cacheFactory) {
         get_url = '../json/Persons.json';
-        // if (ionic.Platform.isAndroid()) {
-        //     get_url = '/android_asset/www/json/Persons.json';
-        // }
+        if (ionic.Platform.isAndroid()) {
+            get_url = '/android_asset/www/json/Persons.json';
+        }
         return $http.get(get_url, {cache: true}).then(function (items) {
             var returnedItems = [];
             for (var i = 0; i < items.data.length; i++) {
