@@ -5,7 +5,7 @@
 		<ion-tabs>
 			<ion-tab title="Desc" icon="ion-document-text">
 				<ion-view>
-					<ion-content class="has-header">
+					<ion-content class="has-header" id="iframeContainer">
 						<script type="text/javascript">
 							function addStyle(frame)
 							{
@@ -13,9 +13,14 @@
 								var link = frame.contentDocument.createElement("link");
 								link.setAttribute("rel", "stylesheet");
 								link.setAttribute("type", "text/css");
-								link.setAttribute("href", "/css/frame-style.css");
+								link.setAttribute("href", "/android_asset/www/css/frame-style.css");
 								otherhead.appendChild(link);
-								frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';
+								var container = $('#iframeContainer');
+								//frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';
+								console.log('height is :');
+
+								
+								frame.style.height = container.height() + 'px';
 							}
 						</script>
 						<iframe id="desc-frame" id="desc-frame" ng-src="{{descUrl}}" onload="addStyle(this);" style="width: 100%; height: auto;"></iframe>
