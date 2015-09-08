@@ -29,10 +29,13 @@ if __name__ == '__main__':
             place_detail_filename = os.path.join(base_path, 'detail.csv')
             current_dict = None
             #add the current place to json
-            with open(place_detail_filename, 'r') as file_details:
+            with open(place_detail_filename, 'r') as file_details,\
+                 open(place_desc_filename) as desc_file:
+                desc_file_content = "\n".join(desc_file.readlines())
                 dic_object = csv_to_dic(file_details.readlines())
                 current_dict = dic_object
-                places[place_type_dir].append(dic_object)
+                current_dict['desc_content'] = desc_file_content
+                places[place_type_dir].append(current_dict)
             #copy the current place html to the templates folder
             print os.path.join(html_out_directory, dic_object['id'])
             shutil.copyfile(place_desc_filename, os.path.join(html_out_directory, current_dict['id']) + '.html')

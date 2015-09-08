@@ -23,7 +23,9 @@
 								frame.style.height = container.height() + 'px';
 							}
 						</script>
-						<iframe id="desc-frame" id="desc-frame" ng-src="{{descUrl}}" onload="addStyle(this);" style="width: 100%; height: auto;"></iframe>
+						<!-- <iframe id="desc-frame" id="desc-frame" ng-src="{{descUrl}}" onload="addStyle(this);" style="width: 100%; height: auto;"></iframe> -->
+						<div ng-bind-html="place.desc_content"></div>
+
 					</ion-content>
 				</ion-view>
 			</ion-tab>

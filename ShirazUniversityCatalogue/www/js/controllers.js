@@ -679,6 +679,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         var allPlaces = null;
         var places = PlaceFactory.then(function (data) {
             $scope.place = $rootScope.getPlaceWithId(data.allPlaces, $stateParams.placeId);
+
             allPlaces = data.allPlaces;
             //$scope.descUrl = 'places/' + $scope.place.id + '/desc.html';
             $scope.descUrl = 'place_templates/' + $scope.place.id + '.html';
