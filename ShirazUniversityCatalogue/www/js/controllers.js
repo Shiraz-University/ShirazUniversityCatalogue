@@ -191,6 +191,15 @@ angular.module('ionicApp.controllers', ['ngRoute'])
                                 }
                             }
                         }
+                        console.log('!!');
+                        console.log(currentPlace);
+                        currentPlace.nearbyPlaces.sort(function(a,b){
+                            var aXDiff = a.geometry.location.lat - currentPlace.latitude;
+                            var aYDiff = a.geometry.location.lng - currentPlace.longtitude;
+                            var bXDiff = b.geometry.location.lat - currentPlace.latitude;
+                            var bYDiff = b.geometry.location.lng - currentPlace.longtitude;
+                            return (aXDiff * aXDiff + aYDiff * aYDiff) - (bXDiff * bXDiff + bYDiff * bYDiff);
+                        });
                     }
                 }
                 return {allPlaces: returnedData, categorizedPlaces: resp.data};
@@ -709,7 +718,6 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         });
 
         $scope.translatePlaceType = function (placeType) {
-            console.log(placeType);
             var translationTable = {
                 'bank': 'بانک',
                 'bookstore': 'کتاب فروشی',
