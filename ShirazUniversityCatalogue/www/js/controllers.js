@@ -14,6 +14,18 @@ Number.prototype.toPersianString = function () {
     return res;
 };
 
+function persianNumberToEnglish(persianNumberString){
+    var res = '';
+    var zeroCharCode = '0'.charCodeAt(0);
+    var persianZeroCharCode = '۰'.charCodeAt(0);
+    for (var x = 0; x < persianNumberString.length; x++){
+        var currentDigit = persianNumberString[x];
+        var currentCharCode = currentDigit.charCodeAt(0);
+        res += String.fromCharCode(zeroCharCode + currentCharCode - persianZeroCharCode);
+    }
+    return res;
+}
+
 Array.prototype.groupBy = function (groupFn) {
     var res = {};
     this.forEach(function (elem) {
@@ -460,10 +472,12 @@ angular.module('ionicApp.controllers', ['ngRoute'])
         // });
     })
 
-    .controller('ContentCtrl', function ($scope, $stateParams, ContentFactory) {
+    .controller('ContentCtrl', function ($scope, $stateParams,$location, ContentFactory) {
         var pathDelim = '/';
         var pathParts = $stateParams.path.split(pathDelim);
-
+        var splitted = $location.path().split('/');
+        var title = splitted[splitted.length-1].replace(/%2F/g,'');
+        $scope.title = title;
         function findChild(children, name) {
             return children.filter(function (ch) {
                 return ch.name == name;
@@ -486,6 +500,10 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             });
             $scope.docs = $scope.contents.children.filter(function (elem) {
                 return elem.type == 'content';
+            }).sort(function(a,b){
+                var aFirstPart = +persianNumberToEnglish(a.title.split('-')[0].trim());
+                var bFirstPart = +persianNumberToEnglish(b.title.split('-')[0].trim());
+                return aFirstPart - bFirstPart;
             });
             console.log($scope.contents);
         })
@@ -775,7 +793,7 @@ angular.module('ionicApp.controllers', ['ngRoute'])
             },
             {name: 'سکونت', href:'#/app/content//%D8%B3%DA%A9%D9%88%D9%86%D8%AA'},
             {name: 'تغذیه', href:'#/app/content//%D8%AA%D8%BA%D8%B0%DB%8C%D9%87'},
-            {name: 'حمل و نقل', href:'#/app/content//%D8%AD%D9%85%D9%84%20%D9%88%20%D9%86%D9%82%D9%84'},
+            // {name: 'حمل و نقل', href:'#/app/content//%D8%AD%D9%85%D9%84%20%D9%88%20%D9%86%D9%82%D9%84'},
             {name: 'مکان ها', href:'#/app/places'},
             {name: 'فرم ها', href:'#/app/forms'},
             
