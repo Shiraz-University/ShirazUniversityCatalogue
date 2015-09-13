@@ -90,7 +90,7 @@ if __name__ == '__main__':
 	with open(input_places_json_file_name) as places_file:
 		json_places = places_file.read()
 		places = json.loads(json_places)
-	all_places = combine_places(places)
+	all_places = [x for x in combine_places(places) if x.has_key('latitude')]
 
 	all_results = {}
 	
