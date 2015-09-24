@@ -6,25 +6,45 @@
 			<ion-tab title="Desc" icon="ion-document-text">
 				<ion-view>
 					<ion-content class="has-header" id="iframeContainer">
-						<script type="text/javascript">
-							function addStyle(frame)
-							{
-								var otherhead = frame.contentDocument.getElementsByTagName("head")[0];
-								var link = frame.contentDocument.createElement("link");
-								link.setAttribute("rel", "stylesheet");
-								link.setAttribute("type", "text/css");
-								link.setAttribute("href", "/android_asset/www/css/frame-style.css");
-								otherhead.appendChild(link);
-								var container = $('#iframeContainer');
-								//frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';
-								console.log('height is :');
-
-								
-								frame.style.height = container.height() + 'px';
-							}
-						</script>
-						<!-- <iframe id="desc-frame" id="desc-frame" ng-src="{{descUrl}}" onload="addStyle(this);" style="width: 100%; height: auto;"></iframe> -->
+						
 						<div ng-bind-html="place.desc_content"></div>
+						
+						<div class="card" ng-if="place.head">
+				      		<div class="item item-divider">رئیس</div>
+				      		<div class="item item-text-wrap">
+				      			<div>نام و نام خانوادگی: {{place.head}}</div>
+								<div ng-if="place.head_phone_number">شماره تلفن: <a href="tel:{{place.head_phone_number}}">{{place.head_phone_number}}</a></div>
+				      			<div ng-if="place.head_fax_number">دورنگار: <a href="tel:{{place.head_fax_number}}">{{place.head_fax_number}}</a></div>
+				      			<div ng-if="place.head_email">پست الکترونیکی: <a href="mailto:{{place.head_email}}">{{place.head_email}}</a></div>
+				      		</div>
+						</div>
+						<div class="card" ng-if="place.education_expert">
+				      		<div class="item item-divider">معاون آموزشی</div>
+				      		<div class="item item-text-wrap">
+				      			<div>نام و نام خانوادگی: {{place.education_expert}}</div>
+								<div ng-if="place.education_expert_phone_number">شماره تلفن: <a href="tel:{{place.education_expert_phone_number}}">{{place.education_expert_phone_number}}</a></div>
+				      			<div ng-if="place.education_expert_fax_number">دورنگار: <a href="tel:{{place.education_expert_fax_number}}">{{place.education_expert_fax_number}}</a></div>
+				      			<div ng-if="place.education_expert_email">پست الکترونیکی: <a href="mailto:{{place.education_expert_email}}">{{place.education_expert_email}}</a></div>
+				      		</div>
+						</div>
+						<div class="card" ng-if="place.culture_expert">
+				      		<div class="item item-divider">معاون دانشجویی و فرهنگی</div>
+				      		<div class="item item-text-wrap">
+				      			<div>نام و نام خانوادگی: {{place.culture_expert}}</div>
+								<div ng-if="place.culture_expert_phone_number">شماره تلفن: <a href="tel:{{place.culture_expert_phone_number}}">{{place.culture_expert_phone_number}}</a></div>
+				      			<div ng-if="place.culture_expert_fax_number">دورنگار: <a href="tel:{{place.culture_expert_fax_number}}">{{place.culture_expert_fax_number}}</a></div>
+				      			<div ng-if="place.culture_expert_email">پست الکترونیکی: <a href="mailto:{{place.culture_expert_email}}">{{place.culture_expert_email}}</a></div>
+				      		</div>
+						</div>
+						<div class="card" ng-if="place.research_expert">
+				      		<div class="item item-divider">معاون پژوهشی</div>
+				      		<div class="item item-text-wrap">
+				      			<div>نام و نام خانوادگی: {{place.research_expert}}</div>
+								<div ng-if="place.research_expert_phone_number">شماره تلفن: <a href="tel:{{place.research_expert_phone_number}}">{{place.research_expert_phone_number}}</a></div>
+				      			<div ng-if="place.research_expert_fax_number">دورنگار: <a href="tel:{{place.research_expert_fax_number}}">{{place.research_expert_fax_number}}</a></div>
+				      			<div ng-if="place.research_expert_email">پست الکترونیکی: <a href="mailto:{{place.research_expert_email}}">{{place.research_expert_email}}</a></div>
+				      		</div>
+						</div>
 
 					</ion-content>
 				</ion-view>
@@ -56,7 +76,7 @@
 				<ion-view>
 					<ion-content class="has-header" dir="rtl">
 						<label class="item item-input item-select">
-							<div class="input-label" >External Place Type</div>
+							<div class="input-label" >|</div>
 							<select ng-model="external_place_type_input">
 								<option ng-repeat="placeType in allExtraPlaceTypes" value="{{placeType}}" >{{translatePlaceType(placeType)}}</option>
 							</select>
