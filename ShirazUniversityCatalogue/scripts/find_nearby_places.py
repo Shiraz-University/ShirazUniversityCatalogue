@@ -2,7 +2,6 @@ import sys
 import os
 import urllib2
 import json
-import urllib2
 from multiprocessing import Pool
 from pprint import pprint
 from itertools import count, repeat
@@ -62,29 +61,38 @@ def combine_places(places):
 def download_nearby_places(((placetype,query), places)):
 	merger = NearbyPlaceMerger()
 	for place in places:
+		# try:
 		latitude = place['latitude']
 		longtitude = place['longtitude']
 		requst = query.format(lat = latitude, lng = longtitude)
+		print requst
 		request_content = urllib2.urlopen(requst).read()
+		print request_content
 		nearby_places = json.loads(request_content)['results']
 		merger.add_places(nearby_places, place['id'])
+		# except:
+		# 	pass
 
 	detail_request = 'https://maps.googleapis.com/maps/api/place/details/json?language=fa&placeid={}&key=' + my_key.key
 	all_places = []
 	for place in merger.places:
+		# try:
 		this_request = detail_request.format(place['place_id'])
+		print this_request
 		response = urllib2.urlopen(this_request).read()
+		print response
 		place_object = json.loads(response)['result']
 		place_object['nearby_places'] = place['nearby_places']
 		all_places.append(place_object)
+		# except:
+		# 	pass
 
 	return (placetype,all_places)
 
 
 if __name__ == '__main__':
-
 	input_places_json_file_name = sys.argv[1]
-	#input_places_json_file_name = 'places.json'
+	output_file_name = sys.argv[2]
 
 	places = None
 	with open(input_places_json_file_name) as places_file:
@@ -94,6 +102,15 @@ if __name__ == '__main__':
 
 	all_results = {}
 	
+	# for x,y in nearby_requests.items():
+	# 	print 'aaa'
+	# 	download_nearby_places(((x,y), all_places))
+
 	p = Pool(10)
 
-	print json.dumps(dict(p.map(download_nearby_places, zip(nearby_requests.items(), repeat(all_places)))), indent = 4)
+	with open(output_file_name, 'w') as outfile:
+		outfile.write(
+			json.dumps(dict(p.map(download_nearby_places,
+							 zip(nearby_requests.items(),
+							 	 repeat(all_places)))),
+			indent = 4))
