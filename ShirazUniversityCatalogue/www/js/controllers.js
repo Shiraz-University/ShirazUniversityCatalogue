@@ -177,29 +177,40 @@ angular.module('ionicApp.controllers', ['ngRoute'])
                     var placesInType = data[placeType];
                     for (var i = 0; i < placesInType.length; i++) {
                         var currentPlace = placesInType[i];
-                        currentPlace['nearbyPlaces'] = [];
+                        
                         currentPlace['placeType'] = placeType;
                         returnedData.push(currentPlace);
 
-                        for (var j = 0; j < extraPlaces.length; j++) {
-                            var currentExtraPlace = extraPlaces[j];
-                            for (var k = 0; k < currentExtraPlace.nearby_places.length; k++) {
-                                var currentNearbyPlace = currentExtraPlace.nearby_places[k];
-                                if (currentPlace.id == currentNearbyPlace) {
-                                    currentPlace.nearbyPlaces.push(currentExtraPlace);
-                                    break;
-                                }
-                            }
-                        }
-                        console.log('!!');
-                        console.log(currentPlace);
-                        currentPlace.nearbyPlaces.sort(function(a,b){
-                            var aXDiff = a.geometry.location.lat - currentPlace.latitude;
-                            var aYDiff = a.geometry.location.lng - currentPlace.longtitude;
-                            var bXDiff = b.geometry.location.lat - currentPlace.latitude;
-                            var bYDiff = b.geometry.location.lng - currentPlace.longtitude;
-                            return (aXDiff * aXDiff + aYDiff * aYDiff) - (bXDiff * bXDiff + bYDiff * bYDiff);
-                        });
+                        currentPlace.getExtraPlaces = (function(currentPlace){
+                        	return function(){
+	                        	if (currentPlace.nearbyPlaces != undefined){
+	                        		return currentPlace.nearbyPlaces;
+	                        	}
+	                        	else{
+	                        		currentPlace.nearbyPlaces = [];	
+	                        		for (var j = 0; j < extraPlaces.length; j++) {
+			                            var currentExtraPlace = extraPlaces[j];
+			                            for (var k = 0; k < currentExtraPlace.nearby_places.length; k++) {
+			                                var currentNearbyPlace = currentExtraPlace.nearby_places[k];
+			                                if (currentPlace.id == currentNearbyPlace) {
+			                                    currentPlace.nearbyPlaces.push(currentExtraPlace);
+			                                    break;
+			                                }
+			                            }
+			                        }
+			                        currentPlace.nearbyPlaces.sort(function(a,b){
+			                            var aXDiff = a.geometry.location.lat - currentPlace.latitude;
+			                            var aYDiff = a.geometry.location.lng - currentPlace.longtitude;
+			                            var bXDiff = b.geometry.location.lat - currentPlace.latitude;
+			                            var bYDiff = b.geometry.location.lng - currentPlace.longtitude;
+			                            return (aXDiff * aXDiff + aYDiff * aYDiff) - (bXDiff * bXDiff + bYDiff * bYDiff);
+			                        });
+			                        return currentPlace.nearbyPlaces;
+	                        	}
+	                        }
+                        })(currentPlace);
+
+                        
                     }
                 }
                 return {allPlaces: returnedData, categorizedPlaces: resp.data};

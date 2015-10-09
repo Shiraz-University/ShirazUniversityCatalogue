@@ -31,6 +31,8 @@ if __name__ == '__main__':
             #add the current place to json
             with open(place_detail_filename, 'r') as file_details,\
                  open(place_desc_filename) as desc_file:
+                print "processing:"
+                print place_detail_filename.encode('utf8')
                 desc_file_content = "\n".join(desc_file.readlines())
                 dic_object = csv_to_dic(file_details.readlines())
                 current_dict = dic_object

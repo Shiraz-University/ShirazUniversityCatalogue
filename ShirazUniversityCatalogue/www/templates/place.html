@@ -72,7 +72,7 @@
 					</ion-content>
 				</ion-view>
 			</ion-tab>
-			<ion-tab title="Nearby Places" icon="ion-location" ng-if="place.nearbyPlaces">
+			<ion-tab title="Nearby Places" icon="ion-location" ng-if="place.getExtraPlaces()">
 				<ion-view>
 					<ion-content class="has-header" dir="rtl">
 						<label class="item item-input item-select">
@@ -82,7 +82,7 @@
 							</select>
 						</label>
 						<ion-list>
-							<ion-item href="#/app/external-place/{{epl.id}}" ng-repeat="epl in place.nearbyPlaces | extraPlaceType:external_place_type_input">
+							<ion-item href="#/app/external-place/{{epl.id}}" ng-repeat="epl in place.getExtraPlaces() | extraPlaceType:external_place_type_input">
 								{{epl.name}}
 								<a style="float: left;padding-left: 3px;padding-right: 3px;" href="tel:{{epl.international_phone_number}}"><i ng-if="epl.formatted_phone_number" class="button button-small icon ion-android-call"></i>
 								</a>

@@ -1,1 +1,1 @@
-python find_nearby_places.py ..\www\json\places.json > ..\www\json\extra_places.json
+python find_nearby_places.py ..\www\json\places.json ..\www\json\extra_places.json
